@@ -83,7 +83,7 @@ class Gather
 		var_4 SendDataToIndex(var_1 *buf, var_4 bufLen, var_1 *ip, var_4 port);
 		var_4 GetSameNews(var_u8, var_4, var_4, var_4, var_1*, var_4, var_4&, var_4&,var_1*, var_4);
 		var_4 GetRelativeNews(var_u8, var_4, var_1*, var_4, var_4&, var_4&, var_1*, var_4);
-		var_4 GetSimilarDocs_test(var_u8, var_4, var_4, var_4, var_1*, var_4, var_4 &, var_4 &);	
+		var_4 GetSimilarDocs_test(var_u8, var_4, var_4, var_4, var_1*, var_4, var_4 &, var_4 &, var_1*, var_4);	
 		var_vd ChooseLeader(DATA_INFO *pDataInfo, GROUP_INFO *pGroupInfo);
 		// merge small files to a big one
 		var_vd MergeSmallFiles(var_1* data_path, var_1* pMemory);

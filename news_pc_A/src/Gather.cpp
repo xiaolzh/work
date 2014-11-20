@@ -361,7 +361,7 @@ THREADFUNTYPE Gather::ThreadComm(var_vd* vpInfo)
 			searchid    = *(var_u8*)(szRecvBuf + 20);
 			startPos    = *(var_4*)(szRecvBuf + 28);
 			endPos      = *(var_4*)(szRecvBuf + 32);
-			iRet = pThis->GetSimilarDocs_test(searchid, searchType, startPos, endPos, pDocBuf + 16, bufLen, totalNum, resultNum);
+			iRet = pThis->GetSimilarDocs_test(searchid, searchType, startPos, endPos, pDocBuf + 16, bufLen, totalNum, resultNum, pMemory, 1<<6);
 			if (iRet <= 0)
 			{
 				pThis->e_log->writelog("%s:%d GetSimilarDocs_test(%lu) error, searchType is %d. Errno is %d.\n", FL, LN, searchid, searchType, iRet);
@@ -2933,9 +2933,8 @@ var_4 Gather::GetThreadState(var_4 iTimeOut)
 
 // support two kinds of query conditions, through docid or finger
 // give priority to docid
-var_4 Gather::GetSimilarDocs_test(var_u8 searchid, var_4 searchType, var_4 startPos, var_4 endPos, var_1* outBuf, var_4 outBufLen, var_4 &totalSimilarNum, var_4 &resultSimilarNum)
+var_4 Gather::GetSimilarDocs_test(var_u8 searchid, var_4 searchType, var_4 startPos, var_4 endPos, var_1* outBuf, var_4 outBufLen, var_4 &totalSimilarNum, var_4 &resultSimilarNum, var_1* pMemory, var_4 ith)
 {
-	var_1 *pMemory = NULL;
 	var_1 *tmpBuf = NULL;
 	uLong tmpBufLen;
 	var_4 processedLen = 0, iRet, i = 0, j = 0, cnt = 0; // for counting
@@ -2952,12 +2951,6 @@ var_4 Gather::GetSimilarDocs_test(var_u8 searchid, var_4 searchType, var_4 start
 	{
 		e_log->writelog("%s:%d DelDoc searchType invalid.\n", FL, LN);
 		return -10;
-	}
-	pMemory = (var_1*)calloc(1, ALLOC_SIZE << 2);
-	if (pMemory == NULL)
-	{
-		e_log->writelog("%s:%d Allocate memory error.\n", FL, LN);
-		return -2;
 	}
 	// °´docid²éÑ¯
 	if (searchType == 0)
@@ -3012,7 +3005,7 @@ var_4 Gather::GetSimilarDocs_test(var_u8 searchid, var_4 searchType, var_4 start
 	if (i > 0)
 	{
 		pDoc = new DOC_BUF();
-		tmpBuf = (var_1*)pMemory;
+		tmpBuf = (var_1*)(pMemory + ith * ALLOC_SIZE);
 		if (pDoc == NULL)
 		{
 			FreeObj(pDoc);
@@ -3117,14 +3110,12 @@ var_4 Gather::GetSameNews(var_u8 docid, var_4 requestType, var_4 startPos, var_4
 			if (iRet < 0)
 			{
 				e_log->writelog("%s:%d Get doc[%lu] data error.\n", FL, LN, docIDs[i]);
-				FreeObj(pDoc);
 				continue;
 			}
 			iRet = ProcessBufToDoc(tmpBuf, tmpBufLen, pDoc);
 			if (iRet < 0)
 			{
 				e_log->writelog("%s:%d Process buffer to doc[%lu] error.\n", FL, LN, docIDs[i]);
-				FreeObj(pDoc);
 				continue;
 			}
 			if (docid == docIDs[i])
@@ -3176,6 +3167,7 @@ var_4 Gather::GetSameNews(var_u8 docid, var_4 requestType, var_4 startPos, var_4
 				e_log->writelog("%s:%d Get doc[%lu] data error.\n", FL, LN, docid);
 			}
 		}
+		FreeObj(pDoc);
 	}
 	return processLen;
 }
