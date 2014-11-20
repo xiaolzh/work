@@ -1,0 +1,1285 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALLOC_SIZE	protocol.h	10;"	d
+Accept	libs/socketpack.h	/^	static const INT32_T Accept(const SOCKET soClient,struct sockaddr* soAddr,INT32_T *iAddrLen,SOCKET &soAccept)$/;"	f	class:CSocketPack
+AccessFile	libs/publicfunction.h	/^inline const INT32_T  AccessFile( const char * const filename,INT32_T icode)$/;"	f
+Add	libs/Fixsizehash.h	/^template<typename K,typename V> int Fixsizehash<K,V>::Add(K key,V *val)$/;"	f	class:Fixsizehash
+Add	libs/mulhash.h	/^template<typename K,typename V> int Mulhash<K,V>::Add(K key,V val)$/;"	f	class:Mulhash
+Add	libs/stateinfo.h	/^	const INT32_T Add()$/;"	f	class:CThreadState
+AddDoc	Gather.cpp	/^var_4 Gather::AddDoc(DOC_BUF *pDoc, var_4 forceRefresh, var_1* pMemory, var_4 ith)$/;"	f	class:Gather
+AddDoc_noduplicate	Gather.cpp	/^var_4 Gather::AddDoc_noduplicate(DOC_BUF *pDoc, var_4 forceRefresh, var_1* pMemory, var_4 ith)$/;"	f	class:Gather
+AllocMem	libs/UC_Allocator_Recycle.h	/^	var_1* AllocMem()$/;"	f	class:UC_Allocator_Recycle
+AttachDataToGroup	Gather.cpp	/^var_4 Gather::AttachDataToGroup(var_u4 groupid, var_u4 dataid)$/;"	f	class:Gather
+BIT	libs/UH_Define.h	129;"	d
+BITS_PER_LONG	libs/UH_Define.h	101;"	d
+BITS_PER_LONG	libs/UH_Define.h	115;"	d
+BIT_CLEAR	libs/UH_Define.h	131;"	d
+BIT_MASK	libs/UH_Define.h	130;"	d
+BIT_WORD	libs/UH_Define.h	132;"	d
+BM_GET_BIT	libs/UH_Define.h	1652;"	d
+BM_LEN_1BYTE	libs/UH_Define.h	1654;"	d
+BM_LEN_2BYTE	libs/UH_Define.h	1655;"	d
+BM_LEN_4BYTE	libs/UH_Define.h	1656;"	d
+BM_LEN_8BYTE	libs/UH_Define.h	1657;"	d
+BM_RULE_BIT	libs/UH_Define.h	/^static var_u1 BM_RULE_BIT[] = {0x80, 0x40, 0x20, 0x10, 0x8, 0x4, 0x2, 0x1};$/;"	v
+BM_RULE_ZERO_BIT	libs/UH_Define.h	/^static var_u1 BM_RULE_ZERO_BIT[] = {0x7F, 0xBF, 0xDF, 0xEF, 0xF7, 0xFB, 0xFD, 0xFE};$/;"	v
+BM_SET_BIT	libs/UH_Define.h	1650;"	d
+BM_SET_BIT_ZERO	libs/UH_Define.h	1651;"	d
+BYTES_PER_LONG	libs/UH_Define.h	102;"	d
+BYTES_PER_LONG	libs/UH_Define.h	116;"	d
+BindServer	libs/socketpack.h	/^	static const INT32_T  BindServer(const INT32_T iPort,const INT32_T iTimeOut,SOCKET &soListenSocket)$/;"	f	class:CSocketPack
+Blk	libs/Fixsizehash.h	/^	struct Blk$/;"	s	class:Fixsizehash
+Byte	libs/zconf.h	/^typedef unsigned char  Byte;  \/* 8 bits *\/$/;"	t
+Byte	libs/zconf.h	109;"	d
+Bytef	libs/zconf.h	/^   typedef Byte  FAR Bytef;$/;"	t
+Bytef	libs/zconf.h	110;"	d
+Bytef	libs/zconf.h	344;"	d
+CDE	protocol.h	14;"	d
+CDS	protocol.h	13;"	d
+CHECK_HEADER	protocol.h	16;"	d
+CONFIG_INFO	config.h	/^}CONFIG_INFO;$/;"	t	typeref:struct:_config_file_
+CP_MMF	libs/UH_Define.h	/^} CP_MMF;$/;"	t	typeref:struct:_cp_memory_map_file_
+CP_MUTEXLOCK	libs/UH_Define.h	/^} CP_MUTEXLOCK;$/;"	t	typeref:struct:CP_MutexLock
+CP_MUTEXLOCK_RW	libs/UH_Define.h	/^} CP_MUTEXLOCK_RW;$/;"	t	typeref:struct:CP_MutexLock_RW
+CP_MUTEXLOCK_RW_FUN	libs/UH_Define.h	/^} CP_MUTEXLOCK_RW_FUN;$/;"	t	typeref:struct:CP_MutexLock_RW_FUN
+CP_MUTEXLOCK_RW_LCK	libs/UH_Define.h	/^} CP_MUTEXLOCK_RW_LCK;$/;"	t	typeref:struct:CP_MutexLock_RW_LCK
+CP_MutexLock	libs/UH_Define.h	/^	CP_MutexLock()$/;"	f	struct:CP_MutexLock
+CP_MutexLock	libs/UH_Define.h	/^typedef struct CP_MutexLock$/;"	s
+CP_MutexLock_RW	libs/UH_Define.h	/^	CP_MutexLock_RW()$/;"	f	struct:CP_MutexLock_RW
+CP_MutexLock_RW	libs/UH_Define.h	/^	CP_MutexLock_RW(var_bl is_writer_wins = true)$/;"	f	struct:CP_MutexLock_RW
+CP_MutexLock_RW	libs/UH_Define.h	/^typedef struct CP_MutexLock_RW$/;"	s
+CP_MutexLock_RW_FUN	libs/UH_Define.h	/^	CP_MutexLock_RW_FUN()$/;"	f	struct:CP_MutexLock_RW_FUN
+CP_MutexLock_RW_FUN	libs/UH_Define.h	/^typedef struct CP_MutexLock_RW_FUN$/;"	s
+CP_MutexLock_RW_LCK	libs/UH_Define.h	/^	CP_MutexLock_RW_LCK()$/;"	f	struct:CP_MutexLock_RW_LCK
+CP_MutexLock_RW_LCK	libs/UH_Define.h	/^typedef struct CP_MutexLock_RW_LCK$/;"	s
+CP_P64	libs/UH_Define.h	573;"	d
+CP_P64	libs/UH_Define.h	576;"	d
+CP_PU64	libs/UH_Define.h	574;"	d
+CP_PU64	libs/UH_Define.h	577;"	d
+CP_SOCKET_T	libs/UH_Define.h	1149;"	d
+CP_SOCKET_T	libs/UH_Define.h	1151;"	d
+CP_STAT_TIME	libs/UH_Define.h	/^} CP_STAT_TIME;$/;"	t	typeref:struct:_cp_stat_time_
+CP_THREAD_T	libs/UH_Define.h	1553;"	d
+CP_THREAD_T	libs/UH_Define.h	1555;"	d
+CRITICAL_SECTION	libs/publicfunction.h	/^	typedef pthread_mutex_t CRITICAL_SECTION;$/;"	t
+CSocketPack	libs/socketpack.h	/^	CSocketPack()$/;"	f	class:CSocketPack
+CSocketPack	libs/socketpack.h	/^class CSocketPack  $/;"	c
+CThreadManage	libs/publicfunction.h	/^	CThreadManage()$/;"	f	class:CThreadManage
+CThreadManage	libs/publicfunction.h	/^class CThreadManage$/;"	c
+CThreadMutex	libs/publicfunction.h	/^	CThreadMutex()$/;"	f	class:CThreadMutex
+CThreadMutex	libs/publicfunction.h	/^class CThreadMutex$/;"	c
+CThreadState	libs/stateinfo.h	/^	CThreadState()$/;"	f	class:CThreadState
+CThreadState	libs/stateinfo.h	/^class CThreadState$/;"	c
+CancelEnter	libs/publicfunction.h	/^inline const UINT32_T CancelEnter(char * const lpszStr)$/;"	f
+CancelEnter	libs/publicfunction.h	/^inline const UINT32_T CancelEnter(char * const lpszStr,UINT32_T uStrLen)$/;"	f
+CheckIn	libs/stateinfo.h	/^	const INT32_T CheckIn(const INT32_T iThreadNo,const UINT8_T u8State)$/;"	f	class:CThreadState
+CheckIn	libs/stateinfo.h	/^	void CheckIn(const UINT8_T u8State)$/;"	f	struct:WORKSTATEINFO
+ChooseLeader	Gather.cpp	/^var_vd Gather::ChooseLeader(DATA_INFO* pDataInfo, GROUP_INFO* pGroupInfo)$/;"	f	class:Gather
+Cleanup	libs/socketpack.h	/^	static const INT32_T Cleanup()$/;"	f	class:CSocketPack
+Clear	libs/Fixsizehash.h	/^template<typename K,typename V> void Fixsizehash<K,V>::Clear()$/;"	f	class:Fixsizehash
+Clear	libs/stateinfo.h	/^	void Clear()$/;"	f	class:CThreadState
+Clear	libs/stateinfo.h	/^	void Clear()$/;"	f	struct:WORKSTATEINFO
+ClearFolder	libs/Utility.h	/^bool static ClearFolder(var_1 *folder)$/;"	f
+ClearQueue	libs/UT_Queue.h	/^	void ClearQueue()$/;"	f	class:UT_Queue
+CloseFile	libs/Utility.h	/^inline void CloseFile(FILE *&fp)$/;"	f
+CloseFile	libs/Utility.h	/^inline void CloseFile(var_4 fh)$/;"	f
+CloseSocket	libs/socketpack.h	/^	static void CloseSocket(SOCKET &soSocket)$/;"	f	class:CSocketPack
+Connect	libs/socketpack.h	/^	static const INT32_T Connect(const char * const lpszIP,const INT32_T iPort,const INT32_T iTimeOut,SOCKET &soClient)$/;"	f	class:CSocketPack
+CopyFile	libs/publicfunction.h	/^static const INT32_T CopyFile(char *lpszFileName,char *lpszNewFileName)$/;"	f
+Count	libs/Fixsizehash.h	/^template<typename K,typename V> int Fixsizehash<K,V>::Count()$/;"	f	class:Fixsizehash
+CountAll	libs/mulhash.h	/^template<typename K,typename V> int Mulhash<K,V>::CountAll()$/;"	f	class:Mulhash
+CountKey	libs/mulhash.h	/^template<typename K,typename V> int Mulhash<K,V>::CountKey(K key)$/;"	f	class:Mulhash
+CreateDir	libs/publicfunction.h	/^static const INT16_T CreateDir(char * const lpszDir)$/;"	f
+CreateFile	libs/Utility.h	/^static var_4 CreateFile(var_1 *filename, var_1** fileBase, var_u8 fileSize, var_4 objSize)$/;"	f
+CreateFile	libs/Utility.h	/^static var_4 CreateFile(var_1 *filename, var_1**fileBase, var_4 &fileHandle, var_8 &fileSize, var_4 objSize)$/;"	f
+CreateFile	libs/publicfunction.h	/^inline const INT32_T CreateFile(char *filename)$/;"	f
+DATA_HEADER	protocol.h	15;"	d
+DATA_INFO	Gather.h	/^}DATA_INFO;$/;"	t	typeref:struct:_data_info_
+DEFAULT_DOC_WEIGHT	protocol.h	12;"	d
+DEFAULT_TAG_LEN	protocol.h	11;"	d
+DEF_MAX_BUF_SEG_NUM	libs/UC_Allocator_Recycle.h	8;"	d
+DEF_PRE_BUF_BLK_NUM	libs/UC_Allocator_Recycle.h	9;"	d
+DOC_BUF	protocol.h	/^}DOC_BUF;$/;"	t	typeref:struct:_doc_buf_
+DOC_INFO	Gather.h	/^}DOC_INFO;$/;"	t	typeref:struct:_doc_info_
+DOC_POS	Gather.h	/^}DOC_POS;$/;"	t	typeref:struct:_doc_pos
+DOMAIN_NUM	libs/Utility.h	5;"	d
+DQM_DATA_END_FLAG	libs/UC_DiskQuotaManager.h	18;"	d
+DQM_DATA_END_FLAG_SIZE	libs/UC_DiskQuotaManager.h	19;"	d
+DQM_MAX_PAYLOAD_SIZE	libs/UC_DiskQuotaManager.h	17;"	d
+DQM_MAX_STORE_PATH_COUNT	libs/UC_DiskQuotaManager.h	16;"	d
+Del	libs/Fixsizehash.h	/^template<typename K,typename V> int Fixsizehash<K,V>::Del(K key)$/;"	f	class:Fixsizehash
+DelDoc	Gather.cpp	/^var_4 Gather::DelDoc(var_u8 deleteid, var_4 delType)$/;"	f	class:Gather
+DelOldData	Gather.cpp	/^var_4 Gather::DelOldData(var_u4 overTime)$/;"	f	class:Gather
+DeleteEndString	libs/publicfunction.h	/^inline const UINT32_T DeleteEndString(char * const lpszStr,UINT32_T uStrLen,char cCode)$/;"	f
+DeleteObj	libs/Utility.h	/^inline void DeleteObj(Type &obj)$/;"	f
+Delkey	libs/mulhash.h	/^template<typename K,typename V> int Mulhash<K,V>::Delkey(K key)$/;"	f	class:Mulhash
+Delval	libs/mulhash.h	/^template<typename K,typename V> int Mulhash<K,V>::Delval(K key,V val)$/;"	f	class:Mulhash
+DigestXml	protocol.h	/^static var_4 DigestXml(DOC_BUF* pDoc, var_1* outXml, var_4& leftLen, var_4 optType, var_4 isSelf)$/;"	f
+DumpBinData	Gather.cpp	/^var_4 Gather::DumpBinData(var_1* pMemory, var_4 ith)$/;"	f	class:Gather
+FAR	libs/zconf.h	257;"	d
+FAR	libs/zconf.h	259;"	d
+FAR	libs/zconf.h	266;"	d
+FAR	libs/zconf.h	268;"	d
+FAR	libs/zconf.h	292;"	d
+FAR	libs/zconf.h	333;"	d
+FILENAMEMAX	libs/publicfunction.h	/^const UINT16_T FILENAMEMAX=256; \/\/文件名最大长度$/;"	v
+FL	libs/log.h	35;"	d
+FLOAT32_T	libs/publicint.h	/^typedef float FLOAT32_T;$/;"	t
+FileExists	libs/publicfunction.h	/^inline const bool FileExists( const char * const lpszFileName)$/;"	f
+FileSerial	Gather.h	/^		var_4 		FileSerial[MAX_INDEX_GROUP][MAX_INDEX_IN_EACH_GROUP];$/;"	m	class:Gather
+Fixsizehash	libs/Fixsizehash.h	/^template<typename K,typename V> Fixsizehash<K,V>::Fixsizehash(int maxnum,int bucknum)$/;"	f	class:Fixsizehash
+Fixsizehash	libs/Fixsizehash.h	/^template<typename K,typename V> class Fixsizehash$/;"	c
+FreeAllocator	libs/UC_Allocator_Recycle.h	/^	void FreeAllocator()$/;"	f	class:UC_Allocator_Recycle
+FreeFiles	Gather.cpp	/^var_vd Gather::FreeFiles()$/;"	f	class:Gather
+FreeMem	libs/UC_Allocator_Recycle.h	/^	void FreeMem(var_1* buffer)$/;"	f	class:UC_Allocator_Recycle
+FreeObj	libs/Utility.h	/^inline void FreeObj(Type &obj)$/;"	f
+GROUP_INFO	Gather.h	/^}GROUP_INFO;$/;"	t	typeref:struct:_group_info_
+Gather	Gather.cpp	/^Gather::Gather()$/;"	f	class:Gather
+Gather	Gather.h	/^class Gather$/;"	c
+GenerateAddXml	protocol.h	/^static var_4 GenerateAddXml(DOC_BUF *pDoc, var_4 sameNum, var_1* outXml, var_4 outXmlLen)$/;"	f
+GetDigest	protocol.h	/^static var_4 GetDigest(var_1* inBuf, var_4 inBufLen, var_1* outBuf)$/;"	f
+GetDocData	Gather.cpp	/^var_4 Gather::GetDocData(var_u8 docid, var_1* dstBuf, uLong *dstBufLen, var_1* pMemory, var_4 ith)$/;"	f	class:Gather
+GetDocWeight	protocol.h	/^static var_u8 GetDocWeight(DOC_BUF *pDoc)$/;"	f
+GetDocXml	Gather.cpp	/^var_4 Gather::GetDocXml(var_u8 docid, var_1* outBuf, var_4 outBufLen, var_1 *pMemory, var_4 ith)$/;"	f	class:Gather
+GetDomain	libs/Utility.h	/^static var_4 GetDomain(var_1 *url, var_1 *domain)$/;"	f
+GetFieldValue	config.h	/^	var_4 GetFieldValue(const var_1* fieldName, Type& fieldValue)$/;"	f	struct:_config_file_
+GetFieldValue	libs/UC_ReadConfigFile.h	/^	var_4 GetFieldValue(const var_1* szpField, var_1& usrValue)$/;"	f	class:UC_ReadConfigFile
+GetFieldValue	libs/UC_ReadConfigFile.h	/^	var_4 GetFieldValue(const var_1* szpField, var_1* szpValue)$/;"	f	class:UC_ReadConfigFile
+GetFieldValue	libs/UC_ReadConfigFile.h	/^	var_4 GetFieldValue(const var_1* szpField, var_4& lrValue)$/;"	f	class:UC_ReadConfigFile
+GetFieldValue	libs/UC_ReadConfigFile.h	/^	var_4 GetFieldValue(const var_1* szpField, var_8& lrValue)$/;"	f	class:UC_ReadConfigFile
+GetFieldValue	libs/UC_ReadConfigFile.h	/^	var_4 GetFieldValue(const var_1* szpField, var_d8& drValue)$/;"	f	class:UC_ReadConfigFile
+GetFieldValue	libs/UC_ReadConfigFile.h	/^	var_4 GetFieldValue(const var_1* szpField, var_f4& frValue)$/;"	f	class:UC_ReadConfigFile
+GetFieldValue	libs/UC_ReadConfigFile.h	/^	var_4 GetFieldValue(const var_1* szpField, var_u2& usrValue)$/;"	f	class:UC_ReadConfigFile
+GetFieldValue	libs/UC_ReadConfigFile.h	/^	var_4 GetFieldValue(const var_1* szpField, var_u4& lrValue)$/;"	f	class:UC_ReadConfigFile
+GetFieldValue	libs/UC_ReadConfigFile.h	/^	var_4 GetFieldValue(const var_1* szpField, var_u8& lrValue)$/;"	f	class:UC_ReadConfigFile
+GetFileMTime	libs/publicfunction.h	/^inline const time_t GetFileMTime(const char * const lpszFileName)$/;"	f
+GetFileSize	libs/publicfunction.h	/^inline const INT64_T GetFileSize( const char * const lpszFileName)$/;"	f
+GetFileSize	libs/publicfunction.h	/^inline const INT64_T GetFileSize(FILE * const fpR)$/;"	f
+GetIPStr	libs/socketpack.h	/^	static const char *GetIPStr(const SOCKET sock)$/;"	f	class:CSocketPack
+GetLastError	libs/publicfunction.h	21;"	d
+GetLocalMachineIP	libs/socketpack.h	/^	static const INT32_T GetLocalMachineIP(char szArrIPList[][L_SOCK_PACK_IP_SIZE],const INT32_T iIPListMax)$/;"	f	class:CSocketPack
+GetMacIPAndPort	libs/UC_ReadConfigFile.h	/^	var_4 GetMacIPAndPort(const var_1* szpField, var_1* szpIp, var_u2& usrPort_1, var_u2& usrPort_2)$/;"	f	class:UC_ReadConfigFile
+GetMacIPAndPort	libs/UC_ReadConfigFile.h	/^	var_4 GetMacIPAndPort(const var_1* szpField, var_1* szpValue, var_u2& usrValue)$/;"	f	class:UC_ReadConfigFile
+GetNext	libs/Fixsizehash.h	/^template<typename K,typename V> int Fixsizehash<K,V>::GetNext(K *pkey,V *pval)$/;"	f	class:Fixsizehash
+GetPicsets	protocol.h	/^static var_4 GetPicsets(DOC_BUF* pDoc, var_1 *outXml, var_4 leftLen)$/;"	f
+GetQueueSize	libs/UT_Queue.h	/^	var_4 GetQueueSize()$/;"	f	class:UT_Queue
+GetRelativeNews	Gather.cpp	/^var_4 Gather::GetRelativeNews(var_u8 docid, var_4 requestType, var_1* outXml, var_4 outXmlLen, var_4& totalNum, var_4& txtLen, var_1* pMemory, var_4 ith)$/;"	f	class:Gather
+GetRelativeNum	protocol.h	/^static var_4 GetRelativeNum(DOC_BUF *pDoc)$/;"	f
+GetRelatives	protocol.h	/^static var_4 GetRelatives(var_1 *outXml, var_4 leftLen, DOC_BUF *pDoc, var_4& totalNum)$/;"	f
+GetSameNews	Gather.cpp	/^var_4 Gather::GetSameNews(var_u8 docid, var_4 requestType, var_4 startPos, var_4 endPos, var_1* dstBuf, var_4 dstBufLen, var_4& totalNum, var_4& txtLen, var_1* pMemory, var_4 ith)$/;"	f	class:Gather
+GetSendFiles	Gather.cpp	/^var_4 Gather::GetSendFiles(var_1 *folder, var_1* ident, var_1 *file_add, var_1 *file_del)$/;"	f	class:Gather
+GetSimilarDocs_test	Gather.cpp	/^var_4 Gather::GetSimilarDocs_test(var_u8 searchid, var_4 searchType, var_4 startPos, var_4 endPos, var_1* outBuf, var_4 outBufLen, var_4 &totalSimilarNum, var_4 &resultSimilarNum)$/;"	f	class:Gather
+GetStateInfo	libs/stateinfo.h	/^	const INT32_T GetStateInfo(const INT32_T iOverTime,char * const lszpOutBuf,const INT32_T iOutBufSize,INT32_T &iOutBufLen)$/;"	f	class:CThreadState
+GetStateInfo	libs/stateinfo.h	/^	const INT32_T GetStateInfo(const INT32_T iOverTime,char * const lszpOutBuf,const INT32_T iOutBufSize,INT32_T &iOutBufLen)$/;"	f	struct:WORKSTATEINFO
+GetStatus	Gather.cpp	/^var_vd Gather::GetStatus(var_4& dataNum, var_4& groupNum, var_4 flag)$/;"	f	class:Gather
+GetTagBuf	protocol.h	/^static var_4 GetTagBuf(DOC_BUF *pDoc, var_1 *outXml, var_4 leftLen)$/;"	f
+GetTagValue	libs/Utility.h	/^static var_vd GetTagValue(var_1 *xml, var_4 xml_len, const var_1 *tag_name, var_1 *tag_value, var_1 if_cdata)$/;"	f
+GetThreadState	Gather.cpp	/^var_4 Gather::GetThreadState(var_4 iTimeOut)$/;"	f	class:Gather
+GetTickCount	libs/publicfunction.h	/^__inline const int GetTickCount()$/;"	f
+GetTimeDiff	libs/Utility.h	/^static var_u8 GetTimeDiff(struct timeval begin, struct timeval end)$/;"	f
+GetUseMemNum	libs/UC_Allocator_Recycle.h	/^	var_8 GetUseMemNum()$/;"	f	class:UC_Allocator_Recycle
+GetVals	libs/mulhash.h	/^template<typename K,typename V> int Mulhash<K,V>::GetVals(K key,unsigned int startnum,unsigned int &num,V *vals)$/;"	f	class:Mulhash
+GetVersion	libs/UC_Allocator_Recycle.h	/^	const var_1* GetVersion()$/;"	f	class:UC_Allocator_Recycle
+GetVersion	libs/UC_ReadConfigFile.h	/^	const var_1* GetVersion()$/;"	f	class:UC_ReadConfigFile
+GetVersion	libs/UT_Queue.h	/^	var_1* GetVersion()$/;"	f	class:UT_Queue
+GetWrdCt	protocol.h	/^static var_4 GetWrdCt(var_1 *buff, var_4 bufLen)$/;"	f
+GetXmlItem	libs/publicfunction.h	/^inline const INT32_T GetXmlItem(char *&lpszStr, char *&lpszEnd, char *lpszTag, char *lpszOutText, const INT32_T iOutTextSize, INT8_T iCase = 0)$/;"	f
+GetXmlItem	libs/publicfunction.h	/^inline const INT32_T GetXmlItem(char *&lpszStr,char *&lpszEnd,char *lpszTag,char *&lpszOutText)$/;"	f
+GotoHead	libs/Fixsizehash.h	/^template<typename K,typename V>	void Fixsizehash<K,V>::GotoHead()$/;"	f	class:Fixsizehash
+GotoNextRecord	Gather.cpp	/^var_vd Gather::GotoNextRecord(FILE *fp)$/;"	f	class:Gather
+IDAlloc	libs/IDAlloc.h	/^	IDAlloc()$/;"	f	class:IDAlloc
+IDAlloc	libs/IDAlloc.h	/^class IDAlloc$/;"	c
+IDXHEADLEN	protocol.h	17;"	d
+INT16_T	libs/publicint.h	/^typedef short INT16_T;$/;"	t
+INT32_T	libs/publicint.h	/^typedef int INT32_T;$/;"	t
+INT64_T	libs/publicint.h	/^typedef  __int64  INT64_T;$/;"	t
+INT64_T	libs/publicint.h	/^typedef long INT64_T;$/;"	t
+INT64_T	libs/publicint.h	/^typedef long long INT64_T;$/;"	t
+INT8_T	libs/publicint.h	/^typedef char INT8_T;$/;"	t
+INVALID_SOCKET	libs/socketpack.h	19;"	d
+I_PATH_NAME_SIZE	libs/publicfunction.h	/^const UINT16_T I_PATH_NAME_SIZE=256; \/\/目录名最大长度$/;"	v
+Idv	libs/mulhash.h	/^	struct Idv$/;"	s	class:Mulhash
+IncVal	libs/Fixsizehash.h	/^template<typename K,typename V> int Fixsizehash<K,V>::IncVal(K key,V inc,V &val)$/;"	f	class:Fixsizehash
+Init	Gather.cpp	/^var_4 Gather::Init(CONFIG_INFO* cfg, var_4 loadBinData)$/;"	f	class:Gather
+Init	libs/Fixsizehash.h	/^template<typename K,typename V> int Fixsizehash<K,V>::Init(Log_file *plog)$/;"	f	class:Fixsizehash
+Init	libs/log.h	/^	int Init(char *file,char *idt,int numb,int size,int time)$/;"	f	class:Log_file
+Init	libs/mulhash.h	/^template<typename K,typename V> int Mulhash<K,V>::Init(Log_file *plog,int recovery,char *filenm)$/;"	f	class:Mulhash
+Init	libs/stateinfo.h	/^	const INT32_T Init(const INT32_T iThreadMax)$/;"	f	class:CThreadState
+InitConfigFile	libs/UC_ReadConfigFile.h	/^	var_4 InitConfigFile(const var_1* filename)$/;"	f	class:UC_ReadConfigFile
+InitQueue	libs/UT_Queue.h	/^	var_4 InitQueue(var_4 lMaxQueueSize)$/;"	f	class:UT_Queue
+InterlockedDecrement	libs/publicfunction.h	/^__inline const UINT64_T InterlockedDecrement(UINT64_T *lDest)$/;"	f
+InterlockedIncrement	libs/publicfunction.h	/^__inline const UINT64_T InterlockedIncrement(UINT64_T *lDest)$/;"	f
+IsExistDir	libs/publicfunction.h	/^static const bool IsExistDir( const char * const lpszDir)$/;"	f
+IsFolderEmpty	libs/Utility.h	/^bool static IsFolderEmpty(var_1 *folder)$/;"	f
+IsQueueEmpty	libs/UT_Queue.h	/^	var_4 IsQueueEmpty()$/;"	f	class:UT_Queue
+IsQueueFull	libs/UT_Queue.h	/^	var_4 IsQueueFull()$/;"	f	class:UT_Queue
+Keyblk	libs/mulhash.h	/^	struct Keyblk$/;"	s	class:Mulhash
+LINT_T	libs/publicint.h	/^typedef long LINT_T;$/;"	t
+LN	libs/log.h	36;"	d
+LOG_ERROR	libs/common_def.h	71;"	d
+LOG_ERROR	libs/common_def.h	83;"	d
+LOG_FAILE_CALL	libs/common_def.h	75;"	d
+LOG_FAILE_CALL	libs/common_def.h	87;"	d
+LOG_FAILE_CALL_PARAM	libs/common_def.h	76;"	d
+LOG_FAILE_CALL_PARAM	libs/common_def.h	88;"	d
+LOG_FAILE_CALL_RET	libs/common_def.h	77;"	d
+LOG_FAILE_CALL_RET	libs/common_def.h	89;"	d
+LOG_FAILE_DUPSTR	libs/common_def.h	80;"	d
+LOG_FAILE_DUPSTR	libs/common_def.h	92;"	d
+LOG_FAILE_NEW	libs/common_def.h	79;"	d
+LOG_FAILE_NEW	libs/common_def.h	91;"	d
+LOG_INVALID_PARAMETER	libs/common_def.h	74;"	d
+LOG_INVALID_PARAMETER	libs/common_def.h	86;"	d
+LOG_NULL_POINTER	libs/common_def.h	73;"	d
+LOG_NULL_POINTER	libs/common_def.h	85;"	d
+LOG_PARAM	libs/common_def.h	78;"	d
+LOG_PARAM	libs/common_def.h	90;"	d
+LOG_WARNING	libs/common_def.h	72;"	d
+LOG_WARNING	libs/common_def.h	84;"	d
+LONG	libs/publicint.h	/^typedef long LONG;$/;"	t
+L_IPSIZE	libs/publicfunction.h	/^const UINT16_T L_IPSIZE=16;$/;"	v
+L_SOCK_PACK_IP_SIZE	libs/socketpack.h	26;"	d
+Load	libs/Fixsizehash.h	/^template<typename K,typename V> int Fixsizehash<K,V>::Load(char *filenm)$/;"	f	class:Fixsizehash
+Load	libs/mulhash.h	/^template<typename K,typename V> int Mulhash<K,V>::Load(char *filenm)$/;"	f	class:Mulhash
+LoadBinData	Gather.cpp	/^var_4 Gather::LoadBinData(var_1* pMemory, var_4 ith)$/;"	f	class:Gather
+LoadFile	libs/Utility.h	/^static var_4 LoadFile(var_1 *fileName, var_1 **fileBase)$/;"	f
+LoadFile	libs/Utility.h	/^static var_4 LoadFile(var_1 *fileName, var_1 **fileBase, var_4 &fileHandle, var_8 &fileSize)$/;"	f
+Lock	libs/publicfunction.h	/^	inline void Lock()$/;"	f	class:CThreadMutex
+LogOut	libs/stateinfo.h	/^	const INT32_T LogOut(const INT32_T iThreadNo)$/;"	f	class:CThreadState
+LogOut	libs/stateinfo.h	/^	void LogOut()$/;"	f	struct:WORKSTATEINFO
+Log_file	libs/log.h	/^	Log_file()$/;"	f	class:Log_file
+Log_file	libs/log.h	/^class Log_file$/;"	c
+MAXSEG_64K	libs/zconf.h	161;"	d
+MAX_DELAY_LOCKER_NUM	libs/UT_HashTable_Pro.h	12;"	d
+MAX_FILE_PATH	config.h	8;"	d
+MAX_FILE_PATH	libs/log.h	34;"	d
+MAX_INDEX_GROUP	config.h	9;"	d
+MAX_INDEX_IN_EACH_GROUP	config.h	10;"	d
+MAX_IP_LEN	config.h	11;"	d
+MAX_MEM_LEVEL	libs/zconf.h	208;"	d
+MAX_MEM_LEVEL	libs/zconf.h	210;"	d
+MAX_RECV_PACK_LEN	protocol.h	8;"	d
+MAX_STORE_PATH_COUNT	storage/UT_Persistent_KeyValue.h	17;"	d
+MAX_TABLE_LOCKER_NUM	libs/UT_HashTable_Pro.h	9;"	d
+MAX_WBITS	libs/zconf.h	220;"	d
+MAX_WORKERSHOP_NUM_PER_FACTORY	libs/common_def.h	11;"	d
+MAX_WORKER_NUM_PER_WORKSHOP	libs/common_def.h	10;"	d
+MAX_WORKER_TYPE_LEN	libs/common_def.h	13;"	d
+MAX_XML_LEN	protocol.h	9;"	d
+MIN_DELAY_LOCKER_NUM	libs/UT_HashTable_Pro.h	13;"	d
+MIN_TABLE_LOCKER_NUM	libs/UT_HashTable_Pro.h	10;"	d
+MSDOS	libs/zconf.h	135;"	d
+MergeDoc	protocol.h	/^static var_4 MergeDoc(DOC_BUF *pDoc1, DOC_BUF* pDoc2, DOC_BUF* pDoc3, var_1* pMemory, var_4 ith)$/;"	f
+MergeSingleTag	protocol.h	/^static var_4 MergeSingleTag(var_1* oldtag, var_4 oldlen, var_1 *newtag, var_4 newlen, var_1* dsttag)$/;"	f
+MergeSmallFiles	Gather.cpp	/^var_vd Gather::MergeSmallFiles(var_1 *data_path, var_1 *pMemory)$/;"	f	class:Gather
+Mod	libs/Fixsizehash.h	/^template<typename K,typename V> int Fixsizehash<K,V>::Mod(K key,int off,int size,void *val)$/;"	f	class:Fixsizehash
+MoveDataFile	libs/publicfunction.h	/^static const INT32_T MoveDataFile( const char * const lpszFileName, const char * const lpszNewFileName)$/;"	f
+Mulhash	libs/mulhash.h	/^template<typename K,typename V> Mulhash<K,V>::Mulhash(int maxkeynum,int maxvalnum)$/;"	f	class:Mulhash
+Mulhash	libs/mulhash.h	/^template<typename K,typename V> class Mulhash$/;"	c
+NO_DUMMY_DECL	libs/zconf.h	202;"	d
+NO_vsnprintf	libs/zconf.h	392;"	d
+NO_vsnprintf	libs/zconf.h	396;"	d
+OF	libs/zconf.h	240;"	d
+OF	libs/zconf.h	242;"	d
+OLD_DATA	protocol.h	6;"	d
+ORG_INFO	libs/UT_Sort.h	/^	struct ORG_INFO$/;"	s	class:UT_Parallel_QS
+OS2	libs/zconf.h	138;"	d
+PRINT_DEBUG_INFO	libs/common_def.h	70;"	d
+PRINT_DEBUG_INFO	libs/common_def.h	82;"	d
+PTF_64	libs/publicint.h	107;"	d
+PTF_64	libs/publicint.h	110;"	d
+PTF_U64	libs/publicint.h	106;"	d
+PTF_U64	libs/publicint.h	109;"	d
+ParseOtherField	protocol.h	/^static var_vd ParseOtherField(DOC_BUF* pDoc)$/;"	f
+PopData	libs/UT_Queue.h	/^	T_Key PopData()$/;"	f	class:UT_Queue
+PopData_NB	libs/UT_Queue.h	/^	var_4 PopData_NB(T_Key& tKey)$/;"	f	class:UT_Queue
+PrepareWrite	libs/socketpack.h	/^	static const INT32_T  PrepareWrite(const SOCKET soSocket,const INT32_T iTimeOut)$/;"	f	class:CSocketPack
+ProcessBufToDoc	protocol.h	/^static  var_4 ProcessBufToDoc(var_1* inBuf, var_4 inBufLen, DOC_BUF *pDoc)$/;"	f
+PushData	libs/UT_Queue.h	/^	void PushData(T_Key tKey)$/;"	f	class:UT_Queue
+PushData_NB	libs/UT_Queue.h	/^	var_4 PushData_NB(T_Key tKey)$/;"	f	class:UT_Queue
+RECV_PROTOCAL	protocol.h	18;"	d
+Recover	Gather.cpp	/^var_4 Gather::Recover(var_1* pMemory, var_4 loadBinData)$/;"	f	class:Gather
+RecvData	libs/socketpack.h	/^	static const INT32_T RecvData(const SOCKET soSocket,const char * lpszRecvBuf,const INT32_T iRecvBufLen)$/;"	f	class:CSocketPack
+RecvDataEx	libs/socketpack.h	/^	static const INT32_T RecvDataEx(const SOCKET soSocket,const char * lpszRecvBuf,const INT32_T iRecvBufLen)$/;"	f	class:CSocketPack
+ReloadIncData	Gather.cpp	/^var_4 Gather::ReloadIncData(var_1* pMemory, var_4 ith)$/;"	f	class:Gather
+RemoveFile	libs/publicfunction.h	/^static void RemoveFile(const char * const lpszFileName)$/;"	f
+RenameFile	libs/publicfunction.h	/^static void RenameFile( const char * const lpszFileName, const char * const lpszRenameFileName)$/;"	f
+ResetAllocator	libs/UC_Allocator_Recycle.h	/^	void ResetAllocator()$/;"	f	class:UC_Allocator_Recycle
+ResetQueue	libs/UT_Queue.h	/^	void ResetQueue()$/;"	f	class:UT_Queue
+RmDirFile	libs/publicfunction.h	/^inline const INT32_T RmDirFile(char *lpszDir)$/;"	f
+SEEK_CUR	libs/zconf.h	384;"	d
+SEEK_END	libs/zconf.h	385;"	d
+SEEK_SET	libs/zconf.h	383;"	d
+SEND_PROTOCAL	protocol.h	19;"	d
+SHIFT_BITS_PER_LONG	libs/UH_Define.h	103;"	d
+SHIFT_BITS_PER_LONG	libs/UH_Define.h	117;"	d
+SLASH	libs/log.h	33;"	d
+SMALLER	protocol.h	20;"	d
+SMALL_MEDIUM	libs/zconf.h	255;"	d
+SMALL_MEDIUM	libs/zconf.h	264;"	d
+SOCKET	libs/socketpack.h	/^	typedef  int					SOCKET;$/;"	t
+SOCKET_ERROR	libs/socketpack.h	20;"	d
+SORT_INFO	libs/UT_Sort.h	/^	struct SORT_INFO$/;"	s	class:UT_Parallel_QS
+SPRINT	libs/log.h	27;"	d
+SPRINT	libs/log.h	29;"	d
+STDC	libs/zconf.h	169;"	d
+STDC	libs/zconf.h	178;"	d
+STDC	libs/zconf.h	181;"	d
+STDC	libs/zconf.h	184;"	d
+STDC	libs/zconf.h	187;"	d
+STDC	libs/zconf.h	191;"	d
+STDC99	libs/zconf.h	173;"	d
+SYS16BIT	libs/zconf.h	151;"	d
+Save	libs/Fixsizehash.h	/^template<typename K,typename V> int Fixsizehash<K,V>::Save(char *filenm)$/;"	f	class:Fixsizehash
+Save	libs/mulhash.h	/^template<typename K,typename V> int Mulhash<K,V>::Save(char *filenm)$/;"	f	class:Mulhash
+SaveFile	libs/Utility.h	/^static var_4 SaveFile(var_1 *filename, Type obj, var_4 nCount, var_4 hasHead)$/;"	f
+Search	libs/Fixsizehash.h	/^template<typename K,typename V> int Fixsizehash<K,V>::Search(K key,V &val)$/;"	f	class:Fixsizehash
+SelectSendData	libs/socketpack.h	/^	static const INT32_T SelectSendData(const SOCKET soSocket,const char * const lpszSendBuf, $/;"	f	class:CSocketPack
+SelectSendDataEx	libs/socketpack.h	/^	static const INT32_T SelectSendDataEx(const SOCKET soSocket,const char * const lpszSendBuf,$/;"	f	class:CSocketPack
+SendData	libs/socketpack.h	/^	static const INT32_T SendData(const SOCKET soSocket,const char * const lpszSendBuf,const INT32_T iSendBufLen)$/;"	f	class:CSocketPack
+SendDataEx	libs/socketpack.h	/^	static const INT32_T SendDataEx(const SOCKET soSocket,const char * const lpszSendBuf,const INT32_T iSendBufLen)$/;"	f	class:CSocketPack
+SendDataToIndex	Gather.cpp	/^var_4 Gather::SendDataToIndex(var_1 *buf, var_4 bufLen, var_1 *ip, var_4 port)$/;"	f	class:Gather
+SendErrorPack	Gather.cpp	/^var_vd Gather::SendErrorPack(SOCKET soClient, var_4 iErr)$/;"	f	class:Gather
+SetNonBlock	libs/socketpack.h	/^	static const INT32_T SetNonBlock(const SOCKET soSocket)$/;"	f	class:CSocketPack
+SetRecvTimeOut	libs/socketpack.h	/^	static const INT32_T SetRecvTimeOut (const SOCKET soClient, const INT32_T iTimeOut)$/;"	f	class:CSocketPack
+SetSendTimeOut	libs/socketpack.h	/^	static const INT32_T SetSendTimeOut (const SOCKET soClient, const INT32_T iTimeOut)$/;"	f	class:CSocketPack
+Setopt	libs/socketpack.h	/^	static const INT32_T Setopt(const SOCKET soSocket,const INT32_T iName,const void * const vpValue,const INT32_T iLen)$/;"	f	class:CSocketPack
+Sleep	libs/publicfunction.h	33;"	d
+StartThread	libs/publicfunction.h	/^	static const INT32_T StartThread(const UINT32_T iMax,DWORD (WINAPI in_function)(void* ), void* in_vpArg)$/;"	f	class:CThreadManage
+StartThread	libs/publicfunction.h	/^	static const INT32_T StartThread(const UINT32_T iMax,void* (in_function)(void*), void* in_vpArg)$/;"	f	class:CThreadManage
+StartThread	libs/publicfunction.h	/^	static const INT32_T StartThread(void* (in_function)(void*), void* in_vpArg)$/;"	f	class:CThreadManage
+Startup	libs/socketpack.h	/^	static const INT32_T Startup()$/;"	f	class:CSocketPack
+SymbolToSpace	libs/Utility.h	/^static var_vd SymbolToSpace(var_1 *srcbuf, var_4 iLen)$/;"	f
+THREADFUNTYPE	libs/UH_Define.h	215;"	d
+THREADFUNTYPE	libs/UH_Define.h	218;"	d
+THREADFUNTYPE	libs/publicfunction.h	23;"	d
+THREADFUNTYPE	libs/publicfunction.h	39;"	d
+THREAD_INFO	libs/stateinfo.h	/^}THREAD_INFO;$/;"	t	typeref:struct:_thread_info_
+ThreadAddData	Gather.cpp	/^THREADFUNTYPE Gather::ThreadAddData(var_vd* vpInfo)$/;"	f	class:Gather
+ThreadComm	Gather.cpp	/^THREADFUNTYPE Gather::ThreadComm(var_vd* vpInfo)$/;"	f	class:Gather
+ThreadDelData	Gather.cpp	/^THREADFUNTYPE Gather::ThreadDelData(var_vd* vpInfo)$/;"	f	class:Gather
+ThreadGenPushData	Gather.cpp	/^THREADFUNTYPE Gather::ThreadGenPushData(var_vd* vpInfo)$/;"	f	class:Gather
+ThreadPushAllData	Gather.cpp	/^THREADFUNTYPE Gather::ThreadPushAllData(var_vd* vpInfo)$/;"	f	class:Gather
+ThreadPushData	Gather.cpp	/^THREADFUNTYPE Gather::ThreadPushData(var_vd* vpInfo)$/;"	f	class:Gather
+ThreadQuery	Gather.cpp	/^THREADFUNTYPE Gather::ThreadQuery(var_vd* vpInfo)$/;"	f	class:Gather
+ThreadRecvData	Gather.cpp	/^THREADFUNTYPE Gather::ThreadRecvData(var_vd* vpInfo)$/;"	f	class:Gather
+ThreadSave	Gather.cpp	/^THREADFUNTYPE Gather::ThreadSave(var_vd* vpInfo)$/;"	f	class:Gather
+TimeDiff	libs/publicfunction.h	/^inline const void TimeDiff(struct timeval begin, struct timeval end, struct timeval diff)$/;"	f
+UCRCF_COMMENT_1	libs/UC_ReadConfigFile.h	11;"	d
+UCRCF_COMMENT_2	libs/UC_ReadConfigFile.h	12;"	d
+UCRCF_SM_1	libs/UC_ReadConfigFile.h	8;"	d
+UCRCF_SM_2	libs/UC_ReadConfigFile.h	9;"	d
+UC_Allocator_Recycle	libs/UC_Allocator_Recycle.h	/^	UC_Allocator_Recycle()$/;"	f	class:UC_Allocator_Recycle
+UC_Allocator_Recycle	libs/UC_Allocator_Recycle.h	/^class UC_Allocator_Recycle$/;"	c
+UC_DiskQuotaManager	libs/UC_DiskQuotaManager.h	/^class UC_DiskQuotaManager$/;"	c
+UC_ReadConfigFile	libs/UC_ReadConfigFile.h	/^	UC_ReadConfigFile()$/;"	f	class:UC_ReadConfigFile
+UC_ReadConfigFile	libs/UC_ReadConfigFile.h	/^class UC_ReadConfigFile$/;"	c
+UINT16_T	libs/publicint.h	/^typedef unsigned short UINT16_T;$/;"	t
+UINT32_T	libs/publicint.h	/^typedef unsigned int UINT32_T;$/;"	t
+UINT64_T	libs/publicint.h	/^typedef unsigned __int64 UINT64_T;$/;"	t
+UINT64_T	libs/publicint.h	/^typedef unsigned long UINT64_T;$/;"	t
+UINT64_T	libs/publicint.h	/^typedef unsigned long long UINT64_T;$/;"	t
+UINT8_T	libs/publicint.h	/^typedef unsigned char UINT8_T;$/;"	t
+ULINT_T	libs/publicint.h	/^typedef unsigned long ULINT_T;$/;"	t
+UNALIGNED_OK	libs/zconf.h	164;"	d
+UT_HASH_TABLE_PRO_TRAVEL_INFO	libs/UT_HashTable_Pro.h	/^} UT_HASH_TABLE_PRO_TRAVEL_INFO;$/;"	t	typeref:struct:_UT_Hash_Table_Pro_Travel_Info_
+UT_HashTable_Pro	libs/UT_HashTable_Pro.h	/^	UT_HashTable_Pro()$/;"	f	class:UT_HashTable_Pro
+UT_HashTable_Pro	libs/UT_HashTable_Pro.h	/^class UT_HashTable_Pro$/;"	c
+UT_Parallel_QS	libs/UT_Sort.h	/^class UT_Parallel_QS$/;"	c
+UT_Persistent_KeyValue	storage/UT_Persistent_KeyValue.h	/^class UT_Persistent_KeyValue$/;"	c
+UT_Persistent_KeyValue_config	storage/UT_Persistent_KeyValue.h	/^}UT_Persistent_KeyValue_config;$/;"	t	typeref:struct:tag_UT_Persistent_KeyValue_config
+UT_Queue	libs/UT_Queue.h	/^	UT_Queue()$/;"	f	class:UT_Queue
+UT_Queue	libs/UT_Queue.h	/^class UT_Queue$/;"	c
+UnLock	libs/publicfunction.h	/^	inline void UnLock()$/;"	f	class:CThreadMutex
+UpperToLower	libs/Utility.h	/^static var_vd UpperToLower(var_1 *srcbuf, var_4 iLen)$/;"	f
+VSPRINT	libs/log.h	32;"	d
+Valblk	libs/mulhash.h	/^	struct Valblk$/;"	s	class:Mulhash
+WIN32	libs/zconf.h	145;"	d
+WINDOWS	libs/zconf.h	141;"	d
+WORKER_HEARTBEAT_INTERVAL	libs/common_def.h	12;"	d
+WORKSTATEINFO	libs/stateinfo.h	/^	WORKSTATEINFO()$/;"	f	struct:WORKSTATEINFO
+WORKSTATEINFO	libs/stateinfo.h	/^struct WORKSTATEINFO$/;"	s
+WSAGetLastError	libs/UH_Define.h	216;"	d
+WSAGetLastError	libs/socketpack.h	22;"	d
+ZCONF_H	libs/zconf.h	9;"	d
+ZEXPORT	libs/zconf.h	297;"	d
+ZEXPORT	libs/zconf.h	309;"	d
+ZEXPORT	libs/zconf.h	312;"	d
+ZEXPORT	libs/zconf.h	326;"	d
+ZEXPORTVA	libs/zconf.h	299;"	d
+ZEXPORTVA	libs/zconf.h	301;"	d
+ZEXPORTVA	libs/zconf.h	310;"	d
+ZEXPORTVA	libs/zconf.h	313;"	d
+ZEXPORTVA	libs/zconf.h	329;"	d
+ZEXTERN	libs/zconf.h	280;"	d
+ZEXTERN	libs/zconf.h	282;"	d
+ZEXTERN	libs/zconf.h	319;"	d
+ZEXTERN	libs/zconf.h	323;"	d
+ZLIB_H	libs/zlib.h	32;"	d
+ZLIB_VERNUM	libs/zlib.h	41;"	d
+ZLIB_VERSION	libs/zlib.h	40;"	d
+ZLIB_VER_MAJOR	libs/zlib.h	42;"	d
+ZLIB_VER_MINOR	libs/zlib.h	43;"	d
+ZLIB_VER_REVISION	libs/zlib.h	44;"	d
+ZLIB_VER_SUBREVISION	libs/zlib.h	45;"	d
+Z_ASCII	libs/zlib.h	201;"	d
+Z_BEST_COMPRESSION	libs/zlib.h	188;"	d
+Z_BEST_SPEED	libs/zlib.h	187;"	d
+Z_BINARY	libs/zlib.h	199;"	d
+Z_BLOCK	libs/zlib.h	169;"	d
+Z_BUF_ERROR	libs/zlib.h	180;"	d
+Z_DATA_ERROR	libs/zlib.h	178;"	d
+Z_DEFAULT_COMPRESSION	libs/zlib.h	189;"	d
+Z_DEFAULT_STRATEGY	libs/zlib.h	196;"	d
+Z_DEFLATED	libs/zlib.h	205;"	d
+Z_ERRNO	libs/zlib.h	176;"	d
+Z_FILTERED	libs/zlib.h	192;"	d
+Z_FINISH	libs/zlib.h	168;"	d
+Z_FIXED	libs/zlib.h	195;"	d
+Z_FULL_FLUSH	libs/zlib.h	167;"	d
+Z_HAVE_UNISTD_H	libs/zconf.h	364;"	d
+Z_HUFFMAN_ONLY	libs/zlib.h	193;"	d
+Z_MEM_ERROR	libs/zlib.h	179;"	d
+Z_NEED_DICT	libs/zlib.h	175;"	d
+Z_NO_COMPRESSION	libs/zlib.h	186;"	d
+Z_NO_FLUSH	libs/zlib.h	164;"	d
+Z_NULL	libs/zlib.h	208;"	d
+Z_OK	libs/zlib.h	173;"	d
+Z_PARTIAL_FLUSH	libs/zlib.h	165;"	d
+Z_RLE	libs/zlib.h	194;"	d
+Z_STREAM_END	libs/zlib.h	174;"	d
+Z_STREAM_ERROR	libs/zlib.h	177;"	d
+Z_SYNC_FLUSH	libs/zlib.h	166;"	d
+Z_TEXT	libs/zlib.h	200;"	d
+Z_TREES	libs/zlib.h	170;"	d
+Z_UNKNOWN	libs/zlib.h	202;"	d
+Z_VERSION_ERROR	libs/zlib.h	181;"	d
+_DEBUG_P	libs/common_def.h	68;"	d
+_GATHER_H_	Gather.h	2;"	d
+_ID	libs/common_def.h	/^    var_u8 _ID;$/;"	m	class:worker_inf
+_IDALLOC_H_	libs/IDAlloc.h	2;"	d
+_LINUX_64_SYSTEM	libs/publicint.h	67;"	d
+_LINUX_ENV_	libs/UH_Define.h	14;"	d
+_LINUX_ENV_	libs/publicint.h	13;"	d
+_LOG_H_	libs/log.h	2;"	d
+_MACOS_ENV_	libs/UH_Define.h	19;"	d
+_PROTOCAL_H_	protocol.h	2;"	d
+_PUBLICFUNCTION_H_	libs/publicfunction.h	10;"	d
+_PUBLICINT_H_	libs/publicint.h	9;"	d
+_SOCKET_PACK_H_	libs/socketpack.h	10;"	d
+_SYSTEM_X64_	libs/UH_Define.h	15;"	d
+_SYSTEM_X86_	libs/UH_Define.h	10;"	d
+_UC_ALLOCATOR_RECYCLE_H_	libs/UC_Allocator_Recycle.h	4;"	d
+_UC_DISKQUOTAMANAGER_H_	libs/UC_DiskQuotaManager.h	10;"	d
+_UC_READ_CONFIG_FILE_H_	libs/UC_ReadConfigFile.h	4;"	d
+_UH_DEFINE_H_	libs/UH_Define.h	4;"	d
+_UTILITY_H_	libs/Utility.h	2;"	d
+_UT_Hash_Table_Pro_Travel_Info_	libs/UT_HashTable_Pro.h	/^typedef struct _UT_Hash_Table_Pro_Travel_Info_$/;"	s
+_UT_QUEUE_EVENT_H_	libs/UT_Queue.h	4;"	d
+_UT_SORT_H_	libs/UT_Sort.h	4;"	d
+_WIN32_ENV_	libs/UH_Define.h	9;"	d
+_WORKSTATEINFO_H_	libs/stateinfo.h	10;"	d
+_WS_cnt	libs/common_def.h	/^	var_u4          _WS_cnt;$/;"	m	struct:tag_pub_protocal
+_WS_infs	libs/common_def.h	/^	workshop_inf    _WS_infs[MAX_WORKERSHOP_NUM_PER_FACTORY];$/;"	m	struct:tag_pub_protocal
+__COMMON_DEF_H_	libs/common_def.h	2;"	d
+__CONFIG_H__	config.h	4;"	d
+__FACTORY_PROXY_H_	libs/factory_proxy.h	2;"	d
+__FIXSIZE_HASH_H_	libs/Fixsizehash.h	2;"	d
+__MULTI_HASH_H_	libs/mulhash.h	2;"	d
+__UT_HASH_TABLE_PRO_H__	libs/UT_HashTable_Pro.h	4;"	d
+__UT_PERSISTENT_KEYVALUE_H__	storage/UT_Persistent_KeyValue.h	10;"	d
+__ZERO_MEMORY	libs/common_def.h	66;"	d
+_atoi64	libs/publicfunction.h	30;"	d
+_config_file_	config.h	/^typedef struct _config_file_$/;"	s
+_count	libs/common_def.h	/^    var_4 _count;$/;"	m	struct:tag_workshop_inf
+_cp_memory_map_file_	libs/UH_Define.h	/^	_cp_memory_map_file_()$/;"	f	struct:_cp_memory_map_file_
+_cp_memory_map_file_	libs/UH_Define.h	/^typedef struct _cp_memory_map_file_$/;"	s
+_cp_stat_time_	libs/UH_Define.h	/^typedef struct _cp_stat_time_$/;"	s
+_data_info_	Gather.h	/^typedef struct _data_info_$/;"	s
+_dist_code	libs/zconf.h	20;"	d
+_doc_buf_	protocol.h	/^typedef struct _doc_buf_$/;"	s
+_doc_info_	Gather.h	/^typedef struct _doc_info_$/;"	s
+_doc_pos	Gather.h	/^typedef struct _doc_pos$/;"	s
+_fseeki64	libs/publicfunction.h	31;"	d
+_group_info_	Gather.h	/^typedef struct _group_info_$/;"	s
+_index	libs/factory_proxy.cpp	/^    var_u4 _index;$/;"	m	struct:tag_thread_param	file:
+_ip	libs/common_def.h	/^    var_1 _ip[16];$/;"	m	class:worker_inf
+_left	libs/common_def.h	/^    T1 _left;$/;"	m	class:simple_pair
+_length_code	libs/zconf.h	21;"	d
+_pointer	libs/factory_proxy.cpp	/^    var_vd* _pointer;$/;"	m	struct:tag_thread_param	file:
+_port	libs/common_def.h	/^    var_u2 _port;$/;"	m	class:worker_inf
+_right	libs/common_def.h	/^    T2 _right;$/;"	m	class:simple_pair
+_setmaxstdio	libs/publicfunction.h	97;"	d
+_snprintf	libs/UH_Define.h	214;"	d
+_thread_info_	libs/stateinfo.h	/^    _thread_info_()$/;"	f	struct:_thread_info_
+_thread_info_	libs/stateinfo.h	/^typedef struct _thread_info_$/;"	s
+_tr_align	libs/zconf.h	22;"	d
+_tr_flush_block	libs/zconf.h	23;"	d
+_tr_init	libs/zconf.h	24;"	d
+_tr_stored_block	libs/zconf.h	25;"	d
+_tr_tally	libs/zconf.h	26;"	d
+_type	libs/common_def.h	/^    var_1  _type[MAX_WORKER_TYPE_LEN];$/;"	m	struct:tag_workshop_inf
+_vsnprintf	libs/publicfunction.h	28;"	d
+_workers	libs/common_def.h	/^    worker_inf _workers[MAX_WORKER_NUM_PER_WORKSHOP];$/;"	m	struct:tag_workshop_inf
+add	libs/UT_HashTable_Pro.h	/^	var_4 add(T_Key key, var_vd* value = NULL, var_vd** const reference = NULL, var_4 is_overwrite = 0, var_4 is_lock = 1)$/;"	f	class:UT_HashTable_Pro
+add	storage/UT_Persistent_KeyValue.h	/^	var_4 add(T_Key key, var_vd* value, var_4 size)$/;"	f	class:UT_Persistent_KeyValue
+add_command	protocol.h	/^const var_4      add_command  = 3301;$/;"	v
+adler	libs/zlib.h	/^    uLong   adler;      \/* adler32 value of the uncompressed data *\/$/;"	m	struct:z_stream_s
+adler32	libs/zconf.h	27;"	d
+adler32_combine	libs/zconf.h	28;"	d
+adler32_combine	libs/zlib.h	1573;"	d
+adler32_combine64	libs/zconf.h	29;"	d
+alloc_func	libs/zconf.h	111;"	d
+alloc_func	libs/zlib.h	/^typedef voidpf (*alloc_func) OF((voidpf opaque, uInt items, uInt size));$/;"	t
+arlen	protocol.h	/^	var_2  arlen;$/;"	m	struct:_doc_buf_
+aroff	protocol.h	/^	var_4  aroff;$/;"	m	struct:_doc_buf_
+avail_in	libs/zlib.h	/^    uInt     avail_in;  \/* number of bytes available at next_in *\/$/;"	m	struct:z_stream_s
+avail_out	libs/zlib.h	/^    uInt     avail_out; \/* remaining free space at next_out *\/$/;"	m	struct:z_stream_s
+backup	libs/UC_DiskQuotaManager.h	/^    var_4 backup(var_1* data_dir)$/;"	f	class:UC_DiskQuotaManager
+backup	libs/UT_HashTable_Pro.h	/^    var_4 backup(var_1* index_dir)$/;"	f	class:UT_HashTable_Pro
+backup	storage/UT_Persistent_KeyValue.h	/^    var_4 backup(var_1* data_dir, var_1* index_dir)$/;"	f	class:UT_Persistent_KeyValue
+backup_count	config.h	/^	var_4 backup_count; 			\/\/ backup when save x counts	$/;"	m	struct:_config_file_
+backup_finish	storage/UT_Persistent_KeyValue.h	/^    var_vd backup_finish()$/;"	f	class:UT_Persistent_KeyValue
+backup_path	config.h	/^	var_1 backup_path[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+backup_prepare	storage/UT_Persistent_KeyValue.h	/^    var_vd backup_prepare()$/;"	f	class:UT_Persistent_KeyValue
+beg	libs/UT_Sort.h	/^		var_4 beg;$/;"	m	struct:UT_Parallel_QS::SORT_INFO
+binary_export	protocol.h	/^const var_4     binary_export = 3309;$/;"	v
+binary_import	protocol.h	/^const var_4     binary_import = 3308;$/;"	v
+bm_groupBuf	Gather.h	/^		var_1		*bm_groupBuf;				$/;"	m	class:Gather
+bm_groupFile	Gather.h	/^		var_4		bm_groupFile;$/;"	m	class:Gather
+bm_groupSize	Gather.h	/^		var_8		bm_groupSize;$/;"	m	class:Gather
+bm_groupStatus	Gather.h	/^		var_u8		*bm_groupStatus; 			\/\/ check whether groupid exist before, if yes, send del and add to index, otherwise, just send add$/;"	m	class:Gather
+bm_modify	Gather.h	/^        var_1		*bm_modify; 	            $/;"	m	class:Gather
+buff	protocol.h	/^	var_1  *buff;$/;"	m	struct:_doc_buf_
+buflen	protocol.h	/^	var_4  buflen;$/;"	m	struct:_doc_buf_
+byteswrite	libs/log.h	/^    int byteswrite;$/;"	m	class:Log_file
+capacity_status	protocol.h	/^const var_4   capacity_status = 3307;$/;"	v
+catch_kill	libs/UH_Define.h	/^static void catch_kill(var_vd (*func)(var_4))$/;"	f
+cfg	config.h	/^	UC_ReadConfigFile cfg;$/;"	m	struct:_config_file_
+charf	libs/zconf.h	/^typedef char  FAR charf;$/;"	t
+charf	libs/zconf.h	112;"	d
+clear	libs/UH_Define.h	/^	inline void clear()$/;"	f	struct:_cp_stat_time_
+clear	libs/UT_HashTable_Pro.h	/^	var_4 clear()$/;"	f	class:UT_HashTable_Pro
+clear_bit	libs/IDAlloc.h	/^	int clear_bit(unsigned int idx)$/;"	f	class:IDAlloc
+cllen	protocol.h	/^	var_2  cllen;$/;"	m	struct:_doc_buf_
+cloff	protocol.h	/^	var_4  cloff;$/;"	m	struct:_doc_buf_
+close_MMF	libs/UH_Define.h	/^	var_4 close_MMF()$/;"	f	struct:_cp_memory_map_file_
+comm_max	libs/zlib.h	/^    uInt    comm_max;   \/* space at comment (only when reading header) *\/$/;"	m	struct:gz_header_s
+comm_port	config.h	/^	var_4 comm_port;$/;"	m	struct:_config_file_
+comment	libs/zlib.h	/^    Bytef   *comment;   \/* pointer to zero-terminated comment or Z_NULL *\/$/;"	m	struct:gz_header_s
+compare_key	libs/UT_Sort.h	/^var_4 compare_key(T_Key_1& key_1_1, T_Key_1& key_1_2, T_Key_2& key_2_1, T_Key_2& key_2_2)$/;"	f
+compare_key	libs/UT_Sort.h	/^var_4 compare_key(T_Key_1& key_1_1, T_Key_1& key_1_2, T_Key_2& key_2_1, T_Key_2& key_2_2, T_Key_3& key_3_1, T_Key_3& key_3_2)$/;"	f
+compress	libs/zconf.h	30;"	d
+compress2	libs/zconf.h	31;"	d
+compressBound	libs/zconf.h	32;"	d
+const	libs/zconf.h	196;"	d
+copy	libs/IDAlloc.h	/^	IDAlloc *copy()$/;"	f	class:IDAlloc
+count	libs/mulhash.h	/^		u32 count;$/;"	m	struct:Mulhash::Idv
+cp_accept_socket	libs/UH_Define.h	/^static var_4 cp_accept_socket(CP_SOCKET_T in_listen, CP_SOCKET_T& out_socket)$/;"	f
+cp_add_and_fetch	libs/UH_Define.h	/^__inline var_u4 cp_add_and_fetch(var_u4* val)$/;"	f
+cp_add_and_fetch	libs/UH_Define.h	/^__inline var_u8 cp_add_and_fetch(var_u8* val)$/;"	f
+cp_change_file_size	libs/UH_Define.h	/^static var_4 cp_change_file_size(FILE* fp, off_t size)$/;"	f
+cp_change_file_size	libs/UH_Define.h	/^static var_4 cp_change_file_size(FILE* fp, var_8 size)$/;"	f
+cp_clear_file	libs/UH_Define.h	/^static var_4 cp_clear_file(var_1* org_file)$/;"	f
+cp_close_socket	libs/UH_Define.h	1155;"	d
+cp_close_socket	libs/UH_Define.h	1157;"	d
+cp_connect_socket	libs/UH_Define.h	/^static var_4 cp_connect_socket(CP_SOCKET_T& in_socket, var_1* in_ip, var_u2 in_port)$/;"	f
+cp_copy_file	libs/UH_Define.h	/^static var_4 cp_copy_file(var_1* org_file, var_1* des_dir, var_1* buf = NULL, var_u4 len = 0)$/;"	f
+cp_create_dir	libs/UH_Define.h	/^static var_4 cp_create_dir(var_1* dir)$/;"	f
+cp_create_thread	libs/UH_Define.h	/^static var_4 cp_create_thread(LPTHREAD_START_ROUTINE in_function, void* in_argv)$/;"	f
+cp_create_thread	libs/UH_Define.h	/^static var_4 cp_create_thread(void* (in_function)(void*), void* in_argv)$/;"	f
+cp_dio_alloc	libs/UH_Define.h	/^static inline var_vd* cp_dio_alloc(size_t size)$/;"	f
+cp_dio_close	libs/UH_Define.h	/^static inline var_4 cp_dio_close(var_4 fildes)$/;"	f
+cp_dio_free	libs/UH_Define.h	/^static inline var_vd cp_dio_free(var_vd* memptr)$/;"	f
+cp_dio_open	libs/UH_Define.h	/^static var_4 cp_dio_open(const var_1* name, const var_1* mode)$/;"	f
+cp_dio_read	libs/UH_Define.h	/^static inline size_t cp_dio_read(var_4 fildes, var_vd* buf, size_t nbyte)$/;"	f
+cp_dio_seek	libs/UH_Define.h	/^static inline off_t cp_dio_seek(var_4 fildes, off_t offset, var_4 whence)$/;"	f
+cp_dio_write	libs/UH_Define.h	/^static inline size_t cp_dio_write(var_4 fildes, const var_vd* buf, size_t nbyte)$/;"	f
+cp_dir_close	libs/UH_Define.h	/^static var_4 cp_dir_close(var_vd*& handle)$/;"	f
+cp_dir_open	libs/UH_Define.h	/^static var_4 cp_dir_open(var_vd*& handle, const var_1* path_name)$/;"	f
+cp_dir_travel	libs/UH_Define.h	/^static var_4 cp_dir_travel(var_vd* handle, var_1* file_name)$/;"	f
+cp_drop_useless_char	libs/UH_Define.h	/^static var_4 cp_drop_useless_char(var_1* str_ptr)$/;"	f
+cp_drop_useless_char_url	libs/UH_Define.h	/^static var_4 cp_drop_useless_char_url(var_1* str_ptr)$/;"	f
+cp_fix_file	libs/UH_Define.h	/^static var_4 cp_fix_file(var_1* file, const var_1* end_flag, var_4 end_flag_len, var_8* fix_len = NULL)$/;"	f
+cp_generate_random	libs/UH_Define.h	/^const var_vd cp_generate_random(T_Key* result, var_4 num)$/;"	f
+cp_get_file_size	libs/UH_Define.h	/^static var_8 cp_get_file_size(var_1* in_file)$/;"	f
+cp_get_local_ip	libs/UH_Define.h	/^static var_1* cp_get_local_ip()$/;"	f
+cp_init_socket	libs/UH_Define.h	/^static var_4 cp_init_socket()$/;"	f
+cp_listen_socket	libs/UH_Define.h	/^static var_4 cp_listen_socket(CP_SOCKET_T& in_listen, var_u2 in_port)$/;"	f
+cp_localtime	libs/UH_Define.h	/^static struct tm* cp_localtime(time_t local_sec, struct tm* local_tm, var_4 time_zone = 8)$/;"	f
+cp_lock_dec	libs/UH_Define.h	/^__inline void cp_lock_dec(var_u4* val)$/;"	f
+cp_lock_dec	libs/UH_Define.h	/^__inline void cp_lock_dec(var_u8* val)$/;"	f
+cp_lock_file	libs/UH_Define.h	/^static var_4 cp_lock_file(var_4 fd)$/;"	f
+cp_lock_file	libs/UH_Define.h	/^static var_4 cp_lock_file(var_4 fd, var_2 type = F_RDLCK)$/;"	f
+cp_lock_inc	libs/UH_Define.h	/^__inline void cp_lock_inc(var_u4* val)$/;"	f
+cp_lock_inc	libs/UH_Define.h	/^__inline void cp_lock_inc(var_u8* val)$/;"	f
+cp_recovery_file	libs/UH_Define.h	/^static var_4 cp_recovery_file(var_1* org_file)$/;"	f
+cp_recvbuf	libs/UH_Define.h	/^static var_4 cp_recvbuf(CP_SOCKET_T in_socket, var_1* in_buffer, var_4 in_buflen)$/;"	f
+cp_recvbuf_onebyte	libs/UH_Define.h	/^static var_4 cp_recvbuf_onebyte(CP_SOCKET_T in_socket, var_1 end_char, var_1* in_buffer, var_4& in_buflen)$/;"	f
+cp_recvbuf_twobyte	libs/UH_Define.h	/^static var_4 cp_recvbuf_twobyte(CP_SOCKET_T in_socket, var_1 end_one, var_1 end_two, var_1* in_buffer, var_4& in_buflen)$/;"	f
+cp_remove_file	libs/UH_Define.h	/^static var_4 cp_remove_file(var_1* src_file)$/;"	f
+cp_rename_file	libs/UH_Define.h	/^static var_4 cp_rename_file(var_1* src_file, var_1* des_file)$/;"	f
+cp_sendbuf	libs/UH_Define.h	/^static var_4 cp_sendbuf(CP_SOCKET_T in_socket, var_1* in_buffer, var_4 in_buflen)$/;"	f
+cp_sendfile	libs/UH_Define.h	/^static var_4 cp_sendfile(CP_SOCKET_T in_socket, var_1* in_file)$/;"	f
+cp_set_overtime	libs/UH_Define.h	/^static var_4 cp_set_overtime(CP_SOCKET_T in_socket, var_4 in_time)$/;"	f
+cp_skip_useless_char	libs/UH_Define.h	/^static var_4 cp_skip_useless_char(var_1* str, var_4 len, var_1*& beg, var_1*& end)$/;"	f
+cp_skip_useless_char_back	libs/UH_Define.h	/^static var_1* cp_skip_useless_char_back(var_1* str, var_4 len)$/;"	f
+cp_skip_useless_char_front	libs/UH_Define.h	/^static var_1* cp_skip_useless_char_front(var_1* str, var_4 len)$/;"	f
+cp_sleep	libs/UH_Define.h	208;"	d
+cp_sleep	libs/UH_Define.h	210;"	d
+cp_strncasecmp	libs/UH_Define.h	/^static var_4 cp_strncasecmp(const var_1* s1, const var_1* s2, size_t n)$/;"	f
+cp_strnicmp	libs/UH_Define.h	/^static var_4 cp_strnicmp(const var_1* s1, const var_1* s2, size_t n)$/;"	f
+cp_strtoval_64	libs/UH_Define.h	585;"	d
+cp_strtoval_64	libs/UH_Define.h	588;"	d
+cp_strtoval_64	libs/UH_Define.h	593;"	d
+cp_strtoval_u64	libs/UH_Define.h	584;"	d
+cp_strtoval_u64	libs/UH_Define.h	587;"	d
+cp_strtoval_u64	libs/UH_Define.h	592;"	d
+cp_sub_and_fetch	libs/UH_Define.h	/^__inline var_u4 cp_sub_and_fetch(var_u4* val)$/;"	f
+cp_sub_and_fetch	libs/UH_Define.h	/^__inline var_u8 cp_sub_and_fetch(var_u8* val)$/;"	f
+cp_swap_file	libs/UH_Define.h	/^static var_4 cp_swap_file(var_1* new_file, var_1* org_file)$/;"	f
+cp_swap_file_nb	libs/UH_Define.h	/^static var_4 cp_swap_file_nb(var_1* new_file, var_1* org_file)$/;"	f
+cp_unlock_file	libs/UH_Define.h	/^static var_4 cp_unlock_file(var_4 fd)$/;"	f
+cp_unsegword	libs/UH_Define.h	/^static var_4 cp_unsegword(var_1* in_buf, var_4 in_len, var_1* out_buf)$/;"	f
+cp_wait_dispose	libs/UH_Define.h	/^static var_vd cp_wait_dispose()$/;"	f
+crMutex	libs/publicfunction.h	/^	CRITICAL_SECTION crMutex;$/;"	m	class:CThreadMutex
+crc32	libs/zconf.h	33;"	d
+crc32_combine	libs/zconf.h	34;"	d
+crc32_combine	libs/zlib.h	1574;"	d
+crc32_combine64	libs/zconf.h	35;"	d
+curid	libs/log.h	/^    int curid;$/;"	m	class:Log_file
+dataLen	Gather.h	/^	var_4 dataLen;$/;"	m	struct:_doc_pos
+data_path	config.h	/^	var_1 data_path[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+data_qs	libs/UT_Sort.h	/^	var_4 data_qs(var_4 begin, var_4 end, T_Key* key)$/;"	f	class:UT_Parallel_QS
+data_store_config_file	config.h	/^	var_1 data_store_config_file[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+data_type	libs/zlib.h	/^    int     data_type;  \/* best guess about the data type: binary or text *\/$/;"	m	struct:z_stream_s
+dataid	Gather.h	/^	var_u4 dataid;$/;"	m	struct:_doc_info_
+datatype	protocol.h	/^	var_u1 datatype;			\/\/ 文本类型，新闻为：0x77$/;"	m	struct:_doc_buf_
+deflate	libs/zconf.h	36;"	d
+deflateBound	libs/zconf.h	37;"	d
+deflateCopy	libs/zconf.h	38;"	d
+deflateEnd	libs/zconf.h	39;"	d
+deflateInit	libs/zlib.h	1546;"	d
+deflateInit2	libs/zlib.h	1550;"	d
+deflateInit2_	libs/zconf.h	40;"	d
+deflateInit_	libs/zconf.h	41;"	d
+deflateParams	libs/zconf.h	42;"	d
+deflatePrime	libs/zconf.h	43;"	d
+deflateReset	libs/zconf.h	44;"	d
+deflateSetDictionary	libs/zconf.h	45;"	d
+deflateSetHeader	libs/zconf.h	46;"	d
+deflateTune	libs/zconf.h	47;"	d
+deflate_copyright	libs/zconf.h	48;"	d
+del	libs/UT_HashTable_Pro.h	/^	var_4 del(T_Key key, var_4 is_lock = 1)$/;"	f	class:UT_HashTable_Pro
+del	storage/UT_Persistent_KeyValue.h	/^	var_4 del(T_Key key)$/;"	f	class:UT_Persistent_KeyValue
+del_command	protocol.h	/^const var_4      del_command  = 3302;$/;"	v
+del_port	config.h	/^	var_4 del_port;$/;"	m	struct:_config_file_
+docid	Gather.h	/^	var_u8 docid;$/;"	m	struct:_data_info_
+docid	protocol.h	/^	var_u8 docid;				\/\/ 文档ID$/;"	m	struct:_doc_buf_
+doclen	protocol.h	/^	var_4  doclen;$/;"	m	struct:_doc_buf_
+domains	libs/Utility.h	/^const var_1 domains[DOMAIN_NUM][8] = { ".com", ".cn", ".com.cn", ".gov", ".net", ".edu.cn", ".net.cn", ".org.cn", ".co.jp", ".gov.cn",$/;"	v
+done	libs/zlib.h	/^    int     done;       \/* true when done reading gzip header (not used$/;"	m	struct:gz_header_s
+dqm_clear	libs/UC_DiskQuotaManager.h	/^	var_4 dqm_clear(var_4 in_sto_path_num, var_1** in_sto_path)$/;"	f	class:UC_DiskQuotaManager
+dqm_index2key	libs/UC_DiskQuotaManager.h	/^	inline var_vd dqm_index2key(var_4 file_no, var_8 file_offset, var_u8& key)$/;"	f	class:UC_DiskQuotaManager
+dqm_init	libs/UC_DiskQuotaManager.h	/^    var_4 dqm_init(var_4 in_sto_path_num, var_1** in_sto_path, var_4* in_sto_total_size, var_4 in_sto_one_size, var_4 in_max_write_size, var_4 in_max_read_handle_num, var_4 (*fun_judge)(var_4 file_no, var_8 file_offset, var_4& key_len, var_1*& key_buf, var_vd* argv), var_4 (*fun_update)(var_4 file_no, var_8 file_offset, var_4& key_len, var_1*& key_buf, var_vd* argv), var_vd* fun_argv = NULL, var_4 is_clear = 0)$/;"	f	class:UC_DiskQuotaManager
+dqm_key2index	libs/UC_DiskQuotaManager.h	/^	inline var_vd dqm_key2index(var_4& file_no, var_8& file_offset, var_u8 key)$/;"	f	class:UC_DiskQuotaManager
+dqm_read_data	libs/UC_DiskQuotaManager.h	/^	var_4 dqm_read_data(var_u8 in_key, var_4& io_one_buf_len, var_1* out_one_buf, var_4& io_two_buf_len, var_1* out_two_buf)$/;"	f	class:UC_DiskQuotaManager
+dqm_read_data	libs/UC_DiskQuotaManager.h	/^    var_4 dqm_read_data(var_4 in_file_no, var_8 in_file_offset, var_4& io_one_buf_len, var_1* out_one_buf, var_4& io_two_buf_len, var_1* out_two_buf)$/;"	f	class:UC_DiskQuotaManager
+dqm_start_trim	libs/UC_DiskQuotaManager.h	/^    var_4 dqm_start_trim()$/;"	f	class:UC_DiskQuotaManager
+dqm_write_data	libs/UC_DiskQuotaManager.h	/^	var_4 dqm_write_data(var_u8& out_key, var_4 in_one_buf_len, var_1* in_one_buf, var_4 in_two_buf_len = 0, var_1* in_two_buf = NULL)$/;"	f	class:UC_DiskQuotaManager
+dqm_write_data	libs/UC_DiskQuotaManager.h	/^    var_4 dqm_write_data(var_4& out_file_no, var_8& out_file_offset, var_4 in_one_buf_len, var_1* in_one_buf, var_4 in_two_buf_len = 0, var_1* in_two_buf = NULL)$/;"	f	class:UC_DiskQuotaManager
+dummy	libs/zlib.h	/^    struct internal_state {int dummy;}; \/* hack for buggy compilers *\/$/;"	m	struct:internal_state
+dump_path	config.h	/^	var_1 dump_path[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+dwTime_1	libs/UH_Define.h	/^	DWORD dwTime_1, dwTime_2;$/;"	m	struct:_cp_stat_time_
+dwTime_2	libs/UH_Define.h	/^	DWORD dwTime_1, dwTime_2;$/;"	m	struct:_cp_stat_time_
+e_log	Gather.h	/^		Log_file 	*e_log;						\/\/ 错误日志$/;"	m	class:Gather
+empty_dir	storage/UT_Persistent_KeyValue.h	/^    inline var_4 empty_dir(var_1* dir)$/;"	f	class:UT_Persistent_KeyValue
+encodelen	protocol.h	/^	var_2  encodelen;$/;"	m	struct:_doc_buf_
+encodeoff	protocol.h	/^	var_4  encodeoff;$/;"	m	struct:_doc_buf_
+end	libs/UT_Sort.h	/^		var_4 end;$/;"	m	struct:UT_Parallel_QS::SORT_INFO
+eventid	protocol.h	/^	var_u8 eventid;$/;"	m	struct:_doc_buf_
+eventword_len	protocol.h	/^	var_2  eventword_len;		\/\/ 事件词长$/;"	m	struct:_doc_buf_
+eventword_off	protocol.h	/^	var_4  eventword_off;		\/\/ 事件词内容的偏移$/;"	m	struct:_doc_buf_
+extra	libs/zlib.h	/^    Bytef   *extra;     \/* pointer to extra field or Z_NULL if none *\/$/;"	m	struct:gz_header_s
+extra_len	libs/zlib.h	/^    uInt    extra_len;  \/* extra field length (valid if extra != Z_NULL) *\/$/;"	m	struct:gz_header_s
+extra_max	libs/zlib.h	/^    uInt    extra_max;  \/* space at extra (only when reading header) *\/$/;"	m	struct:gz_header_s
+factory_proxy	libs/factory_proxy.cpp	/^factory_proxy::factory_proxy()$/;"	f	class:factory_proxy
+factory_proxy	libs/factory_proxy.h	/^class factory_proxy$/;"	c
+ffz	libs/IDAlloc.h	/^	static inline unsigned long ffz(unsigned long word)$/;"	f	class:IDAlloc
+file_add	config.h	/^	var_1 file_add[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+file_add_xml_pre	config.h	/^	var_1 file_add_xml_pre[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+file_data	config.h	/^	var_1 file_data[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+file_data_alloc	config.h	/^	var_1 file_data_alloc[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+file_del_xml_pre	config.h	/^	var_1 file_del_xml_pre[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+file_doc_map	config.h	/^	var_1 file_doc_map[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+file_finger_map	config.h	/^	var_1 file_finger_map[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+file_group_status	config.h	/^	var_1 file_group_status[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+file_idx	config.h	/^	var_1 file_idx[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+file_idx_alloc	config.h	/^	var_1 file_idx_alloc[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+file_save_flag	config.h	/^	var_1 file_save_flag[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+filenm	libs/log.h	/^    char filenm[MAX_FILE_PATH];$/;"	m	class:Log_file
+find_next_bit	libs/IDAlloc.h	/^	int find_next_bit(unsigned int off,unsigned int &idx)$/;"	f	class:IDAlloc
+finger	Gather.h	/^	var_u8 finger;		\/\/$/;"	m	struct:_group_info_
+finger	protocol.h	/^	var_u8 finger;				\/\/ 指纹$/;"	m	struct:_doc_buf_
+flg	libs/UT_Sort.h	/^		var_4 flg;$/;"	m	struct:UT_Parallel_QS::ORG_INFO
+force	protocol.h	/^	var_4  force;$/;"	m	struct:_doc_buf_
+fp	Gather.h	/^	FILE* fp;$/;"	m	struct:_doc_pos
+freeID	libs/IDAlloc.h	/^	int freeID(unsigned int id)$/;"	f	class:IDAlloc
+free_func	libs/zconf.h	113;"	d
+free_func	libs/zlib.h	/^typedef void   (*free_func)  OF((voidpf opaque, voidpf address));$/;"	t
+fun_judge	storage/UT_Persistent_KeyValue.h	/^	static var_4 fun_judge(var_4 file_no, var_8 file_offset, var_4& key_len, var_1*& key_buf, var_vd* argv)$/;"	f	class:UT_Persistent_KeyValue
+fun_update	storage/UT_Persistent_KeyValue.h	/^	static var_4 fun_update(var_4 file_no, var_8 file_offset, var_4& key_len, var_1*& key_buf, var_vd* argv)$/;"	f	class:UT_Persistent_KeyValue
+getID	libs/IDAlloc.h	/^	int getID(unsigned int &nid)$/;"	f	class:IDAlloc
+get_crc_table	libs/zconf.h	49;"	d
+get_file_name	libs/UH_Define.h	/^static var_1* get_file_name(var_1* full_path)$/;"	f
+get_process_id	libs/UH_Define.h	/^static var_4 get_process_id(var_1* process_name)$/;"	f
+get_time	libs/UH_Define.h	/^	static var_4 get_time()$/;"	f	struct:_cp_stat_time_
+get_time	libs/UH_Define.h	/^	static var_8 get_time()$/;"	f	struct:_cp_stat_time_
+get_time_ms	libs/UH_Define.h	/^	inline var_4 get_time_ms()$/;"	f	struct:_cp_stat_time_
+get_time_s	libs/UH_Define.h	/^	inline var_4 get_time_s()$/;"	f	struct:_cp_stat_time_
+get_time_us	libs/UH_Define.h	/^	inline var_4 get_time_us()$/;"	f	struct:_cp_stat_time_
+get_workers	libs/factory_proxy.cpp	/^var_4 factory_proxy::get_workers($/;"	f	class:factory_proxy
+getlast	libs/log.h	/^	int getlast(char *flast,int &f_size)$/;"	f	class:Log_file
+getloglevel	libs/log.h	/^	int getloglevel()$/;"	f	class:Log_file
+global_push	protocol.h	/^const var_4       global_push = 3310;$/;"	v
+groupid	Gather.h	/^	var_u4 groupid;$/;"	m	struct:_doc_info_
+gzFile	libs/zconf.h	114;"	d
+gzFile	libs/zlib.h	/^typedef voidp gzFile;       \/* opaque gzip file descriptor *\/$/;"	t
+gz_error	libs/zconf.h	50;"	d
+gz_header	libs/zconf.h	115;"	d
+gz_header	libs/zlib.h	/^} gz_header;$/;"	t	typeref:struct:gz_header_s
+gz_header_s	libs/zconf.h	129;"	d
+gz_header_s	libs/zlib.h	/^typedef struct gz_header_s {$/;"	s
+gz_headerp	libs/zconf.h	116;"	d
+gz_headerp	libs/zlib.h	/^typedef gz_header FAR *gz_headerp;$/;"	t
+gz_intmax	libs/zconf.h	51;"	d
+gz_strwinerror	libs/zconf.h	52;"	d
+gzbuffer	libs/zconf.h	53;"	d
+gzclearerr	libs/zconf.h	54;"	d
+gzclose	libs/zconf.h	55;"	d
+gzclose_r	libs/zconf.h	56;"	d
+gzclose_w	libs/zconf.h	57;"	d
+gzdirect	libs/zconf.h	58;"	d
+gzdopen	libs/zconf.h	59;"	d
+gzeof	libs/zconf.h	60;"	d
+gzerror	libs/zconf.h	61;"	d
+gzflush	libs/zconf.h	62;"	d
+gzgetc	libs/zconf.h	63;"	d
+gzgets	libs/zconf.h	64;"	d
+gzoffset	libs/zconf.h	65;"	d
+gzoffset	libs/zlib.h	1572;"	d
+gzoffset64	libs/zconf.h	66;"	d
+gzopen	libs/zconf.h	67;"	d
+gzopen	libs/zlib.h	1569;"	d
+gzopen64	libs/zconf.h	68;"	d
+gzprintf	libs/zconf.h	69;"	d
+gzputc	libs/zconf.h	70;"	d
+gzputs	libs/zconf.h	71;"	d
+gzread	libs/zconf.h	72;"	d
+gzrewind	libs/zconf.h	73;"	d
+gzseek	libs/zconf.h	74;"	d
+gzseek	libs/zlib.h	1570;"	d
+gzseek64	libs/zconf.h	75;"	d
+gzsetparams	libs/zconf.h	76;"	d
+gztell	libs/zconf.h	77;"	d
+gztell	libs/zlib.h	1571;"	d
+gztell64	libs/zconf.h	78;"	d
+gzungetc	libs/zconf.h	79;"	d
+gzwrite	libs/zconf.h	80;"	d
+h_fl	libs/log.h	/^    HANDLE h_fl;$/;"	m	class:Log_file
+h_fl	libs/log.h	/^    int h_fl;$/;"	m	class:Log_file
+hcrc	libs/zlib.h	/^    int     hcrc;       \/* true if there was or will be a header crc *\/$/;"	m	struct:gz_header_s
+hylen	protocol.h	/^	var_2  hylen;$/;"	m	struct:_doc_buf_
+hyoff	protocol.h	/^	var_4  hyoff;$/;"	m	struct:_doc_buf_
+iBufSize	libs/stateinfo.h	/^    var_4             iBufSize;$/;"	m	struct:_thread_info_
+iStrToI64	libs/publicfunction.h	/^inline UINT64_T  iStrToI64(char *lpszSource)$/;"	f
+iStrToI64	libs/publicfunction.h	/^inline UINT64_T  iStrToI64(char *lpszSrc,const INT32_T iSrcLen)$/;"	f
+id	libs/mulhash.h	/^		u32 id;$/;"	m	struct:Mulhash::Keyblk
+ident	libs/log.h	/^    char ident[32];$/;"	m	class:Log_file
+idx_path	storage/UT_Persistent_KeyValue.h	/^    var_1 idx_path[256];$/;"	m	struct:tag_UT_Persistent_KeyValue_config
+in_file	libs/UH_Define.h	/^	HANDLE  in_file;$/;"	m	struct:_cp_memory_map_file_
+in_func	libs/zconf.h	117;"	d
+in_func	libs/zlib.h	/^typedef unsigned (*in_func) OF((void FAR *, unsigned char FAR * FAR *));$/;"	t
+index_group_num	config.h	/^	var_4 index_group_num;$/;"	m	struct:_config_file_
+index_ip	config.h	/^	var_1 index_ip[MAX_INDEX_GROUP][MAX_INDEX_IN_EACH_GROUP][MAX_IP_LEN];$/;"	m	struct:_config_file_
+index_num	config.h	/^	var_4 index_num[MAX_INDEX_GROUP];$/;"	m	struct:_config_file_
+index_port	config.h	/^	var_4 index_port[MAX_INDEX_GROUP][MAX_INDEX_IN_EACH_GROUP];$/;"	m	struct:_config_file_
+inflate	libs/zconf.h	81;"	d
+inflateBack	libs/zconf.h	82;"	d
+inflateBackEnd	libs/zconf.h	83;"	d
+inflateBackInit	libs/zlib.h	1555;"	d
+inflateBackInit_	libs/zconf.h	84;"	d
+inflateCopy	libs/zconf.h	85;"	d
+inflateEnd	libs/zconf.h	86;"	d
+inflateGetHeader	libs/zconf.h	87;"	d
+inflateInit	libs/zlib.h	1548;"	d
+inflateInit2	libs/zlib.h	1553;"	d
+inflateInit2_	libs/zconf.h	88;"	d
+inflateInit_	libs/zconf.h	89;"	d
+inflateMark	libs/zconf.h	90;"	d
+inflatePrime	libs/zconf.h	91;"	d
+inflateReset	libs/zconf.h	92;"	d
+inflateReset2	libs/zconf.h	93;"	d
+inflateSetDictionary	libs/zconf.h	94;"	d
+inflateSync	libs/zconf.h	95;"	d
+inflateSyncPoint	libs/zconf.h	96;"	d
+inflateUndermine	libs/zconf.h	97;"	d
+inflate_copyright	libs/zconf.h	98;"	d
+inflate_fast	libs/zconf.h	99;"	d
+inflate_table	libs/zconf.h	100;"	d
+init	config.h	/^	var_4 init(const var_1 *cfg_file)$/;"	f	struct:_config_file_
+init	libs/IDAlloc.h	/^	int init(unsigned int maxID)$/;"	f	class:IDAlloc
+init	libs/UT_HashTable_Pro.h	/^	var_4 init(var_8 table_size, var_u8 max_key_num = -1, var_4 store_size = 0, var_1* name_sto = NULL, var_1* name_inc = NULL, var_1* name_flg = NULL, var_4 is_delay_recycle = 0)$/;"	f	class:UT_HashTable_Pro
+init	storage/UT_Persistent_KeyValue.h	/^	var_4 init(var_4 sto_path_num, var_1** sto_path, var_4* sto_total_size,$/;"	f	class:UT_Persistent_KeyValue
+init	storage/UT_Persistent_KeyValue.h	/^    var_4 init(var_1* _config_path, var_4 is_clear)$/;"	f	class:UT_Persistent_KeyValue
+initMem	libs/UC_Allocator_Recycle.h	/^	var_4 initMem(var_8 lBlockSize\/* 每块buf大小 *\/, var_8 lMaxBlockNum = 0\/* 最大buf块数 *\/, var_8 lPerAllocBlockNum = 0\/* 每段"buffer段"buf块数 *\/)$/;"	f	class:UC_Allocator_Recycle
+init_qs	libs/UT_Sort.h	/^	var_4 init_qs(var_4 threshold_normal = 1000, var_4 list_size = 100000, var_4 thread_num = 10)$/;"	f	class:UT_Parallel_QS
+internal_state	libs/zconf.h	130;"	d
+internal_state	libs/zlib.h	/^    struct internal_state {int dummy;}; \/* hack for buggy compilers *\/$/;"	s
+intf	libs/zconf.h	/^typedef int   FAR intf;$/;"	t
+intf	libs/zconf.h	118;"	d
+is_delete	libs/UT_HashTable_Pro.h	/^	var_4  is_delete;$/;"	m	struct:_UT_Hash_Table_Pro_Travel_Info_
+is_dynamic	libs/UT_HashTable_Pro.h	/^	var_4  is_dynamic;$/;"	m	struct:_UT_Hash_Table_Pro_Travel_Info_
+is_lock	libs/UT_HashTable_Pro.h	/^	var_4  is_lock;$/;"	m	struct:_UT_Hash_Table_Pro_Travel_Info_
+is_set	libs/IDAlloc.h	/^	int is_set(unsigned int idx)$/;"	f	class:IDAlloc
+key	libs/Fixsizehash.h	/^		K key;$/;"	m	struct:Fixsizehash::Blk
+key	libs/UT_Sort.h	/^		T_Key* key;$/;"	m	struct:UT_Parallel_QS::ORG_INFO
+key	libs/mulhash.h	/^		K key;$/;"	m	struct:Mulhash::Keyblk
+l_CSLog	libs/log.h	/^    CRITICAL_SECTION l_CSLog;$/;"	m	class:Log_file
+l_CSLog	libs/log.h	/^    pthread_mutex_t l_CSLog;$/;"	m	class:Log_file
+leadid	Gather.h	/^	var_u8 leadid; 		\/\/ the representative docid in this group$/;"	m	struct:_group_info_
+level	libs/log.h	/^    int level;$/;"	m	class:Log_file
+load	libs/UT_HashTable_Pro.h	/^	var_4 load(var_1* library_file, var_4 is_lock = 1)$/;"	f	class:UT_HashTable_Pro
+lock	libs/UH_Define.h	/^	inline void lock()$/;"	f	struct:CP_MutexLock
+lock	libs/UT_Sort.h	/^		CP_MUTEXLOCK lock;$/;"	m	struct:UT_Parallel_QS::ORG_INFO
+lock_r	libs/UH_Define.h	/^	inline void lock_r()$/;"	f	struct:CP_MutexLock_RW
+lock_r	libs/UH_Define.h	/^	inline void lock_r(CP_MUTEXLOCK_RW_LCK* lck)$/;"	f	struct:CP_MutexLock_RW_FUN
+lock_store	libs/UT_HashTable_Pro.h	/^	inline var_vd lock_store(var_1* head)$/;"	f	class:UT_HashTable_Pro
+lock_table_r	libs/UT_HashTable_Pro.h	/^	inline var_vd lock_table_r(var_8 idx)$/;"	f	class:UT_HashTable_Pro
+lock_table_w	libs/UT_HashTable_Pro.h	/^	inline var_vd lock_table_w(var_8 idx)$/;"	f	class:UT_HashTable_Pro
+lock_w	libs/UH_Define.h	/^	inline void lock_w()$/;"	f	struct:CP_MutexLock_RW
+lock_w	libs/UH_Define.h	/^	inline void lock_w(CP_MUTEXLOCK_RW_LCK* lck)$/;"	f	struct:CP_MutexLock_RW_FUN
+locker	libs/UH_Define.h	/^	pthread_mutex_t locker;$/;"	m	struct:CP_MutexLock_RW
+log_path	config.h	/^	var_1 log_path[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+loop	libs/log.h	/^    int loop;$/;"	m	class:Log_file
+lpszBuf	libs/stateinfo.h	/^    char             *lpszBuf;$/;"	m	struct:_thread_info_
+m_BMap	libs/IDAlloc.h	/^	unsigned long *m_BMap;$/;"	m	class:IDAlloc
+m_HB_addr	libs/factory_proxy.h	/^    var_1*          m_HB_addr; \/\/heart beat$/;"	m	class:factory_proxy
+m_Mutex	libs/stateinfo.h	/^	CThreadMutex      m_Mutex;$/;"	m	class:CThreadState
+m_Mutex	libs/stateinfo.h	/^	CThreadMutex m_Mutex;$/;"	m	struct:WORKSTATEINFO
+m_active_thread_cnt	libs/factory_proxy.h	/^    var_u4          m_active_thread_cnt;$/;"	m	class:factory_proxy
+m_addServer	Gather.h	/^		SOCKET		m_addServer; 				\/\/ for add data$/;"	m	class:Gather
+m_alloced	libs/IDAlloc.h	/^	unsigned int m_alloced; \/\/ represent the number of memory block used$/;"	m	class:IDAlloc
+m_ar	libs/UT_HashTable_Pro.h	/^	UC_Allocator_Recycle m_ar;$/;"	m	class:UT_HashTable_Pro
+m_bExit	Gather.h	/^        bool		m_bExit; 					\/\/ exit flag$/;"	m	class:Gather
+m_bWork	libs/stateinfo.h	/^	bool	   m_bWork;            \/\/当前状态是否工作 true:工作       $/;"	m	struct:WORKSTATEINFO
+m_backup_lck	libs/UC_DiskQuotaManager.h	/^    CP_MUTEXLOCK    m_backup_lck;$/;"	m	class:UC_DiskQuotaManager
+m_backuping	libs/UC_DiskQuotaManager.h	/^    var_4           m_backuping; $/;"	m	class:UC_DiskQuotaManager
+m_buckets	libs/Fixsizehash.h	/^	unsigned int *m_buckets;$/;"	m	class:Fixsizehash
+m_buckkeynum	libs/mulhash.h	/^	int m_buckkeynum;$/;"	m	class:Mulhash
+m_buckkeys	libs/mulhash.h	/^	u32* m_buckkeys;$/;"	m	class:Mulhash
+m_bucknum	libs/Fixsizehash.h	/^	int m_bucknum;$/;"	m	class:Fixsizehash
+m_buckvalnum	libs/mulhash.h	/^	int m_buckvalnum;$/;"	m	class:Mulhash
+m_buckvals	libs/mulhash.h	/^	Idv *m_buckvals;$/;"	m	class:Mulhash
+m_busy_lst	libs/UT_Sort.h	/^	UT_Queue<SORT_INFO*> m_busy_lst;$/;"	m	class:UT_Parallel_QS
+m_cEventCriSec	libs/UT_Queue.h	/^	CP_MUTEXLOCK m_cEventCriSec;$/;"	m	class:UT_Queue
+m_cMutexLock	libs/UC_Allocator_Recycle.h	/^	CP_MUTEXLOCK m_cMutexLock;$/;"	m	class:UC_Allocator_Recycle
+m_cOpenFlag	libs/UH_Define.h	/^	var_1   m_cOpenFlag;$/;"	m	struct:_cp_memory_map_file_
+m_cQueueCriSec	libs/UT_Queue.h	/^	CP_MUTEXLOCK m_cQueueCriSec;$/;"	m	class:UT_Queue
+m_cfg	Gather.h	/^        CONFIG_INFO	*m_cfg;$/;"	m	class:Gather
+m_clt_IPorts	libs/factory_proxy.h	/^    worker_inf      m_clt_IPorts[MAX_WORKER_NUM_PER_WORKSHOP];    $/;"	m	class:factory_proxy
+m_clt_cnt	libs/factory_proxy.h	/^    var_u4          m_clt_cnt;$/;"	m	class:factory_proxy
+m_clt_types	libs/factory_proxy.h	/^    var_1           m_clt_types[MAX_WORKER_NUM_PER_WORKSHOP][MAX_WORKER_TYPE_LEN];$/;"	m	class:factory_proxy
+m_commServer	Gather.h	/^		SOCKET		m_commServer; 				\/\/ for search data$/;"	m	class:Gather
+m_context	libs/factory_proxy.h	/^    var_vd*         m_context;$/;"	m	class:factory_proxy
+m_cpFile	libs/UC_ReadConfigFile.h	/^	FILE* m_cpFile;$/;"	m	class:UC_ReadConfigFile
+m_curkeynum	libs/mulhash.h	/^	int m_curkeynum;$/;"	m	class:Mulhash
+m_curnum	libs/Fixsizehash.h	/^	int m_curnum;$/;"	m	class:Fixsizehash
+m_current	libs/IDAlloc.h	/^	unsigned int m_current;	\/\/ cycle using memory, like circular queue, current point$/;"	m	class:IDAlloc
+m_curvalnum	libs/mulhash.h	/^	int m_curvalnum;$/;"	m	class:Mulhash
+m_data_store	Gather.h	/^        UT_Persistent_KeyValue<var_u8>  *m_data_store;					\/\/ this is used for rw lock$/;"	m	class:Gather
+m_delServer	Gather.h	/^		SOCKET		m_delServer;				\/\/ for delete data$/;"	m	class:Gather
+m_dqm	storage/UT_Persistent_KeyValue.h	/^	UC_DiskQuotaManager m_dqm;$/;"	m	class:UT_Persistent_KeyValue
+m_file_inc	libs/UT_HashTable_Pro.h	/^	FILE* m_file_inc;$/;"	m	class:UT_HashTable_Pro
+m_flg_del	libs/UC_DiskQuotaManager.h	/^    var_1   m_flg_del;$/;"	m	class:UC_DiskQuotaManager
+m_flg_use	libs/UC_DiskQuotaManager.h	/^    var_1   m_flg_use;$/;"	m	class:UC_DiskQuotaManager
+m_fun_argv	libs/UC_DiskQuotaManager.h	/^    var_vd* m_fun_argv;$/;"	m	class:UC_DiskQuotaManager
+m_fun_judge	libs/UC_DiskQuotaManager.h	/^    var_4 (*m_fun_judge)(var_4, var_8, var_4&, var_1*&, var_vd*);$/;"	m	class:UC_DiskQuotaManager
+m_fun_update	libs/UC_DiskQuotaManager.h	/^    var_4 (*m_fun_update)(var_4, var_8, var_4&, var_1*&, var_vd*);$/;"	m	class:UC_DiskQuotaManager
+m_global_lck	libs/UT_HashTable_Pro.h	/^	CP_MUTEXLOCK_RW m_global_lck; \/\/ for clear, save, trim$/;"	m	class:UT_HashTable_Pro
+m_iStateMax	libs/stateinfo.h	/^	INT32_T           m_iStateMax;$/;"	m	class:CThreadState
+m_iThreadMax	Gather.h	/^		var_4		m_iThreadMax; 				\/\/ all thread numbers$/;"	m	class:Gather
+m_iThreadMax	libs/stateinfo.h	/^	INT32_T           m_iThreadMax;$/;"	m	class:CThreadState
+m_idle_lst	libs/UT_Sort.h	/^	UT_Queue<SORT_INFO*> m_idle_lst;$/;"	m	class:UT_Parallel_QS
+m_idx	storage/UT_Persistent_KeyValue.h	/^	UT_HashTable_Pro<T_Key> m_idx;$/;"	m	class:UT_Persistent_KeyValue
+m_is_delay_recycle	libs/UT_HashTable_Pro.h	/^	var_4 m_is_delay_recycle;$/;"	m	class:UT_HashTable_Pro
+m_is_persistent	libs/UT_HashTable_Pro.h	/^	var_4 m_is_persistent;$/;"	m	class:UT_HashTable_Pro
+m_iter	libs/Fixsizehash.h	/^	Blk *m_iter;$/;"	m	class:Fixsizehash
+m_iteridx	libs/Fixsizehash.h	/^	int m_iteridx;$/;"	m	class:Fixsizehash
+m_lBegPos	libs/UT_Queue.h	/^	var_4 m_lBegPos;$/;"	m	class:UT_Queue
+m_lBlockSize	libs/UC_Allocator_Recycle.h	/^	var_8 m_lBlockSize;$/;"	m	class:UC_Allocator_Recycle
+m_lBufMemLen	libs/UC_Allocator_Recycle.h	/^	var_8 m_lBufMemLen;$/;"	m	class:UC_Allocator_Recycle
+m_lCurQueueSize	libs/UT_Queue.h	/^	var_4 m_lCurQueueSize;$/;"	m	class:UT_Queue
+m_lCurUseLen	libs/UC_Allocator_Recycle.h	/^	var_8 m_lCurUseLen;$/;"	m	class:UC_Allocator_Recycle
+m_lEndPos	libs/UT_Queue.h	/^	var_4 m_lEndPos;$/;"	m	class:UT_Queue
+m_lMaxBlockNum	libs/UC_Allocator_Recycle.h	/^	var_8 m_lMaxBlockNum;$/;"	m	class:UC_Allocator_Recycle
+m_lMaxBufNum	libs/UC_Allocator_Recycle.h	/^	var_8 m_lMaxBufNum;$/;"	m	class:UC_Allocator_Recycle
+m_lMaxMemNum	libs/UC_Allocator_Recycle.h	/^	var_8 m_lMaxMemNum;$/;"	m	class:UC_Allocator_Recycle
+m_lMaxQueueSize	libs/UT_Queue.h	/^	var_4 m_lMaxQueueSize;$/;"	m	class:UT_Queue
+m_lStat_AllocNum	libs/UC_Allocator_Recycle.h	/^	var_8 m_lStat_AllocNum;$/;"	m	class:UC_Allocator_Recycle
+m_lStat_RecycleNum	libs/UC_Allocator_Recycle.h	/^	var_8 m_lStat_RecycleNum;$/;"	m	class:UC_Allocator_Recycle
+m_lUseBufNum	libs/UC_Allocator_Recycle.h	/^	var_8 m_lUseBufNum;$/;"	m	class:UC_Allocator_Recycle
+m_lUseMemNum	libs/UC_Allocator_Recycle.h	/^	var_8 m_lUseMemNum;$/;"	m	class:UC_Allocator_Recycle
+m_lck	storage/UT_Persistent_KeyValue.h	/^	CP_MUTEXLOCK m_lck;$/;"	m	class:UT_Persistent_KeyValue
+m_lck_key_num	libs/UT_HashTable_Pro.h	/^	CP_MUTEXLOCK m_lck_key_num;$/;"	m	class:UT_HashTable_Pro
+m_len_del	libs/UT_HashTable_Pro.h	/^	var_4 m_len_del;$/;"	m	class:UT_HashTable_Pro
+m_len_lck	libs/UT_HashTable_Pro.h	/^	var_4 m_len_lck;$/;"	m	class:UT_HashTable_Pro
+m_len_mem	libs/UT_HashTable_Pro.h	/^	var_4 m_len_mem;$/;"	m	class:UT_HashTable_Pro
+m_len_ptr	libs/UT_HashTable_Pro.h	/^	var_4 m_len_ptr;$/;"	m	class:UT_HashTable_Pro
+m_len_ref	libs/UT_HashTable_Pro.h	/^	var_4 m_len_ref;$/;"	m	class:UT_HashTable_Pro
+m_len_sto	libs/UT_HashTable_Pro.h	/^	var_4 m_len_sto;$/;"	m	class:UT_HashTable_Pro
+m_list_size	libs/UT_Sort.h	/^	var_4 m_list_size;$/;"	m	class:UT_Parallel_QS
+m_lock	libs/factory_proxy.h	/^    CP_MUTEXLOCK_RW m_lock;$/;"	m	class:factory_proxy
+m_lockhash	libs/Fixsizehash.h	/^	pthread_rwlock_t m_lockhash;$/;"	m	class:Fixsizehash
+m_lockhash	libs/mulhash.h	/^	pthread_rwlock_t m_lockhash;$/;"	m	class:Mulhash
+m_lpszThreadErr	Gather.h	/^        var_1		*m_lpszThreadErr; 			\/\/ record thread errors$/;"	m	class:Gather
+m_max_key_num	libs/UT_HashTable_Pro.h	/^	var_u8       m_max_key_num;$/;"	m	class:UT_HashTable_Pro
+m_max_read_handle_num	libs/UC_DiskQuotaManager.h	/^    var_4   m_max_read_handle_num;$/;"	m	class:UC_DiskQuotaManager
+m_max_write_size	libs/UC_DiskQuotaManager.h	/^    var_4   m_max_write_size;$/;"	m	class:UC_DiskQuotaManager
+m_maxid	libs/IDAlloc.h	/^	unsigned int m_maxid; 	\/\/ the max number of memory available$/;"	m	class:IDAlloc
+m_maxkeynum	libs/mulhash.h	/^	unsigned int m_maxkeynum;$/;"	m	class:Mulhash
+m_maxnum	libs/Fixsizehash.h	/^	int m_maxnum;$/;"	m	class:Fixsizehash
+m_maxvalnum	libs/mulhash.h	/^	unsigned int m_maxvalnum;$/;"	m	class:Mulhash
+m_name_flg	libs/UT_HashTable_Pro.h	/^	var_1 m_name_flg[256];$/;"	m	class:UT_HashTable_Pro
+m_name_inc	libs/UT_HashTable_Pro.h	/^	var_1 m_name_inc[256];$/;"	m	class:UT_HashTable_Pro
+m_name_sto	libs/UT_HashTable_Pro.h	/^	var_1 m_name_sto[256];$/;"	m	class:UT_HashTable_Pro
+m_now_key_num	libs/UT_HashTable_Pro.h	/^	var_u8       m_now_key_num;$/;"	m	class:UT_HashTable_Pro
+m_pDataAlloc	Gather.h	/^		IDAlloc		*m_pDataAlloc; 				\/\/ data id alloc$/;"	m	class:Gather
+m_pDataBase	Gather.h	/^        DATA_INFO	*m_pDataBase; 			    \/\/ data id chain$/;"	m	class:Gather
+m_pDataBuf	Gather.h	/^		var_1		*m_pDataBuf;				\/\/$/;"	m	class:Gather
+m_pDocInfo	Gather.h	/^        Fixsizehash<var_u8, DOC_INFO>   *m_pDocInfo;           \/\/ docid to doc info$/;"	m	class:Gather
+m_pFingerGroup	Gather.h	/^        Fixsizehash<var_u8, var_u4>     *m_pFingerGroup;       \/\/ finger to groupid$/;"	m	class:Gather
+m_pGroupAlloc	Gather.h	/^		IDAlloc		*m_pGroupAlloc; 			\/\/ group id alloc$/;"	m	class:Gather
+m_pGroupBase	Gather.h	/^        GROUP_INFO	*m_pGroupBase; 				\/\/ group id chain$/;"	m	class:Gather
+m_pID	libs/Fixsizehash.h	/^	IDAlloc *m_pID;$/;"	m	class:Fixsizehash
+m_pIDkey	libs/mulhash.h	/^	IDAlloc *m_pIDkey;$/;"	m	class:Mulhash
+m_pIDval	libs/mulhash.h	/^	IDAlloc *m_pIDval;$/;"	m	class:Mulhash
+m_pIdxBuf	Gather.h	/^		var_1		*m_pIdxBuf;					\/\/$/;"	m	class:Gather
+m_pMemblk	libs/Fixsizehash.h	/^	Blk *m_pMemblk;$/;"	m	class:Fixsizehash
+m_pMemkey	libs/mulhash.h	/^	Keyblk  *m_pMemkey;$/;"	m	class:Mulhash
+m_pMemval	libs/mulhash.h	/^	Valblk  *m_pMemval;$/;"	m	class:Mulhash
+m_persistent_lck	libs/UT_HashTable_Pro.h	/^	CP_MUTEXLOCK    m_persistent_lck;$/;"	m	class:UT_HashTable_Pro
+m_pub_addr	libs/factory_proxy.h	/^    var_1*          m_pub_addr;$/;"	m	class:factory_proxy
+m_pub_prot	libs/factory_proxy.h	/^	pub_protocal	m_pub_prot;$/;"	m	class:factory_proxy
+m_push_flag	Gather.h	/^		var_1		m_push_flag[MAX_INDEX_GROUP];$/;"	m	class:Gather
+m_queryServer	Gather.h	/^		SOCKET		m_queryServer;				\/\/ for query data$/;"	m	class:Gather
+m_run_status	libs/factory_proxy.h	/^    bool            m_run_status;$/;"	m	class:factory_proxy
+m_sf_add_count	libs/UC_DiskQuotaManager.h	/^    var_u8  m_sf_add_count;$/;"	m	class:UC_DiskQuotaManager
+m_sf_all_count	libs/UC_DiskQuotaManager.h	/^    var_4   m_sf_all_count;$/;"	m	class:UC_DiskQuotaManager
+m_sf_cur_count	libs/UC_DiskQuotaManager.h	/^    var_4   m_sf_cur_count;$/;"	m	class:UC_DiskQuotaManager
+m_sf_cur_size	libs/UC_DiskQuotaManager.h	/^    var_8*  m_sf_cur_size;$/;"	m	class:UC_DiskQuotaManager
+m_sf_file_read	libs/UC_DiskQuotaManager.h	/^    UT_Queue<FILE*>* m_sf_file_read;$/;"	m	class:UC_DiskQuotaManager
+m_sf_file_write	libs/UC_DiskQuotaManager.h	/^    FILE**           m_sf_file_write;$/;"	m	class:UC_DiskQuotaManager
+m_sf_inP_allnum	libs/UC_DiskQuotaManager.h	/^    var_4   m_sf_inP_allnum[DQM_MAX_STORE_PATH_COUNT];$/;"	m	class:UC_DiskQuotaManager
+m_sf_inP_count	libs/UC_DiskQuotaManager.h	/^    var_4   m_sf_inP_count;$/;"	m	class:UC_DiskQuotaManager
+m_sf_inP_curnum	libs/UC_DiskQuotaManager.h	/^    var_4   m_sf_inP_curnum[DQM_MAX_STORE_PATH_COUNT];$/;"	m	class:UC_DiskQuotaManager
+m_sf_index_no	libs/UC_DiskQuotaManager.h	/^    var_4*  m_sf_index_no;$/;"	m	class:UC_DiskQuotaManager
+m_sf_max_size	libs/UC_DiskQuotaManager.h	/^    var_8   m_sf_max_size;$/;"	m	class:UC_DiskQuotaManager
+m_sf_name_lst	libs/UC_DiskQuotaManager.h	/^    var_1** m_sf_name_lst;$/;"	m	class:UC_DiskQuotaManager
+m_sf_quota_lock	libs/UC_DiskQuotaManager.h	/^    CP_MUTEXLOCK     m_sf_quota_lock;$/;"	m	class:UC_DiskQuotaManager
+m_sf_tmp_size	libs/UC_DiskQuotaManager.h	/^    var_8*  m_sf_tmp_size;$/;"	m	class:UC_DiskQuotaManager
+m_sf_use_flag	libs/UC_DiskQuotaManager.h	/^    var_4*  m_sf_use_flag;$/;"	m	class:UC_DiskQuotaManager
+m_siState	libs/stateinfo.h	/^	UINT16_T   m_siState;          \/\/当前状态$/;"	m	struct:WORKSTATEINFO
+m_spState	libs/stateinfo.h	/^	WORKSTATEINFO    *m_spState;$/;"	m	class:CThreadState
+m_spThreadInfo	Gather.h	/^		THREAD_INFO	*m_spThreadInfo; 		    \/\/ for thread monitor$/;"	m	class:Gather
+m_static_travel	libs/UT_HashTable_Pro.h	/^	var_4        m_static_travel;$/;"	m	class:UT_HashTable_Pro
+m_static_travel_lck	libs/UT_HashTable_Pro.h	/^	CP_MUTEXLOCK m_static_travel_lck;$/;"	m	class:UT_HashTable_Pro
+m_store_lck	libs/UT_HashTable_Pro.h	/^	CP_MUTEXLOCK* m_store_lck;$/;"	m	class:UT_HashTable_Pro
+m_store_lck_num	libs/UT_HashTable_Pro.h	/^	var_4         m_store_lck_num;$/;"	m	class:UT_HashTable_Pro
+m_store_size	libs/UT_HashTable_Pro.h	/^	var_4 m_store_size;$/;"	m	class:UT_HashTable_Pro
+m_szpRecycleLibrary	libs/UC_Allocator_Recycle.h	/^	var_1*  m_szpRecycleLibrary;$/;"	m	class:UC_Allocator_Recycle
+m_szppBlockLibrary	libs/UC_Allocator_Recycle.h	/^	var_1** m_szppBlockLibrary;$/;"	m	class:UC_Allocator_Recycle
+m_tTime	libs/stateinfo.h	/^	time_t    m_tTime;             \/\/uTime: 当前状态所用时间,m_bWork==true  uTime：起始时间$/;"	m	struct:WORKSTATEINFO
+m_table_flg	libs/UT_HashTable_Pro.h	/^	var_4*  m_table_flg;$/;"	m	class:UT_HashTable_Pro
+m_table_lck	libs/UT_HashTable_Pro.h	/^	CP_MUTEXLOCK* m_table_lck;$/;"	m	class:UT_HashTable_Pro
+m_table_lck_num	libs/UT_HashTable_Pro.h	/^	var_4         m_table_lck_num;$/;"	m	class:UT_HashTable_Pro
+m_table_ptr	libs/UT_HashTable_Pro.h	/^	var_1** m_table_ptr;$/;"	m	class:UT_HashTable_Pro
+m_table_size	libs/UT_HashTable_Pro.h	/^	var_8 m_table_size;$/;"	m	class:UT_HashTable_Pro
+m_thread_num	libs/UT_Sort.h	/^	var_4 m_thread_num;$/;"	m	class:UT_Parallel_QS
+m_threshold_normal	libs/UT_Sort.h	/^	var_4 m_threshold_normal;$/;"	m	class:UT_Parallel_QS
+m_total	libs/IDAlloc.h	/^	unsigned int m_total; 	\/\/ alloc memory size$/;"	m	class:IDAlloc
+m_tpQueue	libs/UT_Queue.h	/^	T_Key* m_tpQueue;$/;"	m	class:UT_Queue
+m_trim_lck	libs/UC_DiskQuotaManager.h	/^    CP_MUTEXLOCK    m_trim_lck;$/;"	m	class:UC_DiskQuotaManager
+main	main.cpp	/^var_4 main(var_4 argc, var_1 *argv[])$/;"	f
+mains	libs/factory_proxy.cpp	/^int mains(int argc, char* argv[])$/;"	f
+max_data_num	config.h	/^    var_4 max_data_num;$/;"	m	struct:_config_file_
+max_group_num	config.h	/^	var_4 max_group_num;$/;"	m	struct:_config_file_
+max_key_num	storage/UT_Persistent_KeyValue.h	/^    var_u8 max_key_num;$/;"	m	struct:tag_UT_Persistent_KeyValue_config
+max_read_handle_num	storage/UT_Persistent_KeyValue.h	/^    var_4 max_read_handle_num;$/;"	m	struct:tag_UT_Persistent_KeyValue_config
+max_workers_count	libs/common_def.h	/^const var_u4 max_workers_count = MAX_WORKER_NUM_PER_WORKSHOP * MAX_WORKERSHOP_NUM_PER_FACTORY;$/;"	v
+max_write_size	storage/UT_Persistent_KeyValue.h	/^    var_4 max_write_size;$/;"	m	struct:tag_UT_Persistent_KeyValue_config
+maxsize	libs/log.h	/^    int maxsize;$/;"	m	class:Log_file
+maxtime	libs/log.h	/^    int maxtime;$/;"	m	class:Log_file
+msg	libs/zlib.h	/^    char     *msg;      \/* last error message, NULL if no error *\/$/;"	m	struct:z_stream_s
+mutex	libs/UH_Define.h	/^	CRITICAL_SECTION mutex;$/;"	m	struct:CP_MutexLock
+mutex	libs/UH_Define.h	/^	CRITICAL_SECTION mutex;$/;"	m	struct:CP_MutexLock_RW
+mutex	libs/UH_Define.h	/^	CRITICAL_SECTION mutex;$/;"	m	struct:CP_MutexLock_RW_FUN
+mutex	libs/UH_Define.h	/^	pthread_mutex_t mutex;$/;"	m	struct:CP_MutexLock
+mutex	libs/UH_Define.h	/^	pthread_mutex_t mutex;$/;"	m	struct:CP_MutexLock_RW_FUN
+name	libs/zlib.h	/^    Bytef   *name;      \/* pointer to zero-terminated file name or Z_NULL *\/$/;"	m	struct:gz_header_s
+name_max	libs/zlib.h	/^    uInt    name_max;   \/* space at name (only when reading header) *\/$/;"	m	struct:gz_header_s
+newdata_flag	protocol.h	/^	var_2  newdata_flag;		\/\/ 是否为新数据格式，在生成机器索引的时候填入，生成事件索引时使用0否1是$/;"	m	struct:_doc_buf_
+newtag_firstpub	protocol.h	/^	var_u1 newtag_firstpub;		\/\/ 是否本站首发$/;"	m	struct:_doc_buf_
+newtag_iscenter	protocol.h	/^	var_u1 newtag_iscenter;		\/\/ 是否出现在大站首页，原始数据中解析得到$/;"	m	struct:_doc_buf_
+newtag_wt	protocol.h	/^	var_u1 newtag_wt;			\/\/ 权重，要从6.0新增的other字段中分析出来$/;"	m	struct:_doc_buf_
+next	Gather.h	/^	var_u4 next;		\/\/ address in DATA_INFO, docids in this list  belong to this group$/;"	m	struct:_group_info_
+next	Gather.h	/^	var_u4 next;$/;"	m	struct:_data_info_
+next	libs/Fixsizehash.h	/^		unsigned int next;$/;"	m	struct:Fixsizehash::Blk
+next	libs/mulhash.h	/^		u32 next;$/;"	m	struct:Mulhash::Idv
+next	libs/mulhash.h	/^		u32 next;$/;"	m	struct:Mulhash::Keyblk
+next	libs/mulhash.h	/^		u32 next;$/;"	m	struct:Mulhash::Valblk
+next_in	libs/zlib.h	/^    Bytef    *next_in;  \/* next input byte *\/$/;"	m	struct:z_stream_s
+next_out	libs/zlib.h	/^    Bytef    *next_out; \/* next output byte should be put there *\/$/;"	m	struct:z_stream_s
+nextotherlen	protocol.h	/^	var_2  nextotherlen;$/;"	m	struct:_doc_buf_
+nextotheroff	protocol.h	/^	var_4  nextotheroff;$/;"	m	struct:_doc_buf_
+noduplicate	config.h	/^	var_4 noduplicate;				\/\/ whether remove the duplicates$/;"	m	struct:_config_file_
+nolockAdd	libs/Fixsizehash.h	/^template<typename K,typename V> int Fixsizehash<K,V>::nolockAdd(K key,V *val)$/;"	f	class:Fixsizehash
+num	libs/UT_HashTable_Pro.h	/^	var_4 num()$/;"	f	class:UT_HashTable_Pro
+number	Gather.h	/^	var_4 number;		\/\/ how much docids in this group$/;"	m	struct:_group_info_
+offSet	Gather.h	/^	var_8 offSet;$/;"	m	struct:_doc_pos
+opaque	libs/zlib.h	/^    voidpf     opaque;  \/* private data object passed to zalloc and zfree *\/$/;"	m	struct:z_stream_s
+open_MMF	libs/UH_Define.h	/^	var_4 open_MMF(var_1* file,var_1 iMode=0)$/;"	f	struct:_cp_memory_map_file_
+org	libs/UT_Sort.h	/^		ORG_INFO* org;$/;"	m	struct:UT_Parallel_QS::SORT_INFO
+os	libs/zlib.h	/^    int     os;         \/* operating system *\/$/;"	m	struct:gz_header_s
+otherlen	protocol.h	/^	var_2  otherlen;$/;"	m	struct:_doc_buf_
+otheroff	protocol.h	/^	var_4  otheroff;			\/\/ 资讯6.0里面新加的tag信息在这里$/;"	m	struct:_doc_buf_
+out_func	libs/zconf.h	119;"	d
+out_func	libs/zlib.h	/^typedef int (*out_func) OF((void FAR *, unsigned char FAR *, unsigned));$/;"	t
+pLog	libs/Fixsizehash.h	/^	Log_file *pLog;$/;"	m	class:Fixsizehash
+pLog	libs/mulhash.h	/^	Log_file *pLog;$/;"	m	class:Mulhash
+p_log	Gather.h	/^		Log_file	*p_log;						\/\/ 流程日志$/;"	m	class:Gather
+path_buffer	storage/UT_Persistent_KeyValue.h	/^    var_1 path_buffer[MAX_STORE_PATH_COUNT][256];$/;"	m	struct:tag_UT_Persistent_KeyValue_config
+persistent	libs/UT_HashTable_Pro.h	/^	var_4 persistent(T_Key key, var_vd* value, var_4 is_delete)$/;"	f	class:UT_HashTable_Pro
+picidlen	protocol.h	/^	var_2  picidlen;$/;"	m	struct:_doc_buf_
+picidoff	protocol.h	/^	var_4  picidoff;$/;"	m	struct:_doc_buf_
+picset_len	protocol.h	/^	var_2  picset_len;			\/\/ 多图$/;"	m	struct:_doc_buf_
+picset_off	protocol.h	/^	var_4  picset_off;			\/\/ $/;"	m	struct:_doc_buf_
+picszlen	protocol.h	/^	var_2  picszlen;$/;"	m	struct:_doc_buf_
+picszoff	protocol.h	/^	var_4  picszoff;$/;"	m	struct:_doc_buf_
+pointer	libs/UH_Define.h	/^	var_vd* pointer;$/;"	m	struct:_cp_memory_map_file_
+pop_value	libs/UT_HashTable_Pro.h	/^	var_4 pop_value(T_Key key, var_vd*& reference)$/;"	f	class:UT_HashTable_Pro
+ppub_protocal	libs/common_def.h	/^}pub_protocal, *ppub_protocal;$/;"	t	typeref:struct:tag_pub_protocal
+print_lock	libs/UH_Define.h	/^static void print_lock(struct flock lock)$/;"	f
+pub_protocal	libs/common_def.h	/^}pub_protocal, *ppub_protocal;$/;"	t	typeref:struct:tag_pub_protocal
+pub_protocal_zize	libs/common_def.h	/^const var_u4 pub_protocal_zize = sizeof(pub_protocal);$/;"	v
+push_value	libs/UT_HashTable_Pro.h	/^	var_vd push_value(var_vd*& reference)$/;"	f	class:UT_HashTable_Pro
+pworkshop_inf	libs/common_def.h	/^}workshop_inf, *pworkshop_inf;$/;"	t	typeref:struct:tag_workshop_inf
+qs_recursion	libs/UT_Sort.h	/^var_4 qs_recursion(var_4 lBegin, var_4 lEnd, T_Key_1* tKey_1, T_Key_2* tKey_2, T_Key_3* tKey_3, T_Key_4* tKey_4, T_Key_5* tKey_5)$/;"	f
+qs_recursion_1k	libs/UT_Sort.h	/^var_4 qs_recursion_1k(var_4 lBegin, var_4 lEnd, T_Key* tKey_1)$/;"	f
+qs_recursion_1k_1p	libs/UT_Sort.h	/^var_4 qs_recursion_1k_1p(var_4 lBegin, var_4 lEnd, T_Key_1* tKey_1, T_Key_2* tKey_2)$/;"	f
+qs_recursion_1k_2p	libs/UT_Sort.h	/^var_4 qs_recursion_1k_2p(var_4 lBegin, var_4 lEnd, T_Key_1* tKey_1, T_Key_2* tKey_2, T_Key_3* tKey_3)$/;"	f
+qs_recursion_1k_4p	libs/UT_Sort.h	/^var_4 qs_recursion_1k_4p(var_4 lBegin, var_4 lEnd, T_Key_1* tKey_1, T_Pld_1* tPld_1, T_Pld_2* tPld_2, T_Pld_3* tPld_3, T_Pld_4* tPld_4)$/;"	f
+qs_recursion_2k	libs/UT_Sort.h	/^var_4 qs_recursion_2k(var_4 lBegin, var_4 lEnd, T_Key_1* tKey_1, T_Key_2* tKey_2)$/;"	f
+qs_unrecursion	libs/UT_Sort.h	/^var_4 qs_unrecursion(var_4 lBegin, var_4 lEnd, T_Key_1* tKey_1, T_Key_2* tKey_2, T_Key_3* tKey_3, T_Key_4* tKey_4)$/;"	f
+qs_unrecursion	libs/UT_Sort.h	/^var_4 qs_unrecursion(var_4 lBegin, var_4 lEnd, T_Key_1* tKey_1, T_Key_2* tKey_2, T_Key_3* tKey_3, T_Key_4* tKey_4, T_Key_5* tKey_5)$/;"	f
+qs_unrecursion_1k	libs/UT_Sort.h	/^var_4 qs_unrecursion_1k(var_4 lBegin, var_4 lEnd, T_Key* tKey)$/;"	f
+qs_unrecursion_1k	libs/UT_Sort.h	/^var_4 qs_unrecursion_1k(var_4 lBegin, var_4 lEnd, T_Key* tKey, var_4 (*_compare_fun)(T_Key, T_Key))$/;"	f
+qs_unrecursion_1k_1p	libs/UT_Sort.h	/^var_4 qs_unrecursion_1k_1p(var_4 lBegin, var_4 lEnd, T_Key_1* tKey_1, T_Key_2* tKey_2)$/;"	f
+qs_unrecursion_1k_2p	libs/UT_Sort.h	/^var_4 qs_unrecursion_1k_2p(var_4 lBegin, var_4 lEnd, T_Key_1* tKey_1, T_Key_2* tKey_2, T_Key_3* tKey_3)$/;"	f
+qs_unrecursion_2k	libs/UT_Sort.h	/^var_4 qs_unrecursion_2k(var_4 lBegin, var_4 lEnd, T_Key_1* tKey_1, T_Key_2* tKey_2)$/;"	f
+qs_unrecursion_2k_1p	libs/UT_Sort.h	/^var_4 qs_unrecursion_2k_1p(var_4 lBegin, var_4 lEnd, T_Key_1* tKey_1, T_Key_2* tKey_2, T_Key_3* tKey_3)$/;"	f
+qs_unrecursion_2k_2p	libs/UT_Sort.h	/^var_4 qs_unrecursion_2k_2p(var_4 lBegin, var_4 lEnd, T_Key_1* tKey_1, T_Key_2* tKey_2, T_Key_3* tKey_3, T_Key_4* tKey_4)$/;"	f
+query	storage/UT_Persistent_KeyValue.h	/^	var_4 query(T_Key key, var_vd* value, var_4& size)$/;"	f	class:UT_Persistent_KeyValue
+query_command	protocol.h	/^const var_4     query_command = 3305;$/;"	v
+query_key	libs/UT_HashTable_Pro.h	/^	var_4 query_key(T_Key key)$/;"	f	class:UT_HashTable_Pro
+query_port	config.h	/^	var_4 query_port;$/;"	m	struct:_config_file_
+radix_sort_one_byte	libs/UT_Sort.h	/^void radix_sort_one_byte(var_4 num, T_Key* src, T_Key* des)$/;"	f
+rd_c	libs/UH_Define.h	/^	var_u4 rd_c; \/\/ read count$/;"	m	struct:CP_MutexLock_RW
+rd_c	libs/UH_Define.h	/^	var_u4 rd_c; \/\/ read count$/;"	m	struct:CP_MutexLock_RW_LCK
+recv_data_lock	Gather.h	/^		CP_MUTEXLOCK                    recv_data_lock;        \/\/ mutex lock, for receiving data, writing to recv.dat, used in recv data thread and add data thread$/;"	m	class:Gather
+recv_overtime	config.h	/^	var_4 recv_overtime;$/;"	m	struct:_config_file_
+recv_path	config.h	/^	var_1 recv_path[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+recv_port	config.h	/^	var_4 recv_port;$/;"	m	struct:_config_file_
+refresh_command	protocol.h	/^const var_4  refresh_command  = 3304;$/;"	v
+relativelen	protocol.h	/^	var_2  relativelen;$/;"	m	struct:_doc_buf_
+relativenum	protocol.h	/^	var_4  relativenum;$/;"	m	struct:_doc_buf_
+relativeoff	protocol.h	/^	var_4  relativeoff;$/;"	m	struct:_doc_buf_
+reserved	libs/zlib.h	/^    uLong   reserved;   \/* reserved for future use *\/$/;"	m	struct:z_stream_s
+reset	libs/IDAlloc.h	/^	int reset()$/;"	f	class:IDAlloc
+resize	libs/IDAlloc.h	/^	int resize(unsigned int newMaxid)$/;"	f	class:IDAlloc
+restore	libs/IDAlloc.h	/^	int restore(char *filename)$/;"	f	class:IDAlloc
+restore	libs/UT_HashTable_Pro.h	/^	var_4 restore()$/;"	f	class:UT_HashTable_Pro
+rotatelog	libs/log.h	/^	int rotatelog()$/;"	f	class:Log_file
+sState	libs/stateinfo.h	/^    WORKSTATEINFO     sState;$/;"	m	struct:_thread_info_
+save	libs/IDAlloc.h	/^	int save(char *filename)$/;"	f	class:IDAlloc
+save	libs/UT_HashTable_Pro.h	/^	var_4 save(var_1* library_file, var_4 is_lock = 1)$/;"	f	class:UT_HashTable_Pro
+save_data_lock	Gather.h	/^        CP_MUTEXLOCK                 	save_data_lock;        \/\/ mutex lock, for save data thread$/;"	m	class:Gather
+save_idx	storage/UT_Persistent_KeyValue.h	/^    var_4 save_idx()$/;"	f	class:UT_Persistent_KeyValue
+save_interval	config.h	/^	var_4 save_interval; 			\/\/ use minutes as unit$/;"	m	struct:_config_file_
+send_overtime	config.h	/^	var_4 send_overtime;$/;"	m	struct:_config_file_
+send_path	config.h	/^	var_1 send_path[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+set_bit	libs/IDAlloc.h	/^	int set_bit(unsigned int idx)$/;"	f	class:IDAlloc
+set_time_begin	libs/UH_Define.h	/^	inline void set_time_begin()$/;"	f	struct:_cp_stat_time_
+set_time_end	libs/UH_Define.h	/^	inline void set_time_end()$/;"	f	struct:_cp_stat_time_
+setloglevel	libs/log.h	/^	int setloglevel(int lv)$/;"	f	class:Log_file
+siFileSize	libs/UH_Define.h	/^	size_t  siFileSize;$/;"	m	struct:_cp_memory_map_file_
+sign_lock	libs/UH_Define.h	/^	var_u4 sign_lock;$/;"	m	struct:CP_MutexLock_RW
+sign_mask	libs/UH_Define.h	/^	var_u4 sign_mask;$/;"	m	struct:CP_MutexLock_RW
+similar_docs	protocol.h	/^const var_4      similar_docs = 3306;$/;"	v
+simple_pair	libs/common_def.h	/^class simple_pair$/;"	c
+sllen	protocol.h	/^	var_2  sllen;$/;"	m	struct:_doc_buf_
+sloff	protocol.h	/^	var_4  sloff;$/;"	m	struct:_doc_buf_
+small_file_num	config.h	/^	var_4 small_file_num;$/;"	m	struct:_config_file_
+solen	protocol.h	/^	var_2  solen;$/;"	m	struct:_doc_buf_
+sooff	protocol.h	/^	var_4  sooff;$/;"	m	struct:_doc_buf_
+sourcetype	protocol.h	/^	var_1  sourcetype;$/;"	m	struct:_doc_buf_
+start	libs/factory_proxy.cpp	/^var_4 factory_proxy::start($/;"	f	class:factory_proxy
+stat	libs/IDAlloc.h	/^	void stat(unsigned int &total,unsigned int &current,unsigned int &alloced,unsigned int &maxid)$/;"	f	class:IDAlloc
+state	libs/zlib.h	/^    struct internal_state FAR *state; \/* not visible by applications *\/$/;"	m	struct:z_stream_s	typeref:struct:z_stream_s::FAR
+sto_path	storage/UT_Persistent_KeyValue.h	/^    var_1* sto_path[MAX_STORE_PATH_COUNT];$/;"	m	struct:tag_UT_Persistent_KeyValue_config
+sto_path_num	storage/UT_Persistent_KeyValue.h	/^    var_4 sto_path_num;$/;"	m	struct:tag_UT_Persistent_KeyValue_config
+sto_total_size	storage/UT_Persistent_KeyValue.h	/^    var_4 sto_total_size[MAX_STORE_PATH_COUNT];$/;"	m	struct:tag_UT_Persistent_KeyValue_config
+stop	libs/factory_proxy.cpp	/^var_4 factory_proxy::stop()$/;"	f	class:factory_proxy
+store_backup_path	config.h	/^	var_1 store_backup_path[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+strncasecmp	libs/publicfunction.h	36;"	d
+sys_error_code	libs/UH_Define.h	/^static var_4 sys_error_code()$/;"	f
+sys_error_code	libs/common_def.h	/^static int sys_error_code()$/;"	f
+tag_UT_Persistent_KeyValue_config	storage/UT_Persistent_KeyValue.h	/^typedef struct tag_UT_Persistent_KeyValue_config$/;"	s
+tag_len	protocol.h	/^	var_2  tag_len;				\/\/ tag五元组总长，翻译成后面的结构信息$/;"	m	struct:_doc_buf_
+tag_off	protocol.h	/^	var_4  tag_off;				\/\/ tag内容偏移$/;"	m	struct:_doc_buf_
+tag_pub_protocal	libs/common_def.h	/^typedef struct tag_pub_protocal$/;"	s
+tag_thread_param	libs/factory_proxy.cpp	/^typedef struct tag_thread_param$/;"	s	file:
+tag_workshop_inf	libs/common_def.h	/^typedef struct tag_workshop_inf$/;"	s
+text	libs/zlib.h	/^    int     text;       \/* true if compressed data believed to be text *\/$/;"	m	struct:gz_header_s
+thread_heartbeat	libs/factory_proxy.cpp	/^unsigned long __stdcall factory_proxy::thread_heartbeat(void* _param)$/;"	f	class:factory_proxy
+thread_num_comm	config.h	/^	var_4 thread_num_comm;$/;"	m	struct:_config_file_
+thread_num_query	config.h	/^	var_4 thread_num_query; $/;"	m	struct:_config_file_
+thread_num_recv	config.h	/^	var_4 thread_num_recv;$/;"	m	struct:_config_file_
+thread_param	libs/factory_proxy.cpp	/^}thread_param;$/;"	t	typeref:struct:tag_thread_param	file:
+thread_pub	libs/factory_proxy.cpp	/^unsigned long __stdcall factory_proxy::thread_pub(void* _param)$/;"	f	class:factory_proxy
+thread_sort	libs/UT_Sort.h	/^	static CP_THREAD_T thread_sort(void* argv)$/;"	f	class:UT_Parallel_QS
+thread_trim	libs/UC_DiskQuotaManager.h	/^	static CP_THREAD_T thread_trim(var_vd* argv)$/;"	f	class:UC_DiskQuotaManager
+time	Gather.h	/^	var_u4 time;		\/\/$/;"	m	struct:_group_info_
+time	Gather.h	/^	var_u4 time;$/;"	m	struct:_data_info_
+time	libs/zlib.h	/^    uLong   time;       \/* modification time *\/$/;"	m	struct:gz_header_s
+time	protocol.h	/^	var_u4 time;				\/\/ 下载时间$/;"	m	struct:_doc_buf_
+timestamp	libs/log.h	/^    int timestamp;$/;"	m	class:Log_file
+titleid	protocol.h	/^	var_u8 titleid;				\/\/ 标题指纹，已弃用$/;"	m	struct:_doc_buf_
+titlelen	protocol.h	/^	var_2  titlelen;$/;"	m	struct:_doc_buf_
+titleoff	protocol.h	/^	var_4  titleoff;$/;"	m	struct:_doc_buf_
+total_in	libs/zlib.h	/^    uLong    total_in;  \/* total nb of input bytes read so far *\/$/;"	m	struct:z_stream_s
+total_out	libs/zlib.h	/^    uLong    total_out; \/* total nb of bytes output so far *\/$/;"	m	struct:z_stream_s
+travel_del	libs/UT_HashTable_Pro.h	/^	var_4 travel_del(var_vd*& handle)$/;"	f	class:UT_HashTable_Pro
+travel_finish	libs/UT_HashTable_Pro.h	/^	var_4 travel_finish(var_vd*& handle)$/;"	f	class:UT_HashTable_Pro
+travel_finish	storage/UT_Persistent_KeyValue.h	/^	var_4 travel_finish(var_vd*& handle)$/;"	f	class:UT_Persistent_KeyValue
+travel_idx	libs/UT_HashTable_Pro.h	/^	var_4  travel_idx;$/;"	m	struct:_UT_Hash_Table_Pro_Travel_Info_
+travel_key	libs/UT_HashTable_Pro.h	/^	var_4 travel_key(var_vd* handle, T_Key& key, var_vd** const reference = NULL)$/;"	f	class:UT_HashTable_Pro
+travel_key	storage/UT_Persistent_KeyValue.h	/^	var_4 travel_key(var_vd* handle, T_Key& key, var_vd* value, var_4& size)$/;"	f	class:UT_Persistent_KeyValue
+travel_modify	libs/UT_HashTable_Pro.h	/^	var_4 travel_modify(var_vd*& handle, var_vd* value)$/;"	f	class:UT_HashTable_Pro
+travel_pos	libs/UT_HashTable_Pro.h	/^	var_1* travel_pos;$/;"	m	struct:_UT_Hash_Table_Pro_Travel_Info_
+travel_pre	libs/UT_HashTable_Pro.h	/^	var_1* travel_pre;$/;"	m	struct:_UT_Hash_Table_Pro_Travel_Info_
+travel_prepare	libs/UT_HashTable_Pro.h	/^	var_4 travel_prepare(var_vd*& handle, var_4 is_dynamic = 0, var_4 is_lock = 1)$/;"	f	class:UT_HashTable_Pro
+travel_prepare	storage/UT_Persistent_KeyValue.h	/^    var_4 travel_prepare(var_vd*& handle)$/;"	f	class:UT_Persistent_KeyValue
+trim	libs/UT_HashTable_Pro.h	/^	var_4 trim()$/;"	f	class:UT_HashTable_Pro
+tv_1	libs/UH_Define.h	/^	struct timeval tv_1, tv_2;$/;"	m	struct:_cp_stat_time_	typeref:struct:_cp_stat_time_::timeval
+tv_2	libs/UH_Define.h	/^	struct timeval tv_1, tv_2;$/;"	m	struct:_cp_stat_time_	typeref:struct:_cp_stat_time_::
+txtlen	protocol.h	/^	var_4  txtlen;$/;"	m	struct:_doc_buf_
+txtoff	protocol.h	/^	var_4  txtoff;$/;"	m	struct:_doc_buf_
+uInt	libs/zconf.h	/^typedef unsigned int   uInt;  \/* 16 bits or more *\/$/;"	t
+uInt	libs/zconf.h	120;"	d
+uIntf	libs/zconf.h	/^typedef uInt  FAR uIntf;$/;"	t
+uIntf	libs/zconf.h	121;"	d
+uLong	libs/zconf.h	/^typedef unsigned long  uLong; \/* 32 bits or more *\/$/;"	t
+uLong	libs/zconf.h	122;"	d
+uLongf	libs/zconf.h	/^typedef uLong FAR uLongf;$/;"	t
+uLongf	libs/zconf.h	123;"	d
+uncompress	libs/zconf.h	101;"	d
+unlock	libs/UH_Define.h	/^	inline void unlock()$/;"	f	struct:CP_MutexLock
+unlock	libs/UH_Define.h	/^	inline void unlock()$/;"	f	struct:CP_MutexLock_RW
+unlock	libs/UH_Define.h	/^	inline void unlock(CP_MUTEXLOCK_RW_LCK* lck)$/;"	f	struct:CP_MutexLock_RW_FUN
+unlock_store	libs/UT_HashTable_Pro.h	/^	inline var_vd unlock_store(var_1* head)$/;"	f	class:UT_HashTable_Pro
+unlock_table	libs/UT_HashTable_Pro.h	/^	inline var_vd unlock_table(var_8 idx)$/;"	f	class:UT_HashTable_Pro
+update_command	protocol.h	/^const var_4   update_command  = 3303;$/;"	v
+update_data_lock	Gather.h	/^        CP_MUTEXLOCK                    update_data_lock;      \/\/ mutex lock, for adding data, generate pushing xml, used in add data thread and generate push data thread$/;"	m	class:Gather
+update_interval	config.h	/^	var_4 update_interval; 			\/\/ use seconds as unit$/;"	m	struct:_config_file_
+urllen	protocol.h	/^	var_2  urllen;$/;"	m	struct:_doc_buf_
+urloff	protocol.h	/^	var_4  urloff;$/;"	m	struct:_doc_buf_
+usleep	libs/publicfunction.h	38;"	d
+val	libs/Fixsizehash.h	/^		V val;$/;"	m	struct:Fixsizehash::Blk
+val	libs/mulhash.h	/^		V val;$/;"	m	struct:Mulhash::Valblk
+var_1	libs/UH_Define.h	/^typedef               char var_1;$/;"	t
+var_2	libs/UH_Define.h	/^typedef              short var_2;$/;"	t
+var_4	libs/UH_Define.h	/^typedef                int var_4;$/;"	t
+var_8	libs/UH_Define.h	/^typedef               long var_8;$/;"	t
+var_8	libs/UH_Define.h	/^typedef            __int64 var_8;$/;"	t
+var_8	libs/UH_Define.h	/^typedef          long long var_8;$/;"	t
+var_bl	libs/UH_Define.h	/^typedef				  bool var_bl;$/;"	t
+var_d8	libs/UH_Define.h	/^typedef             double var_d8;$/;"	t
+var_f4	libs/UH_Define.h	/^typedef              float var_f4;$/;"	t
+var_u1	libs/UH_Define.h	/^typedef      unsigned char var_u1;$/;"	t
+var_u2	libs/UH_Define.h	/^typedef     unsigned short var_u2;$/;"	t
+var_u4	libs/UH_Define.h	/^typedef       unsigned int var_u4;$/;"	t
+var_u8	libs/UH_Define.h	/^typedef      unsigned long var_u8;$/;"	t
+var_u8	libs/UH_Define.h	/^typedef   unsigned __int64 var_u8;$/;"	t
+var_u8	libs/UH_Define.h	/^typedef unsigned long long var_u8;$/;"	t
+var_vd	libs/UH_Define.h	/^typedef				  void var_vd;$/;"	t
+version	libs/UT_HashTable_Pro.h	/^	const var_1* version()$/;"	f	class:UT_HashTable_Pro
+voidp	libs/zconf.h	/^   typedef Byte       *voidp;$/;"	t
+voidp	libs/zconf.h	/^   typedef void       *voidp;$/;"	t
+voidp	libs/zconf.h	124;"	d
+voidpc	libs/zconf.h	/^   typedef Byte const *voidpc;$/;"	t
+voidpc	libs/zconf.h	/^   typedef void const *voidpc;$/;"	t
+voidpc	libs/zconf.h	125;"	d
+voidpf	libs/zconf.h	/^   typedef Byte FAR   *voidpf;$/;"	t
+voidpf	libs/zconf.h	/^   typedef void FAR   *voidpf;$/;"	t
+voidpf	libs/zconf.h	126;"	d
+vpInfo	libs/stateinfo.h	/^    void             *vpInfo;$/;"	m	struct:_thread_info_
+watch_overtime	config.h	/^	var_4 watch_overtime;$/;"	m	struct:_config_file_
+watch_port	config.h	/^	var_4 watch_port;$/;"	m	struct:_config_file_
+weight	Gather.h	/^	var_u8 weight;$/;"	m	struct:_data_info_
+weight	Gather.h	/^	var_u8 weight;$/;"	m	struct:_group_info_
+whitelist	config.h	/^	var_1 whitelist[MAX_FILE_PATH];$/;"	m	struct:_config_file_
+worker_inf	libs/common_def.h	/^class worker_inf$/;"	c
+worker_inf_size	libs/common_def.h	/^const var_u4 worker_inf_size = sizeof(worker_inf);$/;"	v
+workshop_inf	libs/common_def.h	/^}workshop_inf, *pworkshop_inf;$/;"	t	typeref:struct:tag_workshop_inf
+workshop_inf_size	libs/common_def.h	/^const var_u4 workshop_inf_size = sizeof(workshop_inf);$/;"	v
+wr_f	libs/UH_Define.h	/^	var_u4 wr_f; \/\/ write flag$/;"	m	struct:CP_MutexLock_RW
+wr_f	libs/UH_Define.h	/^	var_u4 wr_f; \/\/ write flag$/;"	m	struct:CP_MutexLock_RW_LCK
+writelog	libs/log.h	/^	int writelog(const char *msgfmt,...)$/;"	f	class:Log_file
+xflags	libs/zlib.h	/^    int     xflags;     \/* extra flags (not used when writing a gzip file) *\/$/;"	m	struct:gz_header_s
+zError	libs/zconf.h	102;"	d
+z_off_t	libs/zconf.h	374;"	d
+z_off_t	libs/zconf.h	388;"	d
+z_stream	libs/zlib.h	/^} z_stream;$/;"	t	typeref:struct:z_stream_s
+z_stream_s	libs/zlib.h	/^typedef struct z_stream_s {$/;"	s
+z_streamp	libs/zlib.h	/^typedef z_stream FAR *z_streamp;$/;"	t
+zalloc	libs/zlib.h	/^    alloc_func zalloc;  \/* used to allocate the internal state *\/$/;"	m	struct:z_stream_s
+zcalloc	libs/zconf.h	103;"	d
+zcfree	libs/zconf.h	104;"	d
+zfree	libs/zlib.h	/^    free_func  zfree;   \/* used to free the internal state *\/$/;"	m	struct:z_stream_s
+zlibCompileFlags	libs/zconf.h	105;"	d
+zlibVersion	libs/zconf.h	106;"	d
+zlib_version	libs/zlib.h	210;"	d
+~CP_MutexLock	libs/UH_Define.h	/^	~CP_MutexLock()$/;"	f	struct:CP_MutexLock
+~CP_MutexLock_RW	libs/UH_Define.h	/^	~CP_MutexLock_RW()$/;"	f	struct:CP_MutexLock_RW
+~CP_MutexLock_RW_FUN	libs/UH_Define.h	/^	~CP_MutexLock_RW_FUN()$/;"	f	struct:CP_MutexLock_RW_FUN
+~CSocketPack	libs/socketpack.h	/^	virtual ~CSocketPack()$/;"	f	class:CSocketPack
+~CThreadManage	libs/publicfunction.h	/^	~CThreadManage()$/;"	f	class:CThreadManage
+~CThreadMutex	libs/publicfunction.h	/^	~CThreadMutex()$/;"	f	class:CThreadMutex
+~CThreadState	libs/stateinfo.h	/^	~CThreadState()$/;"	f	class:CThreadState
+~Fixsizehash	libs/Fixsizehash.h	/^template<typename K,typename V> Fixsizehash<K,V>::~Fixsizehash()$/;"	f	class:Fixsizehash
+~Gather	Gather.cpp	/^Gather::~Gather()$/;"	f	class:Gather
+~IDAlloc	libs/IDAlloc.h	/^	~IDAlloc()$/;"	f	class:IDAlloc
+~Log_file	libs/log.h	/^	~Log_file()$/;"	f	class:Log_file
+~Mulhash	libs/mulhash.h	/^template<typename K,typename V> Mulhash<K,V>::~Mulhash()$/;"	f	class:Mulhash
+~UC_Allocator_Recycle	libs/UC_Allocator_Recycle.h	/^	~UC_Allocator_Recycle()$/;"	f	class:UC_Allocator_Recycle
+~UC_ReadConfigFile	libs/UC_ReadConfigFile.h	/^	~UC_ReadConfigFile()$/;"	f	class:UC_ReadConfigFile
+~UT_HashTable_Pro	libs/UT_HashTable_Pro.h	/^	~UT_HashTable_Pro()$/;"	f	class:UT_HashTable_Pro
+~UT_Queue	libs/UT_Queue.h	/^	~UT_Queue()$/;"	f	class:UT_Queue
+~WORKSTATEINFO	libs/stateinfo.h	/^	~WORKSTATEINFO()$/;"	f	struct:WORKSTATEINFO
+~_cp_memory_map_file_	libs/UH_Define.h	/^	~_cp_memory_map_file_()$/;"	f	struct:_cp_memory_map_file_
+~factory_proxy	libs/factory_proxy.cpp	/^factory_proxy::~factory_proxy()$/;"	f	class:factory_proxy
