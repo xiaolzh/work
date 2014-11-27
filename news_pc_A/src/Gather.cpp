@@ -3644,6 +3644,7 @@ var_vd Gather::MergeSmallFiles(var_1 *data_path, var_1 *pMemory)
 	closedir(dirp);
 	if (idx < m_cfg->small_file_num)
 	{
+		delete[] filenm;
 		return;
 	}
 	var_1 tmp[MAX_FILE_PATH] = {0};
@@ -3653,6 +3654,7 @@ var_vd Gather::MergeSmallFiles(var_1 *data_path, var_1 *pMemory)
 		
 	if (fpAdds == NULL || fpDels == NULL)
 	{
+		delete[] filenm;
 		e_log->writelog("%s:%d Open file error.\n", FL, LN);
 		return;
 	}
@@ -3762,6 +3764,7 @@ var_vd Gather::MergeSmallFiles(var_1 *data_path, var_1 *pMemory)
 		{
 			CloseFile(fpAdds[i]);
 		}
+		delete[] filenm;
 		FreeObj(fpAdds);
 		DeleteObj(addDocs);
 		DeleteObj(delDocs);
@@ -3825,6 +3828,7 @@ var_vd Gather::MergeSmallFiles(var_1 *data_path, var_1 *pMemory)
 	DeleteObj(addDocs);
 	if (end_flag == 1)
 	{
+		delete[] filenm;
 		DeleteObj(delDocs);
 		return;
 	}
@@ -3840,6 +3844,7 @@ var_vd Gather::MergeSmallFiles(var_1 *data_path, var_1 *pMemory)
 		if (iRet != 1)
 		{
 			DeleteObj(delDocs);
+			delete[] filenm;
 			CloseFile(fp);
 			e_log->writelog("%s:%d Write error.\n", FL, LN);
 			return;
@@ -3853,6 +3858,7 @@ var_vd Gather::MergeSmallFiles(var_1 *data_path, var_1 *pMemory)
 			if (fp == NULL)
 			{
 				DeleteObj(delDocs);
+				delete[] filenm;
 				CloseFile(fp);
 				e_log->writelog("%s:%d Open file %s error.\n", FL, LN, fileDelBak);
 				return;
