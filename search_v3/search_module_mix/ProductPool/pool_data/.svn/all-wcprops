@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/pool_data
+END
+util.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/pool_data/util.h
+END
+PublicFunc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/pool_data/PublicFunc.cpp
+END
+ResourceUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/pool_data/ResourceUtil.h
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/subversion/!svn/ver/4481/projects/search_v3/deploy/tools/search_v3_log
+END
+log_manager.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/subversion/!svn/ver/4481/projects/search_v3/deploy/tools/search_v3_log/log_manager.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/subversion/!svn/ver/3701/projects/search_v3/deploy/tools/search_v3_log/util.py
+END
+log.conf
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/subversion/!svn/ver/4365/projects/search_v3/deploy/tools/search_v3_log/log.conf
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/3701/projects/search_v3/deploy/tools/search_v3_log/README.txt
+END

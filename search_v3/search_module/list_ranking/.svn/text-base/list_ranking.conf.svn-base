@@ -1,0 +1,45 @@
+## config list_ranking
+
+[ basic ]
+## scatter config
+## config as: category_path:field_name:unit_number, ...
+## [NOTICE]: unit_number should between 0 and 20
+scatter = 58.64:shop_id:2, 58.65:shop_id:2, 58.74:brand_id:3
+
+
+[ default_weight ]
+
+## default weight is computed by the follow factors, 
+## we can change the coffs between [0, 100], which SHOULD be integer type
+## if we don't set the [sale], it means we used default value set by program
+default = stock:10, commerce:40, sale:10, review:10, sale:10
+
+
+[ custom_weight ]
+## without configured, the values are set in default by program
+## [NOTICE]: 1. the field to compute weight MUST NOT be 64 bites, 
+##              this version only support 32- bites
+##           2. the formula to compute weight MUST be legal in C grammar
+##           3. all math functions you can use should be included in 'math.h'
+##           4. the field should be write like this: [field], NOT [ field ]
+##           5. the result computed by formula MUST NOT be too large to save
+##              in 32 bites, which means the range is (-2^31, 2^31]
+##           6. more to add...
+
+00 = [sale_week_amt]
+#00 = [default]
+
+## 58 is mall product, which is special, so we'll set in default in program
+## here config means: weight = sale_week + is_share_product
+58 = [sale_week_amt] + [is_share_product]
+
+##commonly we can set as follows:
+#01.02 = 100*[default]+[sale_amt]<<2;
+#01.02.04.05 = log([sale_price]+1) + 10*log10([score]+1) - exp([stock])
+
+## [WRONG]: following are wrong styles
+#1.2-3 = default + log(sale_price)
+#1.2- = default + log( [ sale_price ])
+#01.02.03.04.05.06.07.08.09 = 10[sale_price] -3[sale_week]
+#01.02-01.03 = [sale_price]/0
+#01.02-01.03 = [sale_price]*[sale_week]*[sale_count]*[first_input_date]

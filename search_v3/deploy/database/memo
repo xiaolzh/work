@@ -1,0 +1,41 @@
+To Do:
+    - 58.70  类别下商品不进搜索视图
+    - product_price.sale_price 和 products_core_search.promote_price 逻辑上应取小值，刘刚建议都吐给前台，前台处理
+    - 促销类型中的有单品促销的商品不显示类别促销
+    - promotion_filt, product_promotion_filt语义？是否可以合并？
+    - 促销类型和促销价格是在有效期内有效的，需要联合促销区间来判断
+    - 促销价和当当卖价联合得到实际销售价
+    - 促销类型有两张表联合判断，product_cat_promo里是类比促销，需要和core表联合比较
+    - search_info里的title等字段是周期推送（每天），每次推送更新时戳，这一点需要改变为只推送改变的信息并更新其时戳
+    - dispatcher作为数字字段处理的字段在数据库端改为相应的数字字段格式
+
+To See:
+    - product_price.discount字段需改为整型 --- 下期修改
+    - prodcut_core_search.category_id存在NULL值 --- 测试数据问题
+      cat_paths,cat_paths_name尚为NULL   --- 数据尚未推送
+    - product_core_search.is_publish和is_publication重义，需确认  --- 两者含义不同
+    - product_core_search.publish_date和pub_date重义，需确认  --- 采用前者
+    - 分拆attrib属性字段，剥离其中的品牌信息 --- 已剥离
+    - 百货的name用product_name代替 --- Done
+    - 出版物的pub_name用publisher代替 --- Done
+    - 百货的score和出版物的average_score合并为score --- Done
+    - category_path分隔符为','  --- 搜索改为'|'
+    - 评分score字段为 评分*2，原搜索2.0为浮点数，现改为整数，四舍五入。--- 记录备案
+    - image_abstract, image_content, image_catalog字段改为abstract, content, catalog --- 刘刚确认
+    - title_ex, titlesyn语义相同，统一为title_synonym --- Done
+    - isbn_search, standard_id语义相同，统一为isbn_search（旧搜索数据取两者）--- Done
+    - seriesname使用series_name，和数据库字段名保持统一 --- Done
+    - second_price使用c2c_second_price, 和数据库保持一致 --- Done
+    - category_path使用cat_paths，和数据库保持一致 --- Done
+    - stock使用stock_status，和数据库保持一致 --- Done
+    - 所有搜索数据表的主键需要为product_id，并具有最后修改时间字段last_modified_date --- guan_id之外均符合
+    - 百货无库存商品不进视图 --- 已加逻辑
+    - ebook相关字段确认  --- 已基本确认
+    - 出版物用first_input_date，publish_date来生成一个modifytime  --- 暂不改
+    - input_date字段需要搜索后台进行处理，利用modifytime来代替 --- 搜索后台需要确认修改
+  
+缺失字段：
+    cd_info, sale_amt
+
+删除字段：
+    lowest_cat, other_cat, product_info

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/subversion/!svn/ver/4365/projects/search_v3/deploy/tools/search_v3_time
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/subversion/!svn/ver/3701/projects/search_v3/deploy/tools/search_v3_time/util.py
+END
+db.conf
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/subversion/!svn/ver/4365/projects/search_v3/deploy/tools/search_v3_time/db.conf
+END
+syn_time.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/subversion/!svn/ver/4363/projects/search_v3/deploy/tools/search_v3_time/syn_time.py
+END

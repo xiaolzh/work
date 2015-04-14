@@ -1,0 +1,12 @@
+MACRO="-DDEBUG -DTEST_CONFIGER"
+#MACRO="-DDEBUG -DTEST_LOGGER"
+INCLUDE="-I/usr/local/include/stlport"
+LIB="-L /usr/local/myodbc/lib"
+LINK="-ldl -liconv -lmyodbc3 -lboost_regex -lboost_system -lboost_thread -lstlport"
+SOURCE="utilities.cpp logger.cpp configer.cpp"
+#SOURCE="logger.cpp"
+#SUPPORT_SOURCE="../libs/*.cpp"
+SUPPORT_SOURCE=""
+BIN="test_configer"
+#BIN="test_logger"
+g++ $MACRO -g $SOURCE $SUPPORT_SOURCE -o $BIN $INCLUDE $LIB $LINK

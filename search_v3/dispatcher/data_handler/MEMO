@@ -1,0 +1,64 @@
+Init 初始化
+    - 所有状态复位 _Empty
+    - 加载配置文件 _LoadConfig
+    - 根据配置初始化数据参数 _AutoSize
+    - 加载数据大表文件
+    - 加载增量数据文件
+    - 加载状态信息 _LoadState
+    - 初始化增量更新数据读取线程    
+
+CoInit 反初始化
+    - 停止增量更新数据读取线程
+    - 状态复位
+
+ProcessData("Main") 主更新流程
+    - 加载状态信息 _LoadState
+    - 读原始数据 _ReadRawData
+        - 停止增量更新数据读取线程
+        - 开始全量更新，失败重试3次
+    - 检查原始数据 _CheckRawData
+    - 索引数据 _IndexData
+    - 检查索引数据 _CheckIndexData
+    - 建数据大表 _BuildDataTable
+        - 打开所有field文件（按其连接表依次打开）
+        - 逐行处理至文件尾
+            - 取出product_id作为key，[str_md5, num_fields,str_md5, 
+              num_fields, ..., mark_cnt]作为value存入，若product_id为空or
+              重要字段缺失，则忽略该条商品
+            - 写入大表并增加计算录入的商品总数
+        - 同步全量数据大表到硬盘
+    - 检查数据大表 _CheckDataTable
+    - 更新状态 _UpdateMainState
+        - 将索引好的全量数据移至指定目录中，以index_2011xxxxx作为目录名
+        - 更新全量数据目录路径及全量时戳至最新
+        - 更新增量更新的下次更新时间及数据更新状态（无数据状态）
+        - 复位增量更新
+    - 保存状态信息 _SaveState
+        - 保存状态信息至备份文件
+        - 覆盖状态文件
+
+ProcessData("inc") 增量更新流程
+    - 加载状态信息 _LoadState
+    - 读原始数据 _ReadRawData
+        - 启动子表数据更新线程 _RunReading
+            - 判断是否停止更新及该子表数据是否已读取
+            - 按增量时间进行增量读取
+            - 更新状态status和更新时间
+    - 检查原始数据 _CheckRawData
+    - 生成增量数据 _BuildIncData
+        - 遍历增量子表，若数据已准备好 status = 0，则进行增量数据生成
+            - 打开所有field文件（按其连接表依次打开）
+            - 逐行处理至文件尾
+                - 从大表中取出数据，若不存在则生成新品数据，并判断进行新品增加
+                - 若存在，比较新旧数据，检查数据变化，判断是哪种类型
+                - 根据类型进行增量数据的生成，详见twiki
+                - 将商品数据刷入大表
+            - 同步数据到硬盘
+    - 检查增量数据 _CheckIncData
+    - 更新状态 _UpdateIncState
+        - 判断是否需要进行全更新
+    - 保存状态信息 _SaveState
+        - 保存状态信息至备份文件
+        - 覆盖状态文件
+    
+    

@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/subversion/!svn/ver/5869/projects/search_v3/util
+END
+MMapFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/MMapFile.h
+END
+InvertReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/InvertReader.h
+END
+FileOperation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/subversion/!svn/ver/2062/projects/search_v3/util/FileOperation.cpp
+END
+StringTrim.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/subversion/!svn/ver/2147/projects/search_v3/util/StringTrim.cpp
+END
+Daemon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/subversion/!svn/ver/2740/projects/search_v3/util/Daemon.cpp
+END
+Dic.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/Dic.h
+END
+nokey_static_hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/nokey_static_hash.h
+END
+XmlHttp.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/subversion/!svn/ver/4242/projects/search_v3/util/XmlHttp.h
+END
+ServerFrameLockAccept.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/subversion/!svn/ver/5869/projects/search_v3/util/ServerFrameLockAccept.cpp
+END
+circle_queue.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/subversion/!svn/ver/2785/projects/search_v3/util/circle_queue.h
+END
+real_time_idx.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/real_time_idx.h
+END
+BitMapFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/BitMapFile.cpp
+END
+DicCommon.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/subversion/!svn/ver/2062/projects/search_v3/util/DicCommon.h
+END
+TaDicW.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/subversion/!svn/ver/2062/projects/search_v3/util/TaDicW.h
+END
+Dic_w.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/Dic_w.cpp
+END
+session_log_c.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/subversion/!svn/ver/4480/projects/search_v3/util/session_log_c.cpp
+END
+volatile_conf.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/subversion/!svn/ver/2835/projects/search_v3/util/volatile_conf.h
+END
+win_strptime.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/subversion/!svn/ver/3323/projects/search_v3/util/win_strptime.h
+END
+UtilTemplateFunc.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/subversion/!svn/ver/4620/projects/search_v3/util/UtilTemplateFunc.h
+END
+MMapFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/subversion/!svn/ver/2194/projects/search_v3/util/MMapFile.cpp
+END
+InvertReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/subversion/!svn/ver/2062/projects/search_v3/util/InvertReader.cpp
+END
+conf.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/subversion/!svn/ver/2062/projects/search_v3/util/conf.h
+END
+DicW.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/subversion/!svn/ver/2062/projects/search_v3/util/DicW.h
+END
+para_hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/subversion/!svn/ver/2511/projects/search_v3/util/para_hash.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/subversion/!svn/ver/3887/projects/search_v3/util/Makefile
+END
+class_tree_nolock.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/class_tree_nolock.h
+END
+Dic.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/Dic.cpp
+END
+map_number_nolock.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/subversion/!svn/ver/2598/projects/search_v3/util/map_number_nolock.h
+END
+static_hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/subversion/!svn/ver/2351/projects/search_v3/util/static_hash.h
+END
+XmlHttp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/subversion/!svn/ver/4242/projects/search_v3/util/XmlHttp.cpp
+END
+hash_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/hash_common.h
+END
+UtilDef.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/subversion/!svn/ver/2062/projects/search_v3/util/UtilDef.h
+END
+Character.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/subversion/!svn/ver/2062/projects/search_v3/util/Character.h
+END
+statistics_bucket_sort.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/subversion/!svn/ver/2683/projects/search_v3/util/statistics_bucket_sort.h
+END
+FileOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/subversion/!svn/ver/4256/projects/search_v3/util/FileOperation.h
+END
+circle_queue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/subversion/!svn/ver/2749/projects/search_v3/util/circle_queue.cpp
+END
+StringTrim.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/StringTrim.h
+END
+Daemon.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/subversion/!svn/ver/2062/projects/search_v3/util/Daemon.h
+END
+Class.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/subversion/!svn/ver/4620/projects/search_v3/util/Class.h
+END
+TaDicW.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/subversion/!svn/ver/2164/projects/search_v3/util/TaDicW.cpp
+END
+effective_wtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/subversion/!svn/ver/5033/projects/search_v3/util/effective_wtree.h
+END
+ServerFrameLockAccept.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/subversion/!svn/ver/2693/projects/search_v3/util/ServerFrameLockAccept.h
+END
+var_t.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/subversion/!svn/ver/3995/projects/search_v3/util/var_t.h
+END
+BitMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/BitMap.h
+END
+BitMapFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/BitMapFile.h
+END
+hash_wrap.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/subversion/!svn/ver/2062/projects/search_v3/util/hash_wrap.h
+END
+static_hash_vector.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/subversion/!svn/ver/5748/projects/search_v3/util/static_hash_vector.h
+END
+SimpleThread.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/SimpleThread.h
+END
+WinnerTree.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/WinnerTree.h
+END
+array_rp_nolock.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/subversion/!svn/ver/3134/projects/search_v3/util/array_rp_nolock.h
+END
+class_tree_nolock.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/class_tree_nolock.cpp
+END
+send.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/subversion/!svn/ver/2061/projects/search_v3/util/send.cpp
+END
+session_log_c.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/subversion/!svn/ver/2785/projects/search_v3/util/session_log_c.h
+END

@@ -1,0 +1,14 @@
+#the path of main data 
+main_data_path = ../data/cache_data/query_pack/data
+
+#the path of cache data
+cache_data_path = ../data/cache_data/query_pack/
+
+#main process cmd
+main_process_cmd = sh ./modules/query_pack/pack_data/QueryPack.sh ./modules/query_pack/pack_data/ ../data/cache_data/query_pack/data ../log/
+
+#inc process cmd
+inc_process_cmd = #echo "query_pack: process inc data"
+
+#main update interval
+main_update_interval = 1  # per hour

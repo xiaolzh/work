@@ -1,0 +1,20 @@
+#include "%s.hxx"
+#include <math.h>
+#include <iostream>
+using namespace std;
+
+int compute_weight(int* field_values, int field_num) {
+    // define field_value as field for using
+%s
+    // compute weight formula
+    int weight__ = 0;
+    weight__ = (int)(%s);
+    return weight__;
+}
+
+#if DEBUG
+int main() {
+    if( !output()) return fasle;
+    return 0;
+}
+#endif

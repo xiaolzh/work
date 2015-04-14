@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/subversion/!svn/ver/5033/projects/search_v3/dispatcher/data_handler
+END
+text_db.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/subversion/!svn/ver/3641/projects/search_v3/dispatcher/data_handler/text_db.h
+END
+global_define.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/subversion/!svn/ver/3798/projects/search_v3/dispatcher/data_handler/global_define.h
+END
+searcher.conf
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/5011/projects/search_v3/dispatcher/data_handler/searcher.conf
+END
+search_data_handler.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/subversion/!svn/ver/4866/projects/search_v3/dispatcher/data_handler/search_data_handler.h
+END
+state_info.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/subversion/!svn/ver/4293/projects/search_v3/dispatcher/data_handler/state_info.h
+END
+handler_config.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/subversion/!svn/ver/4866/projects/search_v3/dispatcher/data_handler/handler_config.cpp
+END
+data_handler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/subversion/!svn/ver/4346/projects/search_v3/dispatcher/data_handler/data_handler.cpp
+END
+handler_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/subversion/!svn/ver/4866/projects/search_v3/dispatcher/data_handler/handler_config.h
+END
+text_db.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/subversion/!svn/ver/4082/projects/search_v3/dispatcher/data_handler/text_db.cpp
+END
+search_data_handler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/subversion/!svn/ver/5033/projects/search_v3/dispatcher/data_handler/search_data_handler.cpp
+END
+state_info.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/subversion/!svn/ver/4866/projects/search_v3/dispatcher/data_handler/state_info.cpp
+END
+MEMO
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/subversion/!svn/ver/3186/projects/search_v3/dispatcher/data_handler/MEMO
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/subversion/!svn/ver/3737/projects/search_v3/dispatcher/data_handler/Makefile
+END

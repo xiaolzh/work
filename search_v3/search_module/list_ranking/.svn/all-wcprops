@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/subversion/!svn/ver/5937/projects/search_v3/search_module/list_ranking
+END
+install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/3762/projects/search_v3/search_module/list_ranking/install.sh
+END
+configer.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/2412/projects/search_v3/search_module/list_ranking/configer.h
+END
+_full_timestamp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/subversion/!svn/ver/3672/projects/search_v3/search_module/list_ranking/_full_timestamp
+END
+swstd.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/subversion/!svn/ver/2412/projects/search_v3/search_module/list_ranking/swstd.h
+END
+utilities.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/subversion/!svn/ver/4620/projects/search_v3/search_module/list_ranking/utilities.cpp
+END
+memo
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/subversion/!svn/ver/2412/projects/search_v3/search_module/list_ranking/memo
+END
+weighter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/subversion/!svn/ver/3430/projects/search_v3/search_module/list_ranking/weighter.cpp
+END
+logger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/4620/projects/search_v3/search_module/list_ranking/logger.cpp
+END
+utilities.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/subversion/!svn/ver/5651/projects/search_v3/search_module/list_ranking/utilities.h
+END
+timer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/subversion/!svn/ver/3934/projects/search_v3/search_module/list_ranking/timer.cpp
+END
+weighter.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/3430/projects/search_v3/search_module/list_ranking/weighter.h
+END
+logger.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/subversion/!svn/ver/2412/projects/search_v3/search_module/list_ranking/logger.h
+END
+ListRanking.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/subversion/!svn/ver/5651/projects/search_v3/search_module/list_ranking/ListRanking.cpp
+END
+timer.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/subversion/!svn/ver/3934/projects/search_v3/search_module/list_ranking/timer.h
+END
+list_ranking.conf
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/subversion/!svn/ver/5033/projects/search_v3/search_module/list_ranking/list_ranking.conf
+END
+ListRanking.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/subversion/!svn/ver/5651/projects/search_v3/search_module/list_ranking/ListRanking.h
+END
+configer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/subversion/!svn/ver/4620/projects/search_v3/search_module/list_ranking/configer.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/subversion/!svn/ver/5838/projects/search_v3/search_module/list_ranking/Makefile
+END

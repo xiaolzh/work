@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack
+END
+PackDefine.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/PackDefine.h
+END
+ErrorMessage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/ErrorMessage.cpp
+END
+QueryResultPacker.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/QueryResultPacker.h
+END
+PublicFunc.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/PublicFunc.h
+END
+PackMallInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/PackMallInfo.cpp
+END
+TimeUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/TimeUtil.h
+END
+masterDaemon.pid.Searcher
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/masterDaemon.pid.Searcher
+END
+search.conf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/search.conf
+END
+CustomProcess.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/CustomProcess.cpp
+END
+so.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/so.sh
+END
+AbstractInfoShow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/AbstractInfoShow.cpp
+END
+hash_wrap.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/hash_wrap.h
+END
+show_result.conf
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/show_result.conf
+END
+pool_ranking.tar.bz2
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/pool_ranking.tar.bz2
+END
+PackShopInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/PackShopInfo.cpp
+END
+ResourceUtil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/ResourceUtil.cpp
+END
+AbstractInfoShow.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/AbstractInfoShow.h
+END
+price_span.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/price_span.h
+END
+ResourceUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/ResourceUtil.h
+END
+QueryResultPacker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/QueryResultPacker.cpp
+END
+PublicFunc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/PublicFunc.cpp
+END
+query.sh
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/subversion/!svn/ver/5914/projects/search_v3/search_module_mix/ProductPool/query_pack/query.sh
+END

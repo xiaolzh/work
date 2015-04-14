@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/subversion/!svn/ver/5914/projects/search_v3
+END
+build_rpm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/subversion/!svn/ver/3453/projects/search_v3/build_rpm.sh
+END
+search_v3.spec
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/subversion/!svn/ver/3887/projects/search_v3/search_v3.spec
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/subversion/!svn/ver/3887/projects/search_v3/Makefile
+END

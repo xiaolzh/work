@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/subversion/!svn/ver/4866/projects/search_v3/dispatcher/libs
+END
+MMapFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/libs/MMapFile.h
+END
+InvertReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/libs/InvertReader.h
+END
+FileOperation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/libs/FileOperation.cpp
+END
+configer.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/subversion/!svn/ver/2937/projects/search_v3/dispatcher/libs/configer.h
+END
+Daemon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/subversion/!svn/ver/4293/projects/search_v3/dispatcher/libs/Daemon.cpp
+END
+FileOperation.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/libs/FileOperation.h
+END
+unit_test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/subversion/!svn/ver/3644/projects/search_v3/dispatcher/libs/unit_test.sh
+END
+Detail.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/subversion/!svn/ver/4293/projects/search_v3/dispatcher/libs/Detail.h
+END
+Daemon.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/subversion/!svn/ver/3798/projects/search_v3/dispatcher/libs/Daemon.h
+END
+MyDef.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/libs/MyDef.h
+END
+swstd.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/libs/swstd.h
+END
+data_handler.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/subversion/!svn/ver/4346/projects/search_v3/dispatcher/libs/data_handler.h
+END
+utilities.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/subversion/!svn/ver/4866/projects/search_v3/dispatcher/libs/utilities.cpp
+END
+ServerFrameEx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/subversion/!svn/ver/4293/projects/search_v3/dispatcher/libs/ServerFrameEx.cpp
+END
+logger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/subversion/!svn/ver/4258/projects/search_v3/dispatcher/libs/logger.cpp
+END
+timer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/libs/timer.cpp
+END
+utilities.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/subversion/!svn/ver/4866/projects/search_v3/dispatcher/libs/utilities.h
+END
+key_dictionary.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/libs/key_dictionary.h
+END
+ServerFrameEx.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/subversion/!svn/ver/4293/projects/search_v3/dispatcher/libs/ServerFrameEx.h
+END
+logger.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/subversion/!svn/ver/3798/projects/search_v3/dispatcher/libs/logger.h
+END
+timer.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/subversion/!svn/ver/3798/projects/search_v3/dispatcher/libs/timer.h
+END
+SimpleThread.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/subversion/!svn/ver/4482/projects/search_v3/dispatcher/libs/SimpleThread.h
+END
+MMapFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/libs/MMapFile.cpp
+END
+InvertReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/libs/InvertReader.cpp
+END
+configer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/subversion/!svn/ver/3644/projects/search_v3/dispatcher/libs/configer.cpp
+END
+business_layer.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/subversion/!svn/ver/3848/projects/search_v3/dispatcher/libs/business_layer.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/subversion/!svn/ver/3737/projects/search_v3/dispatcher/libs/Makefile
+END
+dynamic_hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/subversion/!svn/ver/4293/projects/search_v3/dispatcher/libs/dynamic_hash.h
+END

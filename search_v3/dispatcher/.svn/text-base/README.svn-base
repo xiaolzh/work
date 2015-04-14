@@ -1,0 +1,5 @@
+Deploy CheckList:
+    - /usr/local/nginx/conf/site-enabled/dispatcher_nginx.conf 的带宽限制
+    - modules/searcher/searcher.conf 的数据库相关配置
+    - 各个程序编译时是否是release版本
+    - static_data与动态生成的文件不可重名，否则会覆盖生成的文件，导致失败 

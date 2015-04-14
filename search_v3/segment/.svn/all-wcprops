@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/subversion/!svn/ver/3933/projects/search_v3/segment
+END
+ta_dic_w.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/subversion/!svn/ver/2061/projects/search_v3/segment/ta_dic_w.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/subversion/!svn/ver/2061/projects/search_v3/segment/main.cpp
+END
+common_libs.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/subversion/!svn/ver/2147/projects/search_v3/segment/common_libs.h
+END
+ini_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/subversion/!svn/ver/2061/projects/search_v3/segment/ini_config.h
+END
+ta_dic_w.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/subversion/!svn/ver/2061/projects/search_v3/segment/ta_dic_w.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/subversion/!svn/ver/3933/projects/search_v3/segment/Makefile
+END
+dic_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/subversion/!svn/ver/2061/projects/search_v3/segment/dic_common.h
+END

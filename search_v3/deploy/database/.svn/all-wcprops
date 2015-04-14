@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/subversion/!svn/ver/4741/projects/search_v3/deploy/database
+END
+twiki_translate.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/subversion/!svn/ver/3393/projects/search_v3/deploy/database/twiki_translate.py
+END
+old_b2c_view.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/subversion/!svn/ver/3393/projects/search_v3/deploy/database/old_b2c_view.sql
+END
+old_pub_view.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/subversion/!svn/ver/3393/projects/search_v3/deploy/database/old_pub_view.sql
+END
+memo
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/subversion/!svn/ver/3614/projects/search_v3/deploy/database/memo
+END
+search_view.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/subversion/!svn/ver/4741/projects/search_v3/deploy/database/search_view.sql
+END

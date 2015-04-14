@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/subversion/!svn/ver/5628/projects/search_v3/search_module/search_ranking
+END
+SearchKeyRankingMall.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/subversion/!svn/ver/5545/projects/search_v3/search_module/search_ranking/SearchKeyRankingMall.cpp
+END
+SearchKeyRankingPub.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/subversion/!svn/ver/4827/projects/search_v3/search_module/search_ranking/SearchKeyRankingPub.cpp
+END
+StdString.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/subversion/!svn/ver/5156/projects/search_v3/search_module/search_ranking/StdString.cpp
+END
+StdString.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/subversion/!svn/ver/5156/projects/search_v3/search_module/search_ranking/StdString.h
+END
+SearchKeyRanking.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/subversion/!svn/ver/5628/projects/search_v3/search_module/search_ranking/SearchKeyRanking.cpp
+END
+so.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/subversion/!svn/ver/5156/projects/search_v3/search_module/search_ranking/so.sh
+END
+SearchKeyRanking.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/subversion/!svn/ver/5620/projects/search_v3/search_module/search_ranking/SearchKeyRanking.h
+END

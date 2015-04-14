@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/subversion/!svn/ver/5665/projects/search_v3/dispatcher/deploy
+END
+dispatcher.spec
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/subversion/!svn/ver/5665/projects/search_v3/dispatcher/deploy/dispatcher.spec
+END
+setup_modules.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/subversion/!svn/ver/4006/projects/search_v3/dispatcher/deploy/setup_modules.py
+END
+build_rpm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/subversion/!svn/ver/3608/projects/search_v3/dispatcher/deploy/build_rpm.sh
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/subversion/!svn/ver/4377/projects/search_v3/dispatcher/deploy/setup.py
+END

@@ -1,0 +1,303 @@
+TODO list:
+    - 通用化考虑
+        - business layer so的通用化设计（可考虑用脚本语言翻译where条件编译so实现）
+        - 表格字段的自动增减（可考虑根据select翻译和表格字段定义得到）
+        - 读数据的reader_for_search的额外逻辑规整（利用shell胜过程序）
+        - 多种数据库类型的统一读接口（多个适应数据库类型的reader_for_search）
+    - 性能分析及稳定性分析
+        - 内存文件的替换方案
+        - 偶发崩溃bug的解决
+    - 全更新文件属性问题
+        - 数据文件只有读写属性，不可执行，list_ranking里的可执行文件特例化解决，需要优化方案（修改文件传输模式scp）
+    - 增量数据协议(text, json, xml)
+        - 锦上添花，支持json, xml格式
+    - 主数据更新的数据缓存大表独立成类
+    - daemon类的kill信号检测修改，fork出来的进程可能会长时间运行（db_reader），导致stop时可能会很慢，甚至失败
+    - 打包程序独立化：dispatcher.rpm dispatcher_modules.rpm search_v3_segment.rpm search_v3.rpm
+    - 修改数据传输为json格式
+    - 单表读取线程的改写
+    - mailer功能补全
+    - 网络控制接口的并发安全
+    - nginx之外的支持
+    - 需求整理和测试用例设计
+    - 简单的用例设计，以保证后续代码重构优化的校验工作，可优先data_handler的用例设计，以继续后续的代码调整
+    - API规范整理及补全
+        - ./dispatcher命令行参数补全
+            - ./dispatcher -h 帮助
+            - xxx/dispatcher -d 指定运行目录
+    - logger类完善
+        - 可参考刘刚实现，保证日志的完整性和独立性
+
+MEMO list:
+    - 配置检查
+    - select语句可配，可选择表字段并设置别名  --- 不可配，也不可设置别名，因为字段繁多，且有特殊业务逻辑
+    - data_handler的数据校验及原始数据备份
+    - state指针的线程安全性的测试
+    - 外部接口调用方式的线程安全性测试（在processdata过程中是否可以Init和CoInit)
+
+check list:
+    1. 编写主体框架代码，保证该流程可满足相应需求，并易满足潜在需求，除此无多余实现
+        - 整理现阶段满足的需求和后续潜在需求，并保证其可测性
+    2. 归纳梳理框架，合理布局代码结构，并编写相应测试代码（功能测试）
+        - 框架的可扩展性和通用性保证，代码的独立和干净，必要的单元测试代码
+    3. 将TODO完善并通过功能测试
+        - 清理TODO list，未满足的需求标明原因和后续处理
+    4. 健壮性代码补全，通过安全测试
+        - 日志代码规范，异常保证和检查
+    5. 联调各部分实现，进行性能测试
+        - 保证各部分的独立性和解耦性，并考虑后续的扩展性
+    6. 代码优化（性能，易用性）
+        - 分析热点，并给出程序性能报告
+    7. 代码打扫（代码规范检查，冗余代码清理，日志代码整理，注释及文档补充）
+        - 检查并fix @todo
+        - Makefile
+        - 消除原始指针
+        - 注释及文档补全（doxygen, twiki）
+    8. 部署及黑盒测试（验收测试，压力测试）
+        - rpm安装
+        - 自动化测试用例
+
+extra list:
+    - database handler类实现完善 
+    - thread类及方法（类函数调用）
+    - http request parser类实现完善
+    - 通用类序列及反序列化设计实现（可参考google protocol buffer）
+    - 动态库管理类实现完善（不重启程序及时调用）
+
+requirements list:
+    - Dispatcher是新搜索架构中的一个组件，充当数据中心的角色，实现搜索相关数据的拉取，处理，分发等功能，保证数据的准实时性，容错性
+        - 数据更新要求
+            - 支持全更新及增量更新，不同模块均存在全更新方式，但不一定有增量更新方式
+                [搜索主更新有两种方式，其它模块一般为全更新]
+            - 支持各数据模块的独立加载及独立更新
+                [支持后期模块扩展及新增，可以加载/卸载某一模块，各模块彼此更新相对独立]
+            - 支持手动start/stop模块的更新动作并指定更新周期
+            - 支持手动修改模块的源数据并触发更新动作
+                [当发现某数据不对（数据错误，黑名单，etc）时，紧急修改线上数据并更新搜索后台数据]
+            - 上游数据错误时，根据程度以忽略，重更新，停止更新等，记录该异常，保证恢复后可继续
+                [数据不可读，数据异常变化，数据集过大，数据异常]
+        - 数据推送要求
+            - 支持网络访问拉取数据
+            - 支持多方并行拉取数据
+            - 支持shell命令拉取数据
+                [用于测试及后续扩展]
+            - 网络异常时，根据程度以忽略，报警，停止等，记录该异常，保证恢复后可继续
+                [网络不可访问，权限，带宽限制，网速异常]
+        - 行为要求
+            - 守护进程方式后台静默执行，若异常尝试重启子进程或自杀退出
+            - 具有足够的日志输出以备监视和分析
+            - 支持网络控制及命令参数控制
+            - 支持对错误的跟踪回溯
+                [当出现错误时（搜索数据异常，程序异常），尽可能保留现场以供分析]
+            - 系统异常时，根据程度以忽略，报警，停止等，记录该异常，保证恢复后可继续
+                [硬盘满，CPU负载高，系统损坏，宕机]
+        - 性能要求
+            - 时间
+                - 所有数据达到准实时性
+                    [从数据拉取至推送完成需满足准实时性要求，搜索主数据在second级别，其它数据在h级别]                    
+            - 数据量
+                - 支持1000万级别的商品数的准实时更新
+                - 支持100万级别的商品数据变更
+            - 硬件要求
+                - 以目前线上单服务器硬件为准
+                    [可考虑在实现完成后给出dispatcher对硬件的最低要求] 
+            - 运行时间
+                - 支持长期运行（week级别）
+        - 潜在扩展
+            - 支持大数据量的处理分发
+                [可考虑对分布式系统的迁移]
+            - 支持其它服务的数据分发
+                [非搜索数据]
+
+API list:
+    - 命令行
+        - ./dispatcher -k START|STOP
+            - ./dispatcher -k start 启动 ./dispatcher -k stop 停止
+    - URL ( http://domain:port/?params )
+        - http://192.168.85.155:9527/?help
+            - 帮助信息
+        - http://host:port/?help=control
+            - control相关帮助信息
+        - http://host:port/?help=help
+            - help相关帮助信息
+        - http://host:port/?control=get_info
+            - 获取dispatcher的运行状态信息
+        - http://host:port/?control=pause_update
+            - 暂停所有数据更新
+        - http://host:port/?control=pause_update&module=searcher
+            - 暂停数据模块searcher的更新
+        - http://host:port/?control=continue_update
+            - 继续所有数据更新
+        - http://host:port/?control=continue_update&module=searcher
+            - 继续数据模块searcher的更新
+        - http://host:port/?control=reload_main
+            - 重加载所有数据模块的主数据
+        - http://host:port/?control=reload_main&module=searcher
+            - 重加载数据模块searcher的主数据
+        - http://host:port/?control=continue_update&module=searcher
+            - 继续数据模块searcher的更新
+        - http://host:port/?control=restart_update
+            - 重启所有数据更新
+        - http://host:port/?control=restart_update&module=searcher
+            - 重启数据模块searcher的更新
+        - http://host:port/?control=stop_update
+            - 停止数据更新
+        - http://host:port/?control=stop_update&module=searcher
+            - 停止数据模块searcher的更新
+        - http://host:port/?module=searcher&main_stamp=123456&inc_stamp=123456
+            - module指定数据更新模块名
+                - 目前有searcher（主搜索数据模块），list_ranking（列表数据模块）等，与搜索后台各模块保持一致
+            - main_stamp指定全量更新时戳，标明该次请求对应的全量时戳，为一linux系统时戳数字
+            - inc_stamp指定增量更新时戳，标明该次请求的起始时戳，对应这个请求会返回该时戳及之后的增量信息
+
+configure list:
+    - nginx网络设置
+        - 路径权限设置参照通常设置，此略（后续考虑脚本化）
+        - dispatcher.conf
+            - 端口设置，默认为9528
+            - 访问日志access.log，默认在dispatcher工作路径下的data/access.log
+            - 传输带宽限制，默认为50M/s
+    - dispatcher主组件的配置dispatcher.conf
+        - 参考conf本身的说明
+        - 常用手动配置的说明
+            - data_handler_list  加载模块的指定，可指定modules目录下的任意模块，以','隔开
+            - mailer_list  邮件通知的指定，可指定异常时的邮件通知者，以','隔开
+            - main_data_url  全更新时的url前缀，当主机ip及指定端口修改时，需要改成相应设置
+            - data_server_port dispatcher的通信端口，用于url API相关
+            - data_server_thread_num  根据机器配置及搜索后台多少做相应设置，默认为8，建议在[2, 32)范围内
+    - searcher主搜索数据更新模块配置 search_data.conf
+        - 参考conf本身的说明
+        - 常用手动配置说明
+            - read_cmd  读数据命令指定，./reader_for_search -H [数据库ip] -P [数据库端口] -D [库名] -u [用户名] -p [密码]
+            - search_view  搜索主视图名称
+            - sql_template  数据读取模板，当想限制读取数量时可修改
+            - db_tables  增量更新读取的数据表格，主视图用到哪几个表，这里应标明哪几个表
+            - number_fields 数字字段指定，字段名:字节长（1,2,4,8）
+            - string_fields 文字字段指定
+            - timestamp_fields  时戳字段名称，多时戳用','隔开
+    - 通用全更新模块配置  common_data_handler.conf
+        - 参考conf本身的说明
+        - 常用手动配置说明
+            - main_process_cmd  全更新执行命令，用于该数据模块的一次数据拉取动作，拉取后的数据放入指定的main_data_path目录下
+            - main_update_interval  全更新执行间隔，间隔多久后再次执行全更新动作
+
+test case list:
+
+
+data net protocol:
+    - Key-Value键值对协议格式
+        - 所有信息以['key', 'value']表示，以'key'\0'value'\0的形式存储
+        - ['//Key', 'value']形式的kv表示该键值对为描述信息
+        - ['\n', ' ']形式的kv表示换行，用于格式控制
+        - ['//Header', ' '] 表示下文为消息头部分
+        - ['//Body', ' ']表示下文为消息主体部分
+        - ['@Key', 'value']形式的kv表示该Key为保留关键字
+        - ['#Key', 'value']形式的kv表示该key对应的value为特殊标志，如NULL，需要特殊处理
+    - 数据交互通信模式
+        - 状态码
+            - 0:正常
+            - 1:模块名错误
+            - 2:全量时戳错误
+            - 3:增量时戳错误
+            - 4:无数据
+            - 5:系统错误
+        - 正常增量数据通信
+            - 协议报文
+            {
+                消息头: 
+                {
+                    状态码:{0}
+                    状态信息:{ok}
+                    增量数据总数:{123}
+                    后续主体数据大小:{123}
+                },
+                消息主体:
+                {
+                    {
+                        增量数据:
+                        {
+                            字段名:值
+                            ...
+                        }
+                        数据主键:{id}
+                        增量时戳:{123}
+                        增量类型:{modify, add, delete, recover}
+                    },
+                    ...
+                }
+            }
+            - 用Key-Value键值表述
+            {
+                //Header
+                 @status code 0 @status info ok @inc number {123} @total size {123}
+                 //Body
+                 field1 value1 ... fieldN valueN @product_id {123} @stamp {123} @type {add}
+                 field1 value1 ... fieldN valueN @product_id {123} @stamp {123} @type {modify}
+                 @product_id {123} @stamp {123} @type {delete}
+                 ...
+                 @product_id {123} @stamp {123} @type {recover}
+            }
+        - 通信异常
+            - 协议报文
+            {
+                消息头: 
+                {
+                    状态码:{123}
+                    状态信息:{abc}
+                    增量数据总数:{0}
+                    后续主体数据大小:{0}
+                },
+                消息主体:
+                {
+                }
+            }
+            - 用Key-Value键值表述
+            {
+                //Header
+                 @status code {123} @status info {abc} @inc number {0} @total size {0}
+                 //Body
+            }
+        - 全量时戳不一致
+            - 协议报文
+            {
+                消息头: 
+                {
+                    状态码:{2}
+                    状态信息:{illegal main stamp}
+                    增量数据总数:{0}
+                    后续主体数据大小:{0}
+                },
+                消息主体:
+                {
+                    全量时戳:{123}
+                    全量数据路径:{abc}
+                }
+            }
+            - 用Key-Value键值表述
+            {
+                //Header
+                 @status code {2} @status info {illegal main stamp} @inc number {0} @total size {0}
+                 //Body
+                 main_stamp {123} data_path {abc}
+            }
+        - 无增量更新数据or增量时戳错误
+            - 协议报文
+            {
+                消息头: 
+                {
+                    状态码:{4}
+                    状态信息:{no data}
+                    增量数据总数:{0}
+                    后续主体数据大小:{0}
+                },
+                消息主体:
+                {
+                }
+            }
+            - 用Key-Value键值表述
+            {
+                //Header
+                 @status code {4} @status info {no data} @inc number {0} @total size {0}
+                 //Body
+            }
+            

@@ -1,0 +1,18 @@
+[searcher]
+dispatcher_port = 9527
+dispatcher_domain = 10.255.254.29
+
+[BASE]
+thread_num = 8
+process_list = searcher list_ranking query_pack search_ranking
+need_monitor = 1
+engine_domain = 127.0.0.1
+dispatcher_domain = 10.255.254.72
+engine_port = 8390
+dispatcher_port = 9527
+sleep_time = 1470
+
+[list_ranking]
+dispatcher_port = 9527
+dispatcher_domain = 10.255.254.29
+

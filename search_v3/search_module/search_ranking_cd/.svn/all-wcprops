@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/subversion/!svn/ver/5926/projects/search_v3/search_module/search_ranking_cd
+END
+SearchKeyRanking3C.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/subversion/!svn/ver/5926/projects/search_v3/search_module/search_ranking_cd/SearchKeyRanking3C.cpp
+END
+SearchKeyRankingPub.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/subversion/!svn/ver/5795/projects/search_v3/search_module/search_ranking_cd/SearchKeyRankingPub.cpp
+END
+ddip.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/subversion/!svn/ver/5662/projects/search_v3/search_module/search_ranking_cd/ddip.cpp
+END
+TimeUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/subversion/!svn/ver/5851/projects/search_v3/search_module/search_ranking_cd/TimeUtil.h
+END
+static_hash_vector.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/subversion/!svn/ver/5083/projects/search_v3/search_module/search_ranking_cd/static_hash_vector.h
+END
+SearchKeyRankingCloth.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/subversion/!svn/ver/5926/projects/search_v3/search_module/search_ranking_cd/SearchKeyRankingCloth.cpp
+END
+QueryParse.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/subversion/!svn/ver/5521/projects/search_v3/search_module/search_ranking_cd/QueryParse.h
+END
+ddip.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/subversion/!svn/ver/5662/projects/search_v3/search_module/search_ranking_cd/ddip.h
+END
+SearchKeyRanking.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/subversion/!svn/ver/5924/projects/search_v3/search_module/search_ranking_cd/SearchKeyRanking.cpp
+END
+so.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/5807/projects/search_v3/search_module/search_ranking_cd/so.sh
+END
+SearchKeyRankingOther.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/subversion/!svn/ver/5926/projects/search_v3/search_module/search_ranking_cd/SearchKeyRankingOther.cpp
+END
+SearchKeyRanking.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/subversion/!svn/ver/5917/projects/search_v3/search_module/search_ranking_cd/SearchKeyRanking.h
+END
+search_ranking.so
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/subversion/!svn/ver/5924/projects/search_v3/search_module/search_ranking_cd/search_ranking.so
+END

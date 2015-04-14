@@ -1,0 +1,29 @@
+Summary: search_v3:builder and searcher 
+Name: search_v3
+Version: 
+Release: 
+Source0: %{name}-%{version}.tar.gz
+License: commercial
+Group: Development/Tools
+BuildRoot: %{_builddir}/%{name}-root
+%description
+The search_v3 program is a realtime searcher
+%prep
+%setup -q
+%build
+make clean
+make
+%install
+rm -rf $RPM_BUILD_ROOT
+make DESTDIR=$RPM_BUILD_ROOT install
+%clean
+rm -rf $RPM_BUILD_ROOT
+%files
+%defattr(-,root,root)
+/usr/local/bin/Searcher
+/usr/local/bin/Builder
+/usr/local/bin/BuilderEx
+ 
+ 
+
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/subversion/!svn/ver/3608/projects/search_v3/dispatcher/deploy/package_files/lib
+END
+libboost_system.so.1.40.0
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/subversion/!svn/ver/3608/projects/search_v3/dispatcher/deploy/package_files/lib/libboost_system.so.1.40.0
+END
+libmysqlclient.so.16
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/subversion/!svn/ver/3608/projects/search_v3/dispatcher/deploy/package_files/lib/libmysqlclient.so.16
+END

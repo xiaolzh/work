@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/subversion/!svn/ver/5698/projects/search_v3/updater
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/subversion/!svn/ver/4880/projects/search_v3/updater/util.py
+END
+updater.conf
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/subversion/!svn/ver/5698/projects/search_v3/updater/updater.conf
+END
+updater.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/subversion/!svn/ver/5698/projects/search_v3/updater/updater.py
+END
+MEMO
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/subversion/!svn/ver/4248/projects/search_v3/updater/MEMO
+END

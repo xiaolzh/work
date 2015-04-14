@@ -1,0 +1,14 @@
+#the path of main data 
+main_data_path = ./modules/search_ranking/FB/bin/output/
+
+#the path of cache data
+cache_data_path = ../data/cache_data/search_ranking/
+
+#main process cmd
+main_process_cmd = sh ./modules/search_ranking/process_search_ranking_data.sh
+
+#inc process cmd
+inc_process_cmd = #echo "search_ranking: process inc data"
+
+#main update interval
+main_update_interval = 24  # per hour

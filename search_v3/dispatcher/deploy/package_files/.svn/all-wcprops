@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/subversion/!svn/ver/4482/projects/search_v3/dispatcher/deploy/package_files
+END
+cleanup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/subversion/!svn/ver/3932/projects/search_v3/dispatcher/deploy/package_files/cleanup.sh
+END
+deploy.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/subversion/!svn/ver/3932/projects/search_v3/dispatcher/deploy/package_files/deploy.py
+END
+log_cleaner.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/subversion/!svn/ver/4482/projects/search_v3/dispatcher/deploy/package_files/log_cleaner.sh
+END
+MEMO
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/subversion/!svn/ver/3608/projects/search_v3/dispatcher/deploy/package_files/MEMO
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/subversion/!svn/ver/3608/projects/search_v3/dispatcher/deploy/package_files/README
+END
+dispatcher_nginx.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/subversion/!svn/ver/4002/projects/search_v3/dispatcher/deploy/package_files/dispatcher_nginx.conf
+END

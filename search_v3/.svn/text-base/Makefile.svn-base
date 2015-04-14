@@ -1,0 +1,11 @@
+all:
+	cd searcher;make;
+	cd search_module;sh so.sh;
+clean:
+	cd searcher;make clean;
+install:
+	mkdir -p $(DESTDIR)/usr/local/bin/
+	cp searcher/Searcher $(DESTDIR)/usr/local/bin
+	cp searcher/Builder $(DESTDIR)/usr/local/bin
+	cp searcher/BuilderEx $(DESTDIR)/usr/local/bin
+	

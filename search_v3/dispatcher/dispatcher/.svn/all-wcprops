@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/subversion/!svn/ver/4482/projects/search_v3/dispatcher/dispatcher
+END
+http_server.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/dispatcher/http_server.cpp
+END
+data_handler_adapter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/subversion/!svn/ver/4346/projects/search_v3/dispatcher/dispatcher/data_handler_adapter.cpp
+END
+mailer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/subversion/!svn/ver/3644/projects/search_v3/dispatcher/dispatcher/mailer.cpp
+END
+http_server.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/dispatcher/http_server.h
+END
+data_handler_adapter.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/subversion/!svn/ver/4329/projects/search_v3/dispatcher/dispatcher/data_handler_adapter.h
+END
+http_handler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/subversion/!svn/ver/4346/projects/search_v3/dispatcher/dispatcher/http_handler.cpp
+END
+net_server.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/subversion/!svn/ver/4346/projects/search_v3/dispatcher/dispatcher/net_server.cpp
+END
+mailer.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/subversion/!svn/ver/2496/projects/search_v3/dispatcher/dispatcher/mailer.h
+END
+global_define.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/3798/projects/search_v3/dispatcher/dispatcher/global_define.h
+END
+http_handler.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/dispatcher/http_handler.h
+END
+net_server.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/subversion/!svn/ver/4293/projects/search_v3/dispatcher/dispatcher/net_server.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/subversion/!svn/ver/3931/projects/search_v3/dispatcher/dispatcher/main.cpp
+END
+dispatcher.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/subversion/!svn/ver/4482/projects/search_v3/dispatcher/dispatcher/dispatcher.cpp
+END
+dispatch_worker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/subversion/!svn/ver/2239/projects/search_v3/dispatcher/dispatcher/dispatch_worker.cpp
+END
+dispatcher.conf
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/4482/projects/search_v3/dispatcher/dispatcher/dispatcher.conf
+END
+dispatcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/subversion/!svn/ver/4482/projects/search_v3/dispatcher/dispatcher/dispatcher.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/subversion/!svn/ver/3737/projects/search_v3/dispatcher/dispatcher/Makefile
+END
+dispatch_worker.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/subversion/!svn/ver/3798/projects/search_v3/dispatcher/dispatcher/dispatch_worker.h
+END

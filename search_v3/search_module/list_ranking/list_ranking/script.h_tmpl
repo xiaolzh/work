@@ -1,0 +1,15 @@
+#ifndef SCRIPT_H
+#define SCRIPT_H
+#include <iostream>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+int compute_weight(int* field_values, int field_num);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /// ~>.!.<~

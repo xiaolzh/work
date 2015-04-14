@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/subversion/!svn/ver/5749/projects/search_v3/common
+END
+GlobalDef.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/subversion/!svn/ver/5077/projects/search_v3/common/GlobalDef.h
+END
+QueryParse.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/subversion/!svn/ver/5749/projects/search_v3/common/QueryParse.h
+END
+Module.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/subversion/!svn/ver/4620/projects/search_v3/common/Module.h
+END

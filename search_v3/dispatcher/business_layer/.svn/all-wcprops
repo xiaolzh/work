@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/subversion/!svn/ver/3932/projects/search_v3/dispatcher/business_layer
+END
+business_layer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/subversion/!svn/ver/3932/projects/search_v3/dispatcher/business_layer/business_layer.cpp
+END
+layer_header.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/subversion/!svn/ver/3550/projects/search_v3/dispatcher/business_layer/layer_header.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/subversion/!svn/ver/3737/projects/search_v3/dispatcher/business_layer/Makefile
+END
+memo
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/subversion/!svn/ver/3411/projects/search_v3/dispatcher/business_layer/memo
+END

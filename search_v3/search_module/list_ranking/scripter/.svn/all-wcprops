@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/subversion/!svn/ver/3740/projects/search_v3/search_module/list_ranking/scripter
+END
+script.cpp_tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/subversion/!svn/ver/3430/projects/search_v3/search_module/list_ranking/scripter/script.cpp_tmpl
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/subversion/!svn/ver/3430/projects/search_v3/search_module/list_ranking/scripter/main.cpp
+END
+script.h_tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/subversion/!svn/ver/3430/projects/search_v3/search_module/list_ranking/scripter/script.h_tmpl
+END
+common_func.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/subversion/!svn/ver/3430/projects/search_v3/search_module/list_ranking/scripter/common_func.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/subversion/!svn/ver/3740/projects/search_v3/search_module/list_ranking/scripter/Makefile
+END

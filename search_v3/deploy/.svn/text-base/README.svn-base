@@ -1,0 +1,7 @@
+This is a dir for deploying search_v3.
+
+It includes:
+    - database: the related of search db, like the view we should build, etc.
+    - conf:  the related of search config files, which is needed commonly
+    - tools: the related of search tools, which is needed by search_v3
+    - MORE TO ADD

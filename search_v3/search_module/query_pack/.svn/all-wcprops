@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/subversion/!svn/ver/5588/projects/search_v3/search_module/query_pack
+END
+PackDefine.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/4333/projects/search_v3/search_module/query_pack/PackDefine.h
+END
+ErrorMessage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/subversion/!svn/ver/4272/projects/search_v3/search_module/query_pack/ErrorMessage.cpp
+END
+QueryResultPacker.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/subversion/!svn/ver/4361/projects/search_v3/search_module/query_pack/QueryResultPacker.h
+END
+PublicFunc.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/2925/projects/search_v3/search_module/query_pack/PublicFunc.h
+END
+PackMallInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/subversion/!svn/ver/4272/projects/search_v3/search_module/query_pack/PackMallInfo.cpp
+END
+TimeUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/subversion/!svn/ver/3844/projects/search_v3/search_module/query_pack/TimeUtil.h
+END
+CustomProcess.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/subversion/!svn/ver/4489/projects/search_v3/search_module/query_pack/CustomProcess.cpp
+END
+so.sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/subversion/!svn/ver/4186/projects/search_v3/search_module/query_pack/so.sh
+END
+AbstractInfoShow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/subversion/!svn/ver/4272/projects/search_v3/search_module/query_pack/AbstractInfoShow.cpp
+END
+hash_wrap.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/subversion/!svn/ver/2925/projects/search_v3/search_module/query_pack/hash_wrap.h
+END
+show_result.conf
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/subversion/!svn/ver/5588/projects/search_v3/search_module/query_pack/show_result.conf
+END
+PackShopInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/subversion/!svn/ver/3625/projects/search_v3/search_module/query_pack/PackShopInfo.cpp
+END
+ResourceUtil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/subversion/!svn/ver/3548/projects/search_v3/search_module/query_pack/ResourceUtil.cpp
+END
+AbstractInfoShow.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/subversion/!svn/ver/3833/projects/search_v3/search_module/query_pack/AbstractInfoShow.h
+END
+price_span.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/subversion/!svn/ver/2756/projects/search_v3/search_module/query_pack/price_span.h
+END
+ResourceUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/subversion/!svn/ver/2925/projects/search_v3/search_module/query_pack/ResourceUtil.h
+END
+QueryResultPacker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/subversion/!svn/ver/4330/projects/search_v3/search_module/query_pack/QueryResultPacker.cpp
+END
+PublicFunc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/subversion/!svn/ver/2925/projects/search_v3/search_module/query_pack/PublicFunc.cpp
+END
+query.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/subversion/!svn/ver/2756/projects/search_v3/search_module/query_pack/query.sh
+END

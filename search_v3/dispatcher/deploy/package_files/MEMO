@@ -1,0 +1,5 @@
+NOTICE:
+    - search.conf 源自项目search_v3/searcher/，这里其实是一份拷贝，
+      需要注意两者的一致性
+    - lib/ 里是dispatcher所依赖的外部动态库，这里会存在两个问题：编译依赖，
+      第三方动态库调用版本问题（动态库版本）
