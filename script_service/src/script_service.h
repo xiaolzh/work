@@ -7,8 +7,11 @@
 using namespace std;
 
 #include "UC_MD5.h"
+#include "WFLog.h"
 #include "socketpack.h"
+#include "Utility.h"
 #include "UH_Define.h"
+#include "common_def.h"
 #include "publicfunction.h"
 #include "service_config.h"
 #include "UC_Allocator_Recycle.h"
@@ -20,7 +23,8 @@ using namespace std;
 #define	MAX_EMAIL_NUM	(5)
 #define	MAX_FILE_PATH	(256)
 
-#define __zxl_DEBUG__
+//#define __zxl_DEBUG__
+using namespace nsWFLog;
 
 struct task
 {
@@ -35,18 +39,18 @@ struct task
 	}
 };
 
-struct thread_param
-{
-	void* p1;
-	void* p2;
-};
-
 struct mail_task
 {
 	int email_num;
 	string data_path;
 	string emails[MAX_EMAIL_NUM];
 	struct task t;
+};
+
+struct thread_param
+{
+	void* p1;
+	void* p2;
 };
 
 struct request
@@ -64,9 +68,9 @@ struct request
 struct response
 {
 	int execution;
-	int datasize;
-	int sendsize;
 	int timestamp;
+	int send_size;
+	int data_size;
 	string ip;
 	string script;
 	string params;
@@ -115,7 +119,8 @@ public:
 		return (ret? errno:0);
 	}
 	var_4 json_read(string json_value, struct request& req);
-	var_4 json_write(struct response res, string data_path, string& json_value);
+	var_4 json_write(struct mail_task mt, string& json_value);
+	var_4 json_write(struct response res, string& json_value);
 	var_4 parse_request(CP_SOCKET_T sockfd, struct request req, struct response& res, string& data_path);
 
 	service_config* m_serv_config;
@@ -124,7 +129,10 @@ private:
 
 	var_4 			m_run_status;
 	CP_SOCKET_T		m_reqsvr_socket;
+	CDailyLog*		m_error_logger;
+	CDailyLog*		m_task_logger;
 	UC_Allocator_Recycle*	m_large_allocator;
+	
 	/*
 	 * 1. 接收线程 接收请求放到m_recv_queue队列中
 	 * 2. 处理线程 从m_recv_queue中取出任务处理完毕

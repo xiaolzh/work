@@ -24,20 +24,15 @@ int main(int argc, char* argv[])
 	var_4 ret = service.init(cfg_path);
 	if (ret)
 	{
-		//
+		cout<< "service init failed";	
 		return -1;
 	}
-
-#ifdef __zxl_DEBUG__
-	sleep(300);
-	exit(0);
-#endif
 
 	CP_SOCKET_T lis_sock;
 	ret = cp_listen_socket(lis_sock, service.m_serv_config->moniter_port);
 	if (ret)
 	{
-		//
+		cout<< "listen moniter port failed";
 		return -2;
 	}
 	var_1 moniter_buffer[1024];
@@ -47,14 +42,12 @@ int main(int argc, char* argv[])
 		ret = cp_accept_socket(lis_sock, sock);
 		if (ret)
 		{
-			//
 			continue;
 		}
 		cp_set_overtime(sock, 5000);
 		ret = cp_recvbuf(sock, moniter_buffer, 4);
 		if (ret)
 		{
-			//
 			cp_close_socket(sock);
 			continue;
 		}
@@ -71,7 +64,6 @@ int main(int argc, char* argv[])
 		cp_close_socket(sock);
 		if (ret)
 		{
-			//
 			continue;
 		}
 	}

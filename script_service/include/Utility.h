@@ -53,7 +53,7 @@ bool static ClearFolder(var_1 *folder)
 		{
 			continue;
 		}
-		iRet = _snprintf(file, 512, "%s/%s", folder, direntp->d_name);
+		iRet = snprintf(file, 512, "%s/%s", folder, direntp->d_name);
 		if (iRet <= 0)
 		{
 			res = false;

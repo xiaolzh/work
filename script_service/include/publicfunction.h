@@ -502,11 +502,11 @@ inline const INT32_T RmDirFile(char *lpszDir)
 
 	if(bDir)
 	{
-		iLen = _snprintf(szFile, I_PATH_NAME_SIZE - 1, "%s",lpszDir);
+		iLen = snprintf(szFile, I_PATH_NAME_SIZE - 1, "%s",lpszDir);
 	}
 	else
 	{
-		iLen = _snprintf(szFile, I_PATH_NAME_SIZE - 1, "%s/",lpszDir);
+		iLen = snprintf(szFile, I_PATH_NAME_SIZE - 1, "%s/",lpszDir);
 	}
 
 	if(iLen <= 0)
@@ -527,11 +527,11 @@ inline const INT32_T RmDirFile(char *lpszDir)
 
 		if(bDir)
 		{
-		    iLen = _snprintf(szFile, I_PATH_NAME_SIZE - 1, "%s%s",lpszDir, spDE->d_name);
+		    iLen = snprintf(szFile, I_PATH_NAME_SIZE - 1, "%s%s",lpszDir, spDE->d_name);
 		}
 		else
 		{
-			iLen = _snprintf(szFile, I_PATH_NAME_SIZE - 1, "%s/%s",lpszDir, spDE->d_name);
+			iLen = snprintf(szFile, I_PATH_NAME_SIZE - 1, "%s/%s",lpszDir, spDE->d_name);
 		}
 
 		if(iLen <= 0)
@@ -714,7 +714,7 @@ inline const INT32_T GetXmlItem(char *&lpszStr,char *&lpszEnd,char *lpszTag,char
 {
 	const INT32_T L_TAGNAMESIZE=100;
 	char szTagName[L_TAGNAMESIZE];
-	INT32_T iTagNameLen=_snprintf(szTagName, L_TAGNAMESIZE, "%s>", lpszTag), iTagNM = iTagNameLen + 1;
+	INT32_T iTagNameLen=snprintf(szTagName, L_TAGNAMESIZE, "%s>", lpszTag), iTagNM = iTagNameLen + 1;
 	if(iTagNameLen <= 0)
 		return -2;
 
@@ -740,7 +740,7 @@ inline const INT32_T GetXmlItem(char *&lpszStr,char *&lpszEnd,char *lpszTag,char
 
 				lpszOutText=lpszStr;
 
-				iTagNameLen=_snprintf(szTagName, L_TAGNAMESIZE, "/%s>", lpszTag);
+				iTagNameLen=snprintf(szTagName, L_TAGNAMESIZE, "/%s>", lpszTag);
 				if(iTagNameLen<=0)
 					return -3;
 
@@ -777,7 +777,7 @@ inline const INT32_T GetXmlItem(char *&lpszStr, char *&lpszEnd, char *lpszTag, c
 {
 	const INT32_T L_TAGNAMESIZE = 100;
 	char szTagName[L_TAGNAMESIZE];
-	INT32_T iTagNameLen = _snprintf(szTagName, L_TAGNAMESIZE, "%s>", lpszTag), iTagNM = iTagNameLen + 1;
+	INT32_T iTagNameLen = snprintf(szTagName, L_TAGNAMESIZE, "%s>", lpszTag), iTagNM = iTagNameLen + 1;
 	if(iTagNameLen <= 0)
 		return -2;
 
@@ -798,7 +798,7 @@ inline const INT32_T GetXmlItem(char *&lpszStr, char *&lpszEnd, char *lpszTag, c
 
 			char *lpszOut = lpszOutText, *lpszOutEnd = lpszOutText + iOutTextSize, *lpszStart = lpszStr;
 
-			iTagNameLen = _snprintf(szTagName,L_TAGNAMESIZE, "/%s>", lpszTag);
+			iTagNameLen = snprintf(szTagName,L_TAGNAMESIZE, "/%s>", lpszTag);
 			if(iTagNameLen <= 0)
 				return -3;
 

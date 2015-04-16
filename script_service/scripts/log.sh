@@ -1,3 +1,6 @@
- #!/bin/sh
-echo $1 >>res.dat 
-sleep 30
+#!/bin/sh
+for i in {1..10000}
+do
+	echo -n $i >>res.dat
+done
+sleep 10 

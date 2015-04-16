@@ -63,6 +63,7 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <netinet/tcp.h>
+#include <uuid/uuid.h>
 
 #include <signal.h>
 
@@ -72,6 +73,7 @@
 #include <errno.h>
 #include <unistd.h>
 
+#include <uuid/uuid.h>
 #endif
 
 #include <math.h>
@@ -98,10 +100,6 @@ typedef				  bool var_bl;
 
 #ifdef _SYSTEM_X86_
 
-#define BITS_PER_LONG 32
-#define BYTES_PER_LONG 4
-#define SHIFT_BITS_PER_LONG 5
-
 #ifdef _WIN32_ENV_
 typedef            __int64 var_8;
 typedef   unsigned __int64 var_u8;
@@ -112,10 +110,6 @@ typedef unsigned long long var_u8;
 
 #else
 
-#define BITS_PER_LONG 64
-#define BYTES_PER_LONG 8
-#define SHIFT_BITS_PER_LONG 6
-
 #ifdef _WIN32_ENV_
 typedef            __int64 var_8;
 typedef   unsigned __int64 var_u8;
@@ -125,11 +119,6 @@ typedef      unsigned long var_u8;
 #endif // _WIN32_ENV_
 
 #endif // _SYSTEM_X86_
-
-#define BIT(nr)                 (1UL << (nr))
-#define BIT_MASK(nr)            (~0UL << ((nr) % BITS_PER_LONG))
-#define BIT_CLEAR(nr)           (~0UL >> (BITS_PER_LONG - ((nr) % BITS_PER_LONG)))
-#define BIT_WORD(nr)            ((nr) >> SHIFT_BITS_PER_LONG)
 
 __inline var_u4 cp_add_and_fetch(var_u4* val)
 {
@@ -203,19 +192,37 @@ __inline void cp_lock_dec(var_u8* val)
 #endif
 }
 
+/* cp_fetch_and_add
+var_u8 ret;
+__asm__ __volatile__("lock; xaddq %0, %1" : "=r" (ret), "=m" (*p) : "0" (add), "m" (*p) : "memory");
+return ret;
+*/
+
+/* error code
+#ifdef _SYSTEM_X86_
+asm("movl %0,%%eax" : "=m"(val) : "m"(val) : "%eax");
+asm("lock; incl (%eax)");
+#else
+asm("movq %0,%%rax" : "=m"(val) : "m"(val) : "%rax");
+asm("lock; incq (%rax)");
+#endif
+
+#ifdef _SYSTEM_X86_
+asm("movl %0,%%eax" :"=m"(val) :"m"(val) :"%eax");
+asm("lock; decl (%eax)");
+#else
+asm("movq %0,%%rax" :"=m"(val) :"m"(val) :"%rax");
+asm("lock; decq (%rax)");
+#endif
+*/
+
 // 休眠
 #ifdef _WIN32_ENV_
 #define cp_sleep(x)			Sleep(x)
+#define cp_sleep_s(x)		Sleep(x*1000)
 #else
 #define cp_sleep(x)			usleep(x*1000)
-#endif
-
-#ifdef _LINUX_ENV_
-#define _snprintf	snprintf
-#define THREADFUNTYPE  void*
-#define WSAGetLastError()	errno
-#else
-#define THREADFUNTYPE  DWORD WINAPI
+#define cp_sleep_s(x)		sleep(x)
 #endif
 
 static var_vd cp_wait_dispose()
@@ -429,6 +436,45 @@ typedef struct CP_MutexLock
 		pthread_mutex_unlock(&mutex);
 	}
 } CP_MUTEXLOCK;
+/*
+typedef struct CP_MutexLock_RW
+{
+	pthread_rwlock_t mutex;
+
+	CP_MutexLock_RW()
+	{
+		pthread_rwlock_init(&mutex, NULL);
+	}
+
+	~CP_MutexLock_RW()
+	{
+		pthread_rwlock_destroy(&mutex);
+	}
+
+	inline void lock_r()
+	{
+		while(pthread_rwlock_rdlock(&mutex))
+		{
+			printf("CP_MutexLock_RW.pthread_rwlock_rdlock failure\n");
+			cp_sleep(1);
+		}
+	}
+
+	inline void lock_w()
+	{
+		while(pthread_rwlock_wrlock(&mutex))
+		{
+			printf("CP_MutexLock_RW.pthread_rwlock_wrlock failure\n");
+			cp_sleep(1);
+		}
+	}
+
+	inline void unlock()
+	{
+		pthread_rwlock_unlock(&mutex);
+	}
+} CP_MUTEXLOCK_RW;
+*/
 
 typedef struct CP_MutexLock_RW
 {
@@ -920,16 +966,6 @@ static var_4 cp_remove_file(var_1* src_file)
 	return 0;
 }
 
-
-static var_4 sys_error_code()
-{
-#ifdef _WIN32_ENV_
-    return GetLastError();
-#else
-    return errno;
-#endif
-}
-
 static var_4 cp_rename_file(var_1* src_file, var_1* des_file)
 {
 	if(access(src_file, 0))
@@ -1035,111 +1071,6 @@ static var_4 cp_clear_file(var_1* org_file)
     }
     
     return 0;
-}
-
-static var_1* get_file_name(var_1* full_path)
-{
-    var_1* end = full_path + strlen(full_path) - 1;
-    while (end != full_path)
-    {
-        if (('\\' == *end) || ('/' == *end))
-        {
-            ++end;  
-            break;
-        }
-        --end;
-    }
-
-    return (end == full_path) ? NULL : end;
-}
-
-static var_4 cp_copy_file(var_1* org_file, var_1* des_dir, var_1* buf = NULL, var_u4 len = 0)
-{
-    var_1 des_file[256];
-    sprintf(des_file, "%s/%s", des_dir, get_file_name(org_file));
-    var_1 tmp_file[256];
-    sprintf(tmp_file, "%s.tmp", des_file);
-
-    var_1* buf_tmp = buf;
-    var_u4 buf_len = len;
-    if ((NULL == buf_tmp) || (0 == buf_len))
-    {
-        buf_len = 1<<20;
-        buf_tmp = new var_1[buf_len];
-        if (NULL == buf_tmp)
-        {
-            return -1;
-        }
-    }
-
-    FILE* fh_rd = NULL, *fh_wt = NULL;
-    try
-    {
-        var_u4 size_rd = cp_get_file_size(org_file);
-        if (0 > size_rd)
-        {
-            throw -1;
-        }
-
-        fh_rd = fopen(org_file, "rb");
-        if (NULL == fh_rd)
-        {
-            throw -2;
-        }
-
-        fh_wt = fopen(tmp_file, "wb");
-        if (NULL == fh_wt)
-        {
-            throw -3;
-        }
-
-        while (size_rd > 0)
-        {
-            var_u4 one_rd = buf_len;
-            if (one_rd > size_rd)
-            {
-                one_rd = size_rd;
-            }
-
-            var_4 ret = fread(buf_tmp, one_rd, 1, fh_rd);
-            if (1 != ret)
-            {
-                throw -4;
-            }
-
-            ret = fwrite(buf_tmp, one_rd, 1, fh_wt);
-            if (1 != ret)
-            {
-                throw -5;
-            }
-
-            size_rd -= one_rd;
-        }
-
-        fclose(fh_wt);
-        fh_wt = NULL;
-
-        cp_rename_file(tmp_file, des_file);
-
-        throw 0;
-    }
-    catch (const var_4 _err_code)
-    {
-    	if ((NULL == buf) && (NULL != buf_tmp))
-    	{
-            delete[] buf_tmp;
-    	}
-        if (NULL != fh_rd)
-        {
-            fclose(fh_rd);
-        }
-        if (NULL != fh_wt)
-        {
-            fclose(fh_wt);
-        }
-
-        return _err_code;
-    }
 }
 
 /************************************************************************/
@@ -1293,11 +1224,15 @@ static var_4 cp_recvbuf(CP_SOCKET_T in_socket, var_1* in_buffer, var_4 in_buflen
 	do{
 		retval = (var_4)recv(in_socket, in_buffer + finlen, in_buflen - finlen, 0);
 		if(retval > 0)
+		{
 			finlen += retval;
+		}
 	}while(retval > 0 && finlen < in_buflen);
-	if(retval < 0 || finlen < in_buflen)
-		return -1;
 
+	if (retval < 0 || finlen < in_buflen)
+	{
+		return -1;
+	}
 	return 0;
 }
 
@@ -2159,6 +2094,12 @@ const var_vd cp_generate_random(T_Key* result, var_4 num)
 	std::random_shuffle<T_Key>(result, result + num);
 }
 
+static var_vd cp_warning_no_use()
+{
+	BM_RULE_BIT[0] = BM_RULE_BIT[0];
+	BM_RULE_ZERO_BIT[0] = BM_RULE_ZERO_BIT[0];
+}
+
 /*
 子进程的结束状态返回后存于status，底下有几个宏可判别结束情况
 WIFEXITED(status)如果子进程正常结束则为非0值。
@@ -2170,3 +2111,4 @@ WSTOPSIG(status)取得引发子进程暂停的信号代码，
 */
 
 #endif // _UH_DEFINE_H_
+

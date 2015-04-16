@@ -3,11 +3,14 @@
 UC_MD5 script_service::m_md5;
 
 script_service::script_service()
+: m_large_allocator(NULL)
+, m_error_logger(NULL)
+, m_task_logger(NULL)
+, m_reqsvr_socket(-1)
+, m_run_status(true)
 {
-	m_large_allocator = NULL;
-	m_reqsvr_socket = -1;
-	m_run_status = true;
 }
+
 script_service::~script_service()
 {}
 
@@ -32,67 +35,112 @@ var_4 script_service::init(const var_1* cfg)
 	ret = conf_reader.InitConfigFile(cfg);
 	if (ret)
 	{
-		//
-		return -5;
+		cout<<	"init config failed";
+		return -1;
 	}
 	m_serv_config = new service_config;
 	ret = m_serv_config->read_cfg(conf_reader);
 	if (ret)
 	{
-		//
-		return -6;
+		cout<< "read config failed";
+		return -2;
 	}
 
 	assert(NULL == m_large_allocator);
 	m_large_allocator = new UC_Allocator_Recycle;
 	if (NULL == m_large_allocator)
 	{
-		//
-		return -7;
+		cout<< "new m_large_allocator failed";
+		return -3;
 	}
 	var_4 m_large_size = 1<<20;
 	var_4 count = 10000;
-	//
+	
 	ret = m_large_allocator->initMem(m_large_size, count, (var_4)sqrt(count));
 	if (ret)
 	{
-		//
+		cout<< "init m_large_allocator failed";
+		return -4;
+	}
+	
+	var_1 folder[256];
+	assert(NULL == m_error_logger);
+	m_error_logger = new CDailyLog;
+	if (!m_error_logger)
+	{
+		cout<< "new m_error_logger failed";
+		return -5;
+	}
+	sprintf(folder, "error_log");
+	if (access(folder, 0))
+	{
+		mkdir(folder, S_IRWXO|S_IRWXU);
+	}
+
+	ret = m_error_logger->Init(folder, "err");
+	if (ret)
+	{
+		cout<< "init m_error_logger failed";
+		return -6;
+	}
+	assert(NULL == m_task_logger);
+	m_task_logger = new CDailyLog;
+	if (!m_task_logger)
+	{
+		cout<< "new m_task_logger failed";
+		return -7;
+	}
+	sprintf(folder, "task_log");
+	if (access(folder, 0))
+	{
+		mkdir(folder, S_IRWXO|S_IRWXU);
+	}
+	ret = m_task_logger->Init(folder, "task");
+	if (ret)
+	{
+		cout<< "init m_task_logger failed";
 		return -8;
 	}
+
 	assert(-1 == m_reqsvr_socket);
 	ret = cp_listen_socket(m_reqsvr_socket, m_serv_config->request_port);
 	if (ret)
 	{
-		//
+		cout<< "listen socket failed";
 		return -9;
 	}
 	// 接收请求线程
 	ret = cp_create_thread(thread_request, (void*)this);
 	if (ret)
 	{
-		return -1;
+		cout<< "create thread_request failed";
+		return -10;
 	}
 	ret = cp_create_thread(thread_process, (void*)this);
 	if (ret)
 	{
-		return -10;
+		cout<< "create thread_process failed";
+		return -11;
 	}
 	// 发送数据线程
 	ret = cp_create_thread(thread_reply, (void*)this);
 	if (ret)
 	{
-		return -2;
+		cout<< "create thread_reply failed";
+		return -12;
 	}
 	// 清理线程
 	ret = cp_create_thread(thread_clear, (void*)this);
 	if (ret)
 	{
-		return -3;
+		cout<< "create thread_clear failed";
+		return -13;
 	}
 	ret = cp_create_thread(thread_mail, (void*)this);
 	if (ret)
 	{
-		return -4;
+		cout<< "create thread_mail failed";
+		return -14;
 	}
 	      
 	return 0;
@@ -170,7 +218,7 @@ void* script_service::thread_process(void* param)
 		var_4 ret = cp_create_thread(thread_work, (void*)pt);
 		if (ret)
 		{
-			//
+			_this->m_error_logger->LPrintf(true, "create thread_work failed\n");	
 		}
 		cp_sleep(1);
 	}
@@ -186,7 +234,7 @@ var_4 script_service::json_read(string json_value, struct request& req)
 	Json::Value  value;
 	if (false == reader.parse(json_value, value))
 	{
-		//
+		m_error_logger->LPrintf(true, "parse json failed:%s\n", json_value.c_str());
 		return -1;
 	}
 	else
@@ -203,22 +251,52 @@ var_4 script_service::json_read(string json_value, struct request& req)
 	return 0;
 }
 
-var_4 script_service::json_write(struct response res, string data_path, string& json_value)
+var_4 script_service::json_write(struct response res, string& json_value)
 {
 	Json::Value root;
+	root["timestamp"] = res.timestamp;
 	root["ip"] = res.ip;
-	root["value"] = res.value;
 	root["script"] = res.script;
 	root["params"] = res.params;
-	root["datasize"] = res.datasize;
-	root["sendsize"] = res.sendsize;
 	root["execution"] = res.execution;
-	root["timestamp"] = res.timestamp;
+	
+	root["data_size"] = res.data_size;
+	root["send_size"] = res.send_size;
+	root["value"] = res.value;
 	root.toStyledString();
 	json_value = root.toStyledString();
-#ifdef __zxl_DEBUG__
-	cout <<json_value <<endl;
-#endif
+	return 0;
+}
+
+var_4 script_service::json_write(struct mail_task mt, string& json_value)
+{
+	Json::Value root, value;
+	Json::Reader reader;
+	if (false == reader.parse(mt.t.json_value, value))
+	{
+		m_error_logger->LPrintf(true, "parse json failed:%s\n", mt.t.json_value.c_str());
+		return -1;
+	}
+	root["timestamp"] = value["timestamp"];
+	root["ip"] = value["ip"];
+	root["script"] = value["script"];
+	root["params"] = value["params"];
+	root["execution"] = value["execution"];
+
+	root["data_size"] = value["data_size"];
+	root["send_size"] = value["send_size"];
+	
+	root["error_code"] = mt.t.error_code;
+	root["email_num"] = mt.email_num;
+	root["data_path"] = mt.data_path;
+	Json::Value emails;
+	for (size_t i = 0; i < mt.email_num; i++)
+	{
+		emails[i] = mt.emails[i];
+	}
+	root["emails"] = emails;
+	root.toStyledString();
+	json_value = root.toStyledString();
 	return 0;
 }
 
@@ -231,27 +309,32 @@ void* script_service::thread_work(void* param)
 	string data_path, json_value;
 	struct request req;
 	struct response res;
+	var_1 task_info[1024]; 
 	var_4 ret = _this->json_read(t->json_value, req); 
 	if (ret)
-	{//
-
+	{
+		_this->m_error_logger->LPrintf(true, FAILE_CALL_RET("thread_work", "json_read", ret));
 	}
 	else
 	{
 		ret = _this->parse_request(t->sockfd, req, res, data_path);
 		if (ret)
 		{
-			//
+			_this->m_error_logger->LPrintf(true, FAILE_CALL_RET("thread_work", "parse_request", ret));
 		}
 		else
 		{
-			ret = _this->json_write(res, data_path, json_value);
+			ret = _this->json_write(res, json_value);
 			if (ret)
-			{//
+			{
+				_this->m_error_logger->LPrintf(true, FAILE_CALL_RET("thread_work", "json_write", ret));
 			}
 			else
-			{
-
+			{// 记录任务信息
+				snprintf(task_info, 1024, "\ntimestamp:%d\nip:%s\nscript:%s\nparams:%s\nexecution:%d\ndata_size:%d\n",
+						 res.timestamp, res.ip.c_str(), res.script.c_str(), res.params.c_str(), res.execution, res.data_size);
+				_this->m_task_logger->LPrintf(false, "%s", task_info);
+				_this->m_task_logger->LPrintf(false, "\n-------------------------\n");
 			}
 		}
 	}
@@ -279,12 +362,12 @@ void* script_service::thread_work(void* param)
 void* script_service::thread_reply(void* param)
 {
 	script_service* _this = static_cast<script_service*>(param);
-
-	var_4 send_size;
+	
 	struct mail_task mt;
 	var_1* buffer = block_alloc(_this->m_large_allocator);
 	while (_this->m_run_status)
 	{
+		var_4 send_size = 0, data_size = 0;
 		var_bl need_mail = false;
 		while (_this->m_send_queue.empty())
 		{
@@ -300,13 +383,18 @@ void* script_service::thread_reply(void* param)
 			send_size = 16;
 		}
 		else
-		{
-			send_size = mt.t.json_value.length();
-			if (MAX_BUFFER_SIZE < send_size)
+		{	
+			struct stat st;
+			if (!stat(mt.data_path.c_str(), &st))
+			{
+				data_size = st.st_size;
+			}
+			if (MAX_BUFFER_SIZE < data_size)
 			{
 				need_mail = true;
-				send_size = MAX_BUFFER_SIZE;
 			}
+
+			send_size  = mt.t.json_value.length();
 			snprintf(buffer + 8, 9, "%-8d", send_size);
 			snprintf(buffer + 16, send_size + 1, "%s", mt.t.json_value.c_str());
 			send_size += 16;
@@ -314,9 +402,10 @@ void* script_service::thread_reply(void* param)
 		var_4 ret = cp_sendbuf(mt.t.sockfd, buffer, send_size);
 		if (ret)
 		{
-			//
 			need_mail = true;
+			_this->m_error_logger->LPrintf(true, FAILE_CALL_RET("thread_reply", "cp_sendbuf", ret));	
 		}
+		cp_recvbuf(mt.t.sockfd, buffer, 1);
 		cp_close_socket(mt.t.sockfd);
 		
 		if (need_mail)
@@ -333,6 +422,8 @@ void* script_service::thread_mail(void* param)
 	script_service* _this = static_cast<script_service*>(param);
 
 	struct mail_task mt;
+	string json_value;
+	string command;
 	while (_this->m_run_status)
 	{
 		while (_this->m_mail_queue.empty())
@@ -341,7 +432,18 @@ void* script_service::thread_mail(void* param)
 		}
 		mt = _this->m_mail_queue.front();
 		_this->m_mail_queue.pop();
-
+		var_4 ret = _this->json_write(mt, json_value);
+		if (ret)
+		{
+			_this->m_error_logger->LPrintf(true, FAILE_CALL_RET("thread_mail", "json_write", ret));
+			continue;	
+		}
+		command = "python sendmail.py '" + json_value + "'";
+		system(command.c_str());
+		if (errno == 127 || errno == -1)
+		{
+			_this->m_error_logger->LPrintf(true, FAILE_CALL_RET("thread_mail", "python sendmail.py", errno));	
+		}
 	}
 	return NULL;
 }
@@ -349,10 +451,60 @@ void* script_service::thread_mail(void* param)
 void* script_service::thread_clear(void* param)
 {
 	script_service* _this = static_cast<script_service*>(param);
-
+	
+	DIR *dirp = NULL;
+	struct dirent *direntp = NULL;
+	struct timeval tv;
 	while (_this->m_run_status)
 	{
-		cp_sleep(1000);
+		/*
+		 * 清理超过7天的数据；
+		 * 文件夹命名规则：xxx_1429148362776987
+		 * 时间戳精度为微秒，长度16位
+		 */
+		gettimeofday(&tv, 0);
+		dirp = opendir(".");
+		if (!dirp)
+		{
+			_this->m_error_logger->LPrintf(true, FAILE_CALL_RET("thread_clear", "opendir", errno));
+			continue;
+		}
+		while (direntp = readdir(dirp))
+		{
+			var_4 name_len = strlen(direntp->d_name);
+			if (name_len < 17)
+			{
+				continue;
+			}
+			if (!(direntp->d_type == DT_DIR))
+			{
+				continue;
+			}
+			size_t i = name_len - 1, j = 0;
+			for (; i >= 0 && j < 16; i--, j++)
+			{
+				if (!(direntp->d_name[i] >= '0' && direntp->d_name[i] <= '9'))
+				{
+					break;
+				}
+			}
+			if (j != 16)
+			{
+				continue;
+			}
+			if (i >= 0 && direntp->d_name[i] != '_')
+			{
+				continue;
+			}
+			var_8 timestamp = strtoul(direntp->d_name + name_len - 16, 0, 10);
+			if (tv.tv_sec * 1000000 + tv.tv_usec > timestamp + 1000000L * 86400 * 7)
+			{// 数据日期早于7天，删除
+				ClearFolder(direntp->d_name);
+				RemoveFile(direntp->d_name);
+			}
+		}
+		closedir(dirp);
+		cp_sleep(60000);
 	}
 	return NULL;
 }
@@ -361,10 +513,16 @@ void* script_service::thread_clear(void* param)
 var_4 script_service::parse_request(CP_SOCKET_T sockfd, struct request req,  struct response& res, string& data_path)
 {
 	var_u8 now, task_md5;
+	// 任务目录
 	var_1 foldname_new[MAX_FILE_PATH];
 	var_1 foldname_old[MAX_FILE_PATH];
+	// 数据文件
 	var_1 filename_new[MAX_FILE_PATH];
 	var_1 filename_old[MAX_FILE_PATH];
+	// 脚本文件
+	var_1 script_new[MAX_FILE_PATH];
+	var_1 script_old[MAX_FILE_PATH];
+	// 任务命令加密
 	var_1 md5file[MAX_FILE_PATH];
 	
 	int execution=0;// 脚本执行时长
@@ -380,11 +538,13 @@ var_4 script_service::parse_request(CP_SOCKET_T sockfd, struct request req,  str
 
 	if (access(foldname_new, 0) != -1)
 	{// 目录存在
-		return -2;
+		m_error_logger->LPrintf(true, "folder is existed:%s\n", foldname_new);
+		return -1;
 	}
 	if (CreateDir(foldname_new))
-	{//
-		return -3;
+	{
+		m_error_logger->LPrintf(true, "create dir failed:%s\n", foldname_new);
+		return -2;
 	}
 	// 任务命令字符串加密为MD5值并作为文件名；
 	// 如果同名文件存在，标记任务正在执行；
@@ -403,19 +563,21 @@ var_4 script_service::parse_request(CP_SOCKET_T sockfd, struct request req,  str
 		}
 		snprintf(filename_old, MAX_FILE_PATH, "%s/res.dat", foldname_old);
 		if (CopyFile(filename_old, filename_new))
-		{//
-			return -4;
+		{
+			m_error_logger->LPrintf(true, "copy file %s to %s failed.\n", filename_old, filename_new);
+			return -3;
 		}
 	}
 	else
 	{
-		var_1 command[256];
+		var_1 command[1024];
 		// 将执行脚本拷贝到数据目录
-		snprintf(filename_old, MAX_FILE_PATH, "scripts/%s", req.script.c_str());
-		snprintf(filename_new, MAX_FILE_PATH, "%s/%s", foldname_new, req.script.c_str());
-		if (CopyFile(filename_old, filename_new))
-		{//
-			return -6;	
+		snprintf(script_old, MAX_FILE_PATH, "scripts/%s", req.script.c_str());
+		snprintf(script_new, MAX_FILE_PATH, "%s/%s", foldname_new, req.script.c_str());
+		if (CopyFile(script_old, script_new))
+		{
+			m_error_logger->LPrintf(true, "copy file %s to %s failed.\n", script_old, script_new);
+			return -4;	
 		}
 		// 判断脚本语言，仅支持python和shell
 		if (!strncmp(req.script.c_str() + req.script.length() - 3, ".sh", 3))
@@ -427,7 +589,8 @@ var_4 script_service::parse_request(CP_SOCKET_T sockfd, struct request req,  str
 			snprintf(command, 256, "cd %s;python %s %s;", foldname_new, req.script.c_str(), req.params.c_str());
 		}
 		else
-		{//
+		{
+			m_error_logger->LPrintf(true, "script not support: %s\n", req.script.c_str());
 			return -5;
 		}
 		ofstream fout(md5file);
@@ -441,32 +604,45 @@ var_4 script_service::parse_request(CP_SOCKET_T sockfd, struct request req,  str
 		execution = end.tv_sec - begin.tv_sec;
 		RemoveFile(md5file);
 		if (errno == 127 || errno == -1)
-		{//
+		{
+			m_error_logger->LPrintf(true, "system failed:%s\n", command);
 			return errno; 
 		}
 	}
+	data_path.assign(getcwd(NULL, 0));
+	data_path.append("/");
+	data_path.append(filename_new); 	
+	
 	struct stat st;
-	data_path.assign(filename_new); 	
 	var_1 json_value[MAX_BUFFER_SIZE+1];	
 	// 获取客户端IP
 	static const char *ip  = CSocketPack::GetIPStr(sockfd);
 	res.ip.assign(ip);
 	// 写 struct response结构体
-	res.datasize = 0;
+	res.data_size = 0;
 	if (!stat(data_path.c_str(), &st))
 	{
-		res.datasize = st.st_size;
+		res.data_size = st.st_size;
 	}
-	res.sendsize = (res.datasize > MAX_BUFFER_SIZE?MAX_BUFFER_SIZE:res.datasize);
+	res.send_size = (res.data_size > MAX_BUFFER_SIZE?MAX_BUFFER_SIZE:res.data_size);
 	ifstream fin(data_path.c_str());
-	fin.read(json_value, res.sendsize);
+	fin.read(json_value, res.send_size);
 	fin.close();
-	res.value.assign(json_value, res.sendsize);
+	res.value.assign(json_value, res.send_size);
 	res.timestamp = tv.tv_sec;
 	res.script = req.script;
 	res.params = req.params;
 	res.execution = execution;
-
+	// 将任务信息写到任务目录下的task.info
+	snprintf(filename_new, MAX_FILE_PATH, "%s/task.info", foldname_new);
+	ofstream fout(filename_new);
+	fout <<"timestamp: "<<res.timestamp <<endl;
+	fout <<"ip: "<<res.ip <<endl;
+	fout <<"script: " <<res.script <<endl;
+	fout <<"params: " <<res.params <<endl;
+	fout <<"execution: "<<res.execution <<endl;
+	fout <<"data_size: "<<res.data_size <<endl;
+	fout.close();
 	return 0;
 }
 

@@ -169,11 +169,11 @@ public:
 		// v1.101 - 2011.04.27 - 增加非阻塞函数 PushData_NB(), PopData_NB()
 		return "v1.100";
 	}
-
-private:
+public:
 	var_4 m_lMaxQueueSize;
 	var_4 m_lCurQueueSize;
 
+private:
 	T_Key* m_tpQueue;
 
 	var_4 m_lBegPos;
@@ -184,3 +184,4 @@ private:
 };
 
 #endif // _UT_QUEUE_EVENT_H_
+

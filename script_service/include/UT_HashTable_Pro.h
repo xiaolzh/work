@@ -807,28 +807,37 @@ public:
 		
 		var_4 ret = 0;
 		
-		try {
-			if(fwrite(&m_store_size, 4, 1, fp) != 1)
+		try 
+		{
+			if (fwrite(&m_store_size, 4, 1, fp) != 1)
+			{
 				throw -2;
-			
+			}
 			var_vd* handle = NULL;
 			
 			if(travel_prepare(handle, 0, 0) < 0)
+			{
 				throw -3;
-			
+			}
 			T_Key key;
 			var_vd* value;
 			
 			while(travel_key(handle, key, &value) == 0)
 			{
-				if(fwrite(&key, sizeof(T_Key), 1, fp) != 1)
+				if (fwrite(&key, sizeof(T_Key), 1, fp) != 1)
+				{
 					throw -4;
-				
-				if(m_store_size && fwrite(value, m_store_size, 1, fp) != 1)
+				}
+				ret = fwrite(value, m_store_size, 1, fp);
+				if(m_store_size > 0 && ret != 1)
+				{
 					throw -5;
+				}
 			}
 			
 			travel_finish(handle);
+			// if success return 0
+			throw 0;
 		}
 		catch(var_4 err)
 		{
@@ -955,11 +964,6 @@ public:
 		
 		return 0;
 	}
-
-    var_4 backup(var_1* index_dir)
-    {
-        return cp_copy_file(m_name_sto, index_dir);
-    }
 	
 	const var_1* version()
 	{
@@ -1097,12 +1101,15 @@ private:
 				
 				if(*(var_u8*)buf == (var_u8)0xABABABABABABABAB)
 				{
-					if(fread(buf + 8 + sizeof(T_Key), m_store_size, 1, m_file_inc) != 1)
+					var_4 ret = fread(buf + 8 + sizeof(T_Key), m_store_size, 1, m_file_inc);
+					if (m_store_size > 0 && ret != 1)
+					{
 						break;
-					
+					}
 					if(add(*(T_Key*)(buf + 8), buf + 8 + sizeof(T_Key), NULL, 1, 0) < 0)
+					{
 						return -1;
-					
+					}
 					cur_size += 8 + sizeof(T_Key) + m_store_size;
 				}
 				else if(*(var_u8*)buf == (var_u8)0xCDCDCDCDCDCDCDCD)
@@ -1113,7 +1120,9 @@ private:
 					cur_size += 8 + sizeof(T_Key);
 				}
 				else
+				{
 					return -1;
+				}
 			}
 						
 			fclose(m_file_inc);
@@ -1143,7 +1152,7 @@ private:
 		m_persistent_lck.lock();
 		
 		var_8 size = ftell(m_file_inc);
-		
+		var_4 ret  = 0;	
 		try
 		{
 			var_u8 flag = 0;
@@ -1153,15 +1162,26 @@ private:
 			else
 				flag = 0xCDCDCDCDCDCDCDCD;
 			
-			if(fwrite(&flag, 8, 1, m_file_inc) != 1)
+			if (fwrite(&flag, 8, 1, m_file_inc) != 1)
+			{
 				throw -1;
-			if(fwrite(&key, sizeof(T_Key), 1, m_file_inc) != 1)
+			}
+			if (fwrite(&key, sizeof(T_Key), 1, m_file_inc) != 1)
+			{
 				throw -2;
-			if(is_delete == 0 && fwrite(value, m_store_size, 1, m_file_inc) != 1)
-				throw -3;
-			
+			}
+			if(is_delete == 0)
+			{
+				ret = fwrite(value, m_store_size, 1, m_file_inc); 
+				if (m_store_size > 0 && ret != 1)
+				{
+					throw -3;
+				}
+			}
 			if(fflush(m_file_inc))
+			{
 				throw -4;
+			}
 		}
 		catch (var_4 err)
 		{
@@ -1188,7 +1208,12 @@ private:
 		
 		return 0;
 	}
-	
+public:
+	//var_4 get_size()
+	//{
+	//	return m_now_key_num;
+	//}
+
 private:
 	var_8 m_table_size;
 	var_4 m_store_size;

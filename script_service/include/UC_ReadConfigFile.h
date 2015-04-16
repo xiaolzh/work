@@ -25,7 +25,7 @@ public:
 			fclose(m_cpFile);
 	}
 	// 初始化配置文件
-	var_4 InitConfigFile(const var_1* filename)
+	var_4 InitConfigFile(const char* filename)
 	{
 		m_cpFile = fopen(filename, "r");
 		if(m_cpFile == NULL)
@@ -243,7 +243,7 @@ public:
 	{
 		// v1.000 - 2008.08.26 - 初始版本
 		// v1.100 - 2009.03.31 - 增加跨平台支持
-		// v2.000 - 2013.04.15 - 重写核心函数,支持引号,分割符定义,注释符号定义
+		// v2.000 - 2013.04.15 - ??D′o?D?oˉêy,?§3?òyo?,·???·??¨ò?,×￠êí·?o??¨ò?
 		return "v2.000";
 	}
 

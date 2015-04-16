@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -g
+CFLAGS = -g -D __zxl_DEBUG__
 
 DIR_SRC=src include/json/src/lib_json
 DIR_OBJ=obj
